@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<rss version="2.0">
+ <channel>
+  <title>My Blog: My Blog</title>
+  <description>My Blog: My Blog</description>
+  <link>http://www.example.com/index.html</link>
+  <lastBuildDate>Thu, 05 Sep 2019 15:08:26 UT</lastBuildDate>
+  <pubDate>Thu, 05 Sep 2019 15:08:26 UT</pubDate>
+  <ttl>1800</ttl>
+  <item>
+   <title>Cassandra Lab1</title>
+   <link>http://www.example.com/2019/09/cassandra-lab1.html?utm_source=all&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-www-example-com:-2019-09-cassandra-lab1-html</guid>
+   <pubDate>Thu, 05 Sep 2019 15:08:26 UT</pubDate>
+   <author>Cassandra Wendlandt</author>
+   <description>
+&lt;p&gt;In this lab we started going over the course outline and basic linux command lines. then we went over setting up frogs.&lt;/p&gt;&lt;a href="http://www.example.com/2019/09/cassandra-lab1.html?utm_source=all&amp;amp;utm_medium=RSS"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</description></item></channel></rss>
