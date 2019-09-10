@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<rss version="2.0">
+ <channel>
+  <title>My Blog: Posts tagged 'Author: Cassandra Wendlandt-Bloodsworth'</title>
+  <description>My Blog: Posts tagged 'Author: Cassandra Wendlandt-Bloodsworth'</description>
+  <link>http://www.example.com/tags/Author-Cassandra-Wendlandt-Bloodsworth.html</link>
+  <lastBuildDate>Tue, 10 Sep 2019 14:12:08 UT</lastBuildDate>
+  <pubDate>Tue, 10 Sep 2019 14:12:08 UT</pubDate>
+  <ttl>1800</ttl>
+  <item>
+   <title>Lab2</title>
+   <link>http://www.example.com/2019/09/lab2.html?utm_source=Author-Cassandra-Wendlandt-Bloodsworth&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-www-example-com:-2019-09-lab2-html</guid>
+   <pubDate>Tue, 10 Sep 2019 14:12:08 UT</pubDate>
+   <author>Cassandra Wendlandt-Bloodsworth</author>
+   <description>
+&lt;p&gt;&lt;em&gt;Replace this with your post text. Add one or more comma-separated Tags above. The special tag &lt;code&gt;DRAFT&lt;/code&gt; will prevent the post from being published.&lt;/em&gt;&lt;/p&gt;&lt;a href="http://www.example.com/2019/09/lab2.html?utm_source=Author-Cassandra-Wendlandt-Bloodsworth&amp;amp;utm_medium=RSS"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</description></item></channel></rss>
