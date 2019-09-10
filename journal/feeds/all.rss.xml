@@ -4,18 +4,18 @@
   <title>My Blog: My Blog</title>
   <description>My Blog: My Blog</description>
   <link>http://www.example.com/index.html</link>
-  <lastBuildDate>Thu, 05 Sep 2019 15:08:26 UT</lastBuildDate>
-  <pubDate>Thu, 05 Sep 2019 15:08:26 UT</pubDate>
+  <lastBuildDate>Thu, 05 Sep 2019 15:00:00 UT</lastBuildDate>
+  <pubDate>Thu, 05 Sep 2019 15:00:00 UT</pubDate>
   <ttl>1800</ttl>
   <item>
-   <title>Cassandra Lab1</title>
-   <link>http://www.example.com/2019/09/cassandra-lab1.html?utm_source=all&amp;utm_medium=RSS</link>
-   <guid isPermaLink="false">urn:http-www-example-com:-2019-09-cassandra-lab1-html</guid>
-   <pubDate>Thu, 05 Sep 2019 15:08:26 UT</pubDate>
+   <title>Lab1</title>
+   <link>http://www.example.com/2019/09/lab1.html?utm_source=all&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-www-example-com:-2019-09-lab1-html</guid>
+   <pubDate>Thu, 05 Sep 2019 15:00:00 UT</pubDate>
    <author>Cassandra Wendlandt</author>
    <description>
-&lt;p&gt;In this lab we started going over the course outline and basic Linux command lines like creating a directory, removing the directory and editing a text file in a plain text editor like vim. This was a pretty simple task but it was a nice refresher to get back to working with the command line.&lt;/p&gt;
+&lt;p&gt;In the lab we started with some Linux command line review. Using the command line to make directory&amp;rsquo;s, open a plain text editor and editing files that way were familiar concepts I learned from a previous coop. It was a good review although because I have not used those commands in a while.&lt;/p&gt;
 
-&lt;p&gt;Then we started setting up the frog project in order to keep our journal entries. This was a new concept to learn. This was a very interesting new concept to learn as well. The steps were pretty easy to follow which helped a lot. It was a little confusing to start. Starting a blog post was simple but then finding it to edit it was a little confusing. Then trying to have it appear on the blog was a bit tricky but it was a simple error I made. Besides the start I found it pretty simple to use now.&lt;/p&gt;
+&lt;p&gt;Then we moved on working with Frog. This is new concept for me to learn. It was a very interesting concept for me to learn. At first, I found it was a little confusing but after I got playing around with it and understanding the different parts within the package and the steps we had to do I found it really easy to do.&lt;/p&gt;
 
-&lt;p&gt;After the frog project was set up we moved to look at Git. This wasn&amp;rsquo;t that new of an idea as I worked within the past for other classes. The way of accessing it was a new concept. I was not use to working out of the command line to access it. To start we read a section on understanding Git. Then we set up the git repository and added the frog project. Then we pushed the project to get. It was different getting use to working with Linux just from the command line but after a few times it got a lot less confusing.&lt;/p&gt;&lt;a href="http://www.example.com/2019/09/cassandra-lab1.html?utm_source=all&amp;amp;utm_medium=RSS"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</description></item></channel></rss>
+&lt;p&gt;After we moved on to getting use to git. This was a new concept for me because I have never really worked with git besides through a web browser. First we started by reading a section from pro git. This section was very helpful for to gain a better understanding of git but reading about the basics. Understanding what the different commands do and understanding what the different messages meant was a little hard but by the end of the lab I had a lot of it understood. A new skill I had a chance to practice was working with git in a command line. I am really glad I got to practice this new skill because I think it will become very helpful in the future. I also think knowing how to be able to access git from the command line is important because it makes working with it so much easier and quicker to get the information you are looking for.&lt;/p&gt;&lt;a href="http://www.example.com/2019/09/lab1.html?utm_source=all&amp;amp;utm_medium=RSS"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</description></item></channel></rss>
