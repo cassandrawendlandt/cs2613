@@ -4,7 +4,76 @@
  <link rel="self" href="http://www.example.com/feeds/Author-Cassandra-Wendlandt-Bloodsworth.atom.xml" />
  <link href="http://www.example.com/tags/Author-Cassandra-Wendlandt-Bloodsworth.html" />
  <id>urn:http-www-example-com:-tags-Author-Cassandra-Wendlandt-Bloodsworth-html</id>
- <updated>2019-09-10T14:12:08Z</updated>
+ <updated>2019-09-17T13:58:26Z</updated>
+ <entry>
+  <title type="text">Lab4</title>
+  <link rel="alternate" href="http://www.example.com/2019/09/lab4.html?utm_source=Author-Cassandra-Wendlandt-Bloodsworth&amp;utm_medium=Atom" />
+  <id>urn:http-www-example-com:-2019-09-lab4-html</id>
+  <published>2019-09-17T13:58:26Z</published>
+  <updated>2019-09-17T13:58:26Z</updated>
+  <author>
+   <name>Cassandra Wendlandt-Bloodsworth</name></author>
+  <content type="html">
+&lt;p&gt;In lab 4 we did a lot more group discussion and demonstrations than compared to the past labs.&lt;/p&gt;
+
+&lt;h2&gt;What new concepts (if any) did you learn about in this lab?&lt;/h2&gt;
+
+&lt;p&gt;In today’s lab there was a few new topics that we covered. The first one is scribble and the other one is modules in Racket.&lt;/p&gt;
+
+&lt;h3&gt;Scribble&lt;/h3&gt;
+
+&lt;p&gt;We looked at how to create blog using scribble. It was really interesting to learn how to combine Racket into the document. Using both Racket and scribble to create a document would be a good way to help save some work. An example that was talked about in class was using it so you no longer had to copy down the copyrights to the document. The copyrights could just be stored in a function and the document then could call the function.&lt;/p&gt;
+
+&lt;h3&gt;Modules&lt;/h3&gt;
+
+&lt;p&gt;Modules were another interesting topic we covered today. Modules are basically another way to write functions in one file and call them from another file in the same space. This would seem really helpful because the function can be wrote once and then called from other files. Instead of continuously writing the same function in multiple programs that use.&lt;/p&gt;
+
+&lt;h2&gt;What concepts are familiar from other courses or from your own knowledge?&lt;/h2&gt;
+
+&lt;p&gt;I was familiar with the debugger in Dr Racket before the lab. I was familiar with it because while working on my assignment I ran into errors and used the debugger to help fix them.&lt;/p&gt;
+
+&lt;h2&gt;What new skills did you practice?&lt;/h2&gt;
+
+&lt;p&gt;The new skilled I practised in the lab today was working with scribble. It was a little challenging to get the code to work for the first few tries but then it slowly was easier. This is a new skill because it gives me another format I could use for writing journals.&lt;/p&gt;
+
+&lt;h2&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h2&gt;
+
+&lt;p&gt;During the lab I read through some different material that helped understand the did situations better. 
+ &lt;p&gt;First I read the &lt;a href="https://docs.racket-lang.org/scribble/getting-started.html?q=%40-syntax#%28part._how-to~3areader%29"&gt;Racket documentation&lt;/a&gt; to gain a better understanding of the syntax used in scribble.&lt;/p&gt; To gain a better understanding of how modules worked, I read the &lt;a href="https://docs.racket-lang.org/guide/Module_Syntax.html#%28part._module-syntax%29"&gt;Racket module documentation&lt;/a&gt;. The documentation was easy to follow and answered most of the questions on how to complete part 5 of the lab.&lt;/p&gt;</content></entry>
+ <entry>
+  <title type="text">Lab3</title>
+  <link rel="alternate" href="http://www.example.com/2019/09/lab3.html?utm_source=Author-Cassandra-Wendlandt-Bloodsworth&amp;utm_medium=Atom" />
+  <id>urn:http-www-example-com:-2019-09-lab3-html</id>
+  <published>2019-09-12T17:36:42Z</published>
+  <updated>2019-09-12T17:36:42Z</updated>
+  <author>
+   <name>Cassandra Wendlandt-Bloodsworth</name></author>
+  <content type="html">
+&lt;h2&gt;What new concepts (if any) did you learn about in this lab?&lt;/h2&gt;
+
+&lt;h3&gt;Racket Recurison&lt;/h3&gt;
+
+&lt;p&gt;In lab three there was a lot of new topics covered. The first new topic to me was recursion in Racket. The examples on the &lt;a href="https://docs.racket-lang.org/guide/Lists__Iteration__and_Recursion.html#%28part._.List_.Iteration_from_.Scratch%29"&gt;Racket Guide site&lt;/a&gt; helped me understand the concepts a lot more. For list recursion there is first and rest functions. Being able to use these functions made the recursion part much easier than in other programming languages.&lt;/p&gt;
+
+&lt;h3&gt;Testing&lt;/h3&gt;
+
+&lt;p&gt;Another new topic was unit test and test coverage in Racket. I found this an extremely helpful tool to use. Being able to see what lines of code were used for a test case is very helpful in debugging. I found that looking at the unused line of code after a test case is found made debugging a lot easier. It saved me a lot time because I no longer had to insert print statements to see where the code was going, I was just able to look at the lines the code to see what was and was not entered.&lt;/p&gt;
+
+&lt;h2&gt;What new skills did you practice?&lt;/h2&gt;
+
+&lt;p&gt;The new skill that I practised during the lab was my debugging skills in Racket. During the lab we were taught helpful tools to test the code in Racket. By having to fix the code and make sure all the test cases passed allowed me to gain some practice using them.&lt;/p&gt;
+
+&lt;h2&gt;What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?&lt;/h2&gt;
+
+&lt;p&gt;There are a few things during the lab that I found interesting. The first one was using the first and rest functions. I found them interesting because I have always struggled with recursion functions but using first and rest made recursion a lot easier to understand and solve the problem.&lt;/p&gt;
+
+&lt;h2&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h2&gt;
+
+&lt;p&gt;Throughout the lab there was a few different things I read to help gain a better understanding.&lt;/p&gt;
+
+&lt;p&gt;One thing that I read was documentation on &lt;a href="https://beautifulracket.com/explainer/unit-testing.html"&gt;Unit testing in racket&lt;/a&gt;. This helped me understand the different things that I needed to know in order to complete the unit testing on the lab. It gave a nice explanation on how to be able to run the test cases.&lt;/p&gt;
+
+&lt;p&gt;The other thing I read was the documentation on &lt;a href="https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git"&gt;debugging with Git&lt;/a&gt;. This was a helpful document to read to understand on what the lab instructions meant.&lt;/p&gt;</content></entry>
  <entry>
   <title type="text">Lab2</title>
   <link rel="alternate" href="http://www.example.com/2019/09/lab2.html?utm_source=Author-Cassandra-Wendlandt-Bloodsworth&amp;utm_medium=Atom" />
