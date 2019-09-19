@@ -39,10 +39,11 @@
      
 
     (define (integrate2 f x)
+      (* dx
       (for/fold
           ([acc 0])
           ([y (in-range 0 x dx)])
-        (+ acc (f y))))
+        (+ acc (f y)))))
 
     (module+ test
       
