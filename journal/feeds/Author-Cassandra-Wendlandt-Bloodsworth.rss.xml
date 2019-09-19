@@ -4,9 +4,43 @@
   <title>My Blog: Posts tagged 'Author: Cassandra Wendlandt-Bloodsworth'</title>
   <description>My Blog: Posts tagged 'Author: Cassandra Wendlandt-Bloodsworth'</description>
   <link>http://www.example.com/tags/Author-Cassandra-Wendlandt-Bloodsworth.html</link>
-  <lastBuildDate>Tue, 17 Sep 2019 13:58:26 UT</lastBuildDate>
-  <pubDate>Tue, 17 Sep 2019 13:58:26 UT</pubDate>
+  <lastBuildDate>Thu, 19 Sep 2019 16:09:42 UT</lastBuildDate>
+  <pubDate>Thu, 19 Sep 2019 16:09:42 UT</pubDate>
   <ttl>1800</ttl>
+  <item>
+   <title>Lab 5</title>
+   <link>http://www.example.com/2019/09/lab-5.html?utm_source=Author-Cassandra-Wendlandt-Bloodsworth&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-www-example-com:-2019-09-lab-5-html</guid>
+   <pubDate>Thu, 19 Sep 2019 16:09:42 UT</pubDate>
+   <author>Cassandra Wendlandt-Bloodsworth</author>
+   <description>
+&lt;h2&gt;What new concepts (if any) did you learn about in this lab?&lt;/h2&gt;
+
+&lt;h3&gt;Trail Recursion&lt;/h3&gt;
+
+&lt;p&gt;Trail recursion&lt;a href="https://docs.racket-lang.org/guide/Lists__Iteration__and_Recursion.html#%28part._tail-recursion%29"&gt;Trail recursion&lt;/a&gt; was an interesting concept to look at. At the beginning it was a little changeling to understand the question that was being asked. after looking at the trail recursion document and reading it through a few times it seemed to make more sense and the question became a lot easier to answer. The example on the document was really helpful for part 1 of the lab.&lt;/p&gt;
+
+&lt;h3&gt;For Loops&lt;/h3&gt;
+
+&lt;p&gt;The other new concept we looked at today was &lt;a href="https://docs.racket-lang.org/guide/for.html"&gt;for loops&lt;/a&gt;. These were pretty easy to understand because they looked a lot like the for loops in java. Understand the different types of for loops like for/fold was a bit tricky. The documentation explained it really well.&lt;/p&gt;
+
+&lt;h2&gt;What concepts are familiar from other courses or from your own knowledge?&lt;/h2&gt;
+
+&lt;h3&gt;For Loop&lt;/h3&gt;
+
+&lt;p&gt;The for concept was a little familiar from Java and previous languages. Learning the syntax and different types were new tho. Having a base understanding of four loops made it a lot easier to understand them in Racket.&lt;/p&gt;
+
+&lt;h3&gt;Range&lt;/h3&gt;
+
+&lt;p&gt;Today in one of the code examples on the lab there was a function called range used. This was familiar to be because I used it on the assignment which I finished before the lab. Knowing range before had helped me understand what the code was doing a lot easier.&lt;/p&gt;
+
+&lt;h2&gt;What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?&lt;/h2&gt;
+
+&lt;p&gt;I found the trail recursion very interesting today. It was interesting because it was a new concept but it also makes sense in practice. Being able to increment as you go is really helpful to know because it can help save stack on the stack trace and it makes things a lot faster to run.&lt;/p&gt;
+
+&lt;h2&gt;What explicit tasks (e.g. reading) were you given during this lab&lt;/h2&gt;
+
+&lt;p&gt;First we copy the code provided in part 1 and observed how deep the stack trace went. Then we copied the code for odds-even2 and fixed the helper function to use trail recursion. Then we looked at for loop. We copied the code odds-even3 that used for loops instead of recursion. We then copied the function big-list to be able to compare the speeds between the three different functions. It turns out the odds-even2 was the fastest.  For part 4 we gained more practice working with trail recursion, for loops and higher order functions.&lt;/p&gt;</description></item>
   <item>
    <title>Lab4</title>
    <link>http://www.example.com/2019/09/lab4.html?utm_source=Author-Cassandra-Wendlandt-Bloodsworth&amp;utm_medium=RSS</link>

@@ -1,5 +1,6 @@
 http://www.example.com/2019/09/scribble-demo.html
 http://www.example.com/2019/09/lab2.html
+http://www.example.com/2019/09/lab-5.html
 http://www.example.com/2019/09/lab4.html
 http://www.example.com/2019/09/lab1.html
 http://www.example.com/2019/09/lab3.html
