@@ -1,12 +1,14 @@
 #lang racket
 
-;the functions are restricted to positive numbers only
+;the functions are restricted to exact positive numbers only
 
 
 (define (drop-divisible m list)
        (filter (lambda (x) (not (equal? x 0)))
             (map (lambda (x) (cond
                     [(equal? x m) x]
+                    [(equal? m 1) x]
+                    [(equal? m 0) x]
                     [(equal? (remainder x m) 0) 0 ]
                     [else x ]))list)))
 
