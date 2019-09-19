@@ -1,5 +1,7 @@
 #lang racket
 
+;the functions are restricted to positive numbers only
+
 
 (define (drop-divisible m list)
        (filter (lambda (x) (not (equal? x 0)))
