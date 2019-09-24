@@ -1,0 +1,7 @@
+#lang racket
+
+(define ht (hash "apple" 'red "banana" 'yellow))
+
+(module+ test
+  (require rackunit)
+  (check-equal? (hash-ref ht "apple") 'red))

@@ -4,9 +4,50 @@
   <title>My Blog: My Blog</title>
   <description>My Blog: My Blog</description>
   <link>http://www.example.com/index.html</link>
-  <lastBuildDate>Thu, 19 Sep 2019 16:09:42 UT</lastBuildDate>
-  <pubDate>Thu, 19 Sep 2019 16:09:42 UT</pubDate>
+  <lastBuildDate>Tue, 24 Sep 2019 16:29:24 UT</lastBuildDate>
+  <pubDate>Tue, 24 Sep 2019 16:29:24 UT</pubDate>
   <ttl>1800</ttl>
+  <item>
+   <title>lab62</title>
+   <link>http://www.example.com/2019/09/lab62.html?utm_source=all&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-www-example-com:-2019-09-lab62-html</guid>
+   <pubDate>Tue, 24 Sep 2019 16:29:24 UT</pubDate>
+   <author>The Unknown Author</author>
+   <description>
+&lt;p&gt;&lt;em&gt;Replace this with your post text. Add one or more comma-separated Tags above. The special tag &lt;code&gt;DRAFT&lt;/code&gt; will prevent the post from being published.&lt;/em&gt;&lt;/p&gt;&lt;a href="http://www.example.com/2019/09/lab62.html?utm_source=all&amp;amp;utm_medium=RSS"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</description></item>
+  <item>
+   <title>Lab6</title>
+   <link>http://www.example.com/2019/09/lab6.html?utm_source=all&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-www-example-com:-2019-09-lab6-html</guid>
+   <pubDate>Tue, 24 Sep 2019 13:00:15 UT</pubDate>
+   <author>Cassandra Wendlandt-Bloodsworth</author>
+   <description>
+&lt;h2&gt;What new concepts (if any) did you learn about in this lab?&lt;/h2&gt;
+
+&lt;h3&gt;Explorer&lt;/h3&gt;
+
+&lt;p&gt;One of the new things that I learned this lab was the explorer. Using the explorer reminded me of using visual debuggers in other program languages. You were able to see what was in the list. This would allow you to be able to see what is stored in the list. I think this was a very interesting concept to learned because it seems like it would be a very helpful tool for debugging. Having a separate window open with the list of variables visible would be really helpful when trying to understand what the code is doing. Another thing I learned to go with has tables is the function this which allows you to print out what you have highlighted in the explorer.&lt;/p&gt;
+
+&lt;h3&gt;Plotting&lt;/h3&gt;
+
+&lt;p&gt;Plotting was another new thing I learned in the lab today. This concept would be helpful for unit test cases to be able to check the behaviour of the code. The plotting is also useful for watching specific variables change as you change other variables. I feel that plotting would also be good for testing where the output is defined by the input.&lt;/p&gt;
+
+&lt;h3&gt;Hash Table functions&lt;/h3&gt;
+
+&lt;p&gt;Before the lab I had a familiar sense of &lt;code&gt;Hash Tables&lt;/code&gt; from other programming languages but during the lab I learned a lot of new functions that Racket uses. The first interesting thing found was that the period on &lt;code&gt;define (census . list)&lt;/code&gt; means that it takes all the inputs and combines them into a list. This seems like a really interesting and helpful tool to use when it comes to doing assignments.&lt;/p&gt;
+
+&lt;h2&gt;What concepts are familiar from other courses or from your own knowledge?&lt;/h2&gt;
+
+&lt;p&gt;Before the lab I had some knowledge on 
+ &lt;b&gt;hash tables&lt;/b&gt; from other programming languages. This helped make things click a lot faster and understand what the different functions could do.&lt;/p&gt;
+
+&lt;h2&gt;What new skills did you practice?&lt;/h2&gt;
+
+&lt;p&gt;The skills that I got to practice during this lab was my debugging skills. More importantly I got to practice using tools to be able to understand the behaviour of the code.  I also got to practice working with tail recursion and cons.&lt;/p&gt;
+
+&lt;h2&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h2&gt;
+
+&lt;p&gt;First we worked with hash tables. We had to fill in the accumulator in the code that was provided in the lab instructions.  Then we moved to work with explorer and ran a few different commands to see how it worked.  After we worked with plotting. In this section we had to plot the difference between &lt;code&gt;(deriv sin x)&lt;/code&gt; and &lt;code&gt;(cos x)&lt;/code&gt;.  Finally we moved to work with JSON and writing a function to collect all the statuses from the &lt;code&gt;errors.json&lt;/code&gt; file.&lt;/p&gt;</description></item>
   <item>
    <title>Lab 5</title>
    <link>http://www.example.com/2019/09/lab-5.html?utm_source=all&amp;utm_medium=RSS</link>
