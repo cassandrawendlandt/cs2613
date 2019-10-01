@@ -4,17 +4,56 @@
   <title>My Blog: My Blog</title>
   <description>My Blog: My Blog</description>
   <link>http://www.example.com/index.html</link>
-  <lastBuildDate>Tue, 24 Sep 2019 16:29:24 UT</lastBuildDate>
-  <pubDate>Tue, 24 Sep 2019 16:29:24 UT</pubDate>
+  <lastBuildDate>Tue, 01 Oct 2019 13:51:44 UT</lastBuildDate>
+  <pubDate>Tue, 01 Oct 2019 13:51:44 UT</pubDate>
   <ttl>1800</ttl>
   <item>
-   <title>lab62</title>
-   <link>http://www.example.com/2019/09/lab62.html?utm_source=all&amp;utm_medium=RSS</link>
-   <guid isPermaLink="false">urn:http-www-example-com:-2019-09-lab62-html</guid>
-   <pubDate>Tue, 24 Sep 2019 16:29:24 UT</pubDate>
-   <author>The Unknown Author</author>
+   <title>Lab 8</title>
+   <link>http://www.example.com/2019/10/lab-8.html?utm_source=all&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-www-example-com:-2019-10-lab-8-html</guid>
+   <pubDate>Tue, 01 Oct 2019 13:51:44 UT</pubDate>
+   <author>Cassandra Wendlandt-Bloodsworth</author>
    <description>
-&lt;p&gt;&lt;em&gt;Replace this with your post text. Add one or more comma-separated Tags above. The special tag &lt;code&gt;DRAFT&lt;/code&gt; will prevent the post from being published.&lt;/em&gt;&lt;/p&gt;&lt;a href="http://www.example.com/2019/09/lab62.html?utm_source=all&amp;amp;utm_medium=RSS"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</description></item>
+&lt;h2&gt;What new concepts (if any) did you learn about in this lab?&lt;/h2&gt;
+
+&lt;p&gt;This lab was mainly focused around JavaScript. JavaScript was a new language for me to learn today. In the lab it was really helpful to have the background knowledge of Java because it made things a lot easier to understand. It was also helpful knowing racket because there was a lot of shortcut ways of do things that you could not do in Java.   
+ &lt;h2&gt;What concepts are familiar from other courses or from your own knowledge?&lt;/h2&gt;  There was nothing that I knew from the past used that was used in this lab. However my knowledge of Java really helped to understand JavaScript a lot easier. It also helped me pick up on the JavaScript syntax.   
+ &lt;h2&gt;What new skills did you practice?&lt;/h2&gt; Some new skills I prcticed today was using debugging in JavaScript. Another skill I practiced was coding in JavaScript. The skills I practiced today are going to become helpful throught the course as we more more into JavaScript stuff.   
+ &lt;h2&gt;What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?&lt;/h2&gt; In this lab, I found the 
+ &lt;b&gt;VSCodium&lt;/b&gt; really interesting. It seems like it would be very handy to debug the JavaScript in. I also found trying to solve the JavaScript problems really interesting. It was interesting to see the different ways that they could be solved.   
+ &lt;h2&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h2&gt; In this lab we started working with JavaScript. First we started with understanding a little about JavaScript by reading a few different links posted in the lab. Then there was a demo on how to use VSCodium. During the demostration we were also shown that inorder to run JavaScript through the terminal, we use &lt;code&gt;node hello-world.js&lt;/code&gt; . Then we used JavaScript to translate some Racket expressions. Then finally we looked at two coding problems in JavaScript.&lt;/p&gt;</description></item>
+  <item>
+   <title>Lab7</title>
+   <link>http://www.example.com/2019/09/lab7.html?utm_source=all&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-www-example-com:-2019-09-lab7-html</guid>
+   <pubDate>Thu, 26 Sep 2019 14:14:10 UT</pubDate>
+   <author>Cassandra Wendlandt-Bloodsworth</author>
+   <description>
+&lt;h2&gt;What new concepts (if any) did you learn about in this lab?&lt;/h2&gt;
+
+&lt;h3&gt;Macros&lt;/h3&gt;
+
+&lt;p&gt;In the lab we discussed the construction of programs using macros. To define a macro in racket we use &lt;code&gt;define-syntax-rule&lt;/code&gt;. This is basically a function that does not evaluate the arguments. This seems like it would be helpful in a case where you want to evaluate math functions or different boolean statements.   
+ &lt;h3&gt;Pattern Matching&lt;/h3&gt; The next new thing that was covered in the lab was match. This is a function where you specify a pattern to match against the data instead of specifying a test for each case. This seems like a very helpful when using a pattern against a list.&lt;/p&gt;
+
+&lt;h2&gt;What concepts are familiar from other courses or from your own knowledge?&lt;/h2&gt;
+
+&lt;p&gt;There was not a lot of familiar concepts. The only concept that was a little familiar was using &lt;code&gt;Let&lt;/code&gt; and &lt;code&gt;Let*&lt;/code&gt;. The only reasons why these concepts where a little familiar is because we looked at them in a previous lab. They did not completely make sense until this lab.&lt;/p&gt;
+
+&lt;h2&gt;What new skills did you practice?&lt;/h2&gt;
+
+&lt;p&gt;During the lab there was not any new skills that I practiced. I practiced my problem solving skill in the lab. This was done by having to fill in the blanks in the code. This was done for part 4 of the &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/labs/L07/"&gt;lab&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?&lt;/h2&gt;
+
+&lt;p&gt;Some of the things that I found really interesting is the lab was using &lt;code&gt;match&lt;/code&gt;. This was really interesting to me because it was something I have not seen before. It was a cool concept to look at another way to use something similar to &lt;code&gt;cons&lt;/code&gt; for lists.&lt;/p&gt;
+
+&lt;h2&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h2&gt;
+
+&lt;p&gt;The first thing we had to do in the lab is read a few links to get some background.  Then we looked at 
+ &lt;b&gt;macros&lt;/b&gt;. During this section we looked at redefining &lt;code&gt;and&lt;/code&gt; and redefining &lt;code&gt;or&lt;/code&gt;.  Then we looked at 
+ &lt;b&gt;pattern matching&lt;/b&gt;. Here we used match with maps and looked at &lt;code&gt;Let&lt;/code&gt; and &lt;code&gt;Let *&lt;/code&gt;.  Then we looked at 
+ &lt;b&gt;list transformers to macros&lt;/b&gt;. During this part of the lab we looked at reading a list in a macro.&lt;/p&gt;</description></item>
   <item>
    <title>Lab6</title>
    <link>http://www.example.com/2019/09/lab6.html?utm_source=all&amp;utm_medium=RSS</link>

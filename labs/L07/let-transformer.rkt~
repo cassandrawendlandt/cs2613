@@ -1,0 +1,43 @@
+#lang racket
+ (module+ test
+      (check-equal? (let* ([x 5]
+                           [y (- x 3)])
+                          (+ y y))
+                    4)
+      (check-equal? (let* ([x 5]
+                           [y (- x 3)]
+                           [y x])
+                           (* y y))
+                    25))
+
+
+
+    (module+ test
+      (check-equal? (let ([x 5])
+                      (let ([y (- x 3)])
+                        (+ y y)))
+                    4)
+      (check-equal? (let ([x 5])
+                      (let ([y (- x 3)])
+                        (let ([y x])
+                          (* y y))))
+                    25))
+
+
+
+(provide let-transformer)
+(define (let-transformer lst)
+  (match lst
+    [(list 'Let* '() body)     ]
+    [(list 'Let* (cons (list       ) tail) body)
+     (list 'let  (list (list id val))
+           (let-transformer
+            (list 'Let*          )))]))
+
+(define test-expr '(Let* ([x 5]
+                          [y (- x 3)])
+                         (+ y y)))
+(module+ test
+  (require rackunit)
+  (check-equal? (let-transformer test-expr)
+                '(let ([x 5]) (let ([y (- x 3)]) (+ y y)))))
