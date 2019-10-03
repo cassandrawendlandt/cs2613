@@ -1,0 +1,28 @@
+#lang racket
+(define test-list '(1 [keep 2] 3 [keep 4] [keep 5] 6))
+
+
+
+(define (assoc* key lst)
+  (cond
+    [(empty? lst) empty]
+    [(not(list? (first lst) )) (assoc* key (rest lst)) ]
+    [(equal? (first lst) key) (rest list)]
+    [else ;(display lst)
+          (display (first lst))
+          ;(assoc* key lst)
+          ;          ])
+          ;            )
+          ;
+          ;
+          ;
+          ;
+          ;
+          ;
+          ;
+          ;
+          ;            (module+ test
+          ;              (define test-list '(1 [keep 2] 3 [keep 4] [keep 5] 6))
+          ;                (check-equal? (assoc* 'keep test-list) 2)
+          ;                  (check-equal? (assoc* 'discard test-list) #f)
+          ;                    (require rackunit))
