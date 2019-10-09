@@ -4,9 +4,76 @@
   <title>My Blog: My Blog</title>
   <description>My Blog: My Blog</description>
   <link>http://www.example.com/index.html</link>
-  <lastBuildDate>Tue, 01 Oct 2019 13:51:44 UT</lastBuildDate>
-  <pubDate>Tue, 01 Oct 2019 13:51:44 UT</pubDate>
+  <lastBuildDate>Tue, 08 Oct 2019 20:12:16 UT</lastBuildDate>
+  <pubDate>Tue, 08 Oct 2019 20:12:16 UT</pubDate>
   <ttl>1800</ttl>
+  <item>
+   <title>Lab 10</title>
+   <link>http://www.example.com/2019/10/lab-10.html?utm_source=all&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-www-example-com:-2019-10-lab-10-html</guid>
+   <pubDate>Tue, 08 Oct 2019 20:12:16 UT</pubDate>
+   <author>Cassandra Wendlandt-Bloodsworth</author>
+   <description>
+&lt;h2&gt;What new concepts (if any) did you learn about in this lab?&lt;/h2&gt;
+
+&lt;p&gt;In this lab working with 
+ &lt;b&gt;JavaScript objects&lt;/b&gt; was a new concept. It was interesting to see that the JavaScript objects were similar to the hash table in Racket. The next new concept was 
+ &lt;b&gt;Deep Comparison&lt;/b&gt;. This was a were we had to write a method to compare the values of the object's actual properties. The next new concept was 
+ &lt;b&gt;JavaScript Arrays&lt;/b&gt;. These were very similar to arrays that are used in Java.&lt;/p&gt;
+
+&lt;h2&gt;What concepts are familiar from other courses or from your own knowledge?&lt;/h2&gt;
+
+&lt;p&gt;In this lab there was not anything that was super familiar. The concept of JavaScript arrays were similar to those in Java. This helped made learning JavaScript arrays a lot easier to understand. Also having background knowledge of how arrays work too was very helpful to understand JavaScript arrays.&lt;/p&gt;
+
+&lt;h2&gt;What new skills did you practice?&lt;/h2&gt;
+
+&lt;p&gt;I practiced my coding skills in JavaScript. This was done by working with arrays in JavaScript and objects within JavaScript.  I also practiced my testing skills. This was done by working with jasmine in the lab to test the methods that have been created to make sure they actually worked.&lt;/p&gt;
+
+&lt;h2&gt;What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?&lt;/h2&gt;
+
+&lt;p&gt;I found how JavaScript concepts that were covered in today&amp;rsquo;s lab was very similar to others languages we learnt in the past very interesting. It made understanding those concepts a lot easier.&lt;/p&gt;
+
+&lt;h2&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h2&gt;
+
+&lt;p&gt;First there were some background readings ton JavaScript and function arguments.  Then we moved on to 
+ &lt;b&gt;JavaScript objects&lt;/b&gt;. Here we did a quick reading on what &lt;a href="http://eloquentjavascript.net/04_data.html#h_cqg63Sxe3o"&gt;JavaScript&lt;/a&gt; objects were. Then we moved to do a quick demonstrations about JavaScript objects.  Next topic covered was 
+ &lt;b&gt;deep comparison&lt;/b&gt;. We had to follow the deep comparison &lt;a href="http://eloquentjavascript.net/04_data.html#i_IJBU+aXOIC"&gt;exercise&lt;/a&gt; from the following link.  Next topic covered was 
+ &lt;b&gt;JavaScript arrays&lt;/b&gt;. Here we read a section from the link on what the &lt;a href="http://eloquentjavascript.net/04_data.html#h_HjL/otjEJn"&gt;JavaScript arrays&lt;/a&gt; were. Then we had some practice working with JavaScript arrays. we had to follow the steps to the sum of the range exercise to write a sum function that passes all the tests that were provided in the lab instructions. Finally we covered 
+ &lt;b&gt;variadic functions&lt;/b&gt;.&lt;/p&gt;</description></item>
+  <item>
+   <title>Lab 9</title>
+   <link>http://www.example.com/2019/10/lab-9.html?utm_source=all&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-www-example-com:-2019-10-lab-9-html</guid>
+   <pubDate>Tue, 08 Oct 2019 20:12:03 UT</pubDate>
+   <author>Cassandra Wendlandt-Bloodsworth</author>
+   <description>
+&lt;h2&gt;What new concepts (if any) did you learn about in this lab?&lt;/h2&gt;
+
+&lt;p&gt;In this lab we continued looking JavaScript. This concepts covered in the lab was all new concept from me.&lt;/p&gt;
+
+&lt;h3&gt;JavaScript&lt;/h3&gt;
+
+&lt;p&gt;In this lab we looked at creating functions in JavaScript and using modules. This was an interesting section because it a lot of things were very similar to racket and java. Creating functions was very similar to the way they are done in java. Creating the modules were very similar to the way it was done in racket.&lt;/p&gt;
+
+&lt;h3&gt;Jasmine&lt;/h3&gt;
+
+&lt;p&gt;The next new thing we covered was jasmine. This is a unit testing tool that is used. This was a very interesting thing to cover because it is always nice to find other tools that can be used to help test the code.&lt;/p&gt;
+
+&lt;h2&gt;What concepts are familiar from other courses or from your own knowledge?&lt;/h2&gt;
+
+&lt;p&gt;There was nothing that was too familiar in this lab. The structure of JavaScript was familiar from racket and java. This familiar structure made it easier to gain a basic understanding of javascript.  I was also familiar with recursion from the past coding languages. Having the past knowledge made applying recursion in java script a lot easier to understand.&lt;/p&gt;
+
+&lt;h2&gt;What new skills did you practice?&lt;/h2&gt;
+
+&lt;p&gt;Some new skills I practiced was coding in JavaScript and testing through different tools.  The skills in JavaScript was practiced by having the whole lab be based on coding in Javascript.  The testing skills were practiced by using jasmine to run different test cases. What specific details did you find surprising, interesting, confusing, difficult, or otherwise important? I found the close similarities to Java and racket very interesting. It made the process of learning the new language a lot easier to begin.&lt;/p&gt;
+
+&lt;h2&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h2&gt;
+
+&lt;p&gt;First we looked at the 
+ &lt;b&gt;JavaScript equality&lt;/b&gt; and type coercion. During this we looked different statements that use &lt;code&gt;==&lt;/code&gt; and looked at the results.  Then we looked at 
+ &lt;b&gt;JavaScript functions&lt;/b&gt;. We read &lt;a href="http://eloquentjavascript.net/03_functions.html"&gt;JavaScript function&lt;/a&gt; to help gain a better understanding of what they are.These are outlined very similar to the way the functions that are in Java which made it easier to understand.  After we looked at 
+ &lt;b&gt;Node.js modules&lt;/b&gt;. This was a very similar way of setting up modules as racket did. For this section we quickly read &lt;a href="http://eloquentjavascript.net/10_modules.html"&gt;chapter 10&lt;/a&gt; of the JavaScript book to gain a better understanding of modules in JavaScript. After we looked at Jasmine. First I read the &lt;a href="https://jasmine.github.io/index.html"&gt;documentation&lt;/a&gt; and the &lt;a href="https://jasmine.github.io/tutorials/your_first_suite"&gt;tutorial&lt;/a&gt; to git better understanding of how the unit testing framework. Then we moved to testing to see how it worked with creating small simple unit test cases. FInally we looked at 
+ &lt;b&gt;recursion in JavaScript&lt;/b&gt;. This was a very similar to racket and Java.&lt;/p&gt;</description></item>
   <item>
    <title>Lab 8</title>
    <link>http://www.example.com/2019/10/lab-8.html?utm_source=all&amp;utm_medium=RSS</link>
@@ -18,10 +85,10 @@
 
 &lt;p&gt;This lab was mainly focused around JavaScript. JavaScript was a new language for me to learn today. In the lab it was really helpful to have the background knowledge of Java because it made things a lot easier to understand. It was also helpful knowing racket because there was a lot of shortcut ways of do things that you could not do in Java.   
  &lt;h2&gt;What concepts are familiar from other courses or from your own knowledge?&lt;/h2&gt;  There was nothing that I knew from the past used that was used in this lab. However my knowledge of Java really helped to understand JavaScript a lot easier. It also helped me pick up on the JavaScript syntax.   
- &lt;h2&gt;What new skills did you practice?&lt;/h2&gt; Some new skills I prcticed today was using debugging in JavaScript. Another skill I practiced was coding in JavaScript. The skills I practiced today are going to become helpful throught the course as we more more into JavaScript stuff.   
+ &lt;h2&gt;What new skills did you practice?&lt;/h2&gt; Some new skills I practiced today was using debugging in JavaScript. Another skill I practiced was coding in JavaScript. The skills I practiced today are going to become helpful throughout the course as we more more into JavaScript stuff.   
  &lt;h2&gt;What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?&lt;/h2&gt; In this lab, I found the 
  &lt;b&gt;VSCodium&lt;/b&gt; really interesting. It seems like it would be very handy to debug the JavaScript in. I also found trying to solve the JavaScript problems really interesting. It was interesting to see the different ways that they could be solved.   
- &lt;h2&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h2&gt; In this lab we started working with JavaScript. First we started with understanding a little about JavaScript by reading a few different links posted in the lab. Then there was a demo on how to use VSCodium. During the demostration we were also shown that inorder to run JavaScript through the terminal, we use &lt;code&gt;node hello-world.js&lt;/code&gt; . Then we used JavaScript to translate some Racket expressions. Then finally we looked at two coding problems in JavaScript.&lt;/p&gt;</description></item>
+ &lt;h2&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h2&gt; In this lab we started working with JavaScript. First we started with understanding a little about JavaScript by reading a few different links posted in the lab. Then there was a demonstration on how to use VSCodium. During the demonstration we were also shown that in order to run JavaScript through the terminal, we use &lt;code&gt;node hello-world.js&lt;/code&gt; . Then we used JavaScript to translate some Racket expressions. Then finally we looked at two coding problems in JavaScript.&lt;/p&gt;</description></item>
   <item>
    <title>Lab7</title>
    <link>http://www.example.com/2019/09/lab7.html?utm_source=all&amp;utm_medium=RSS</link>
