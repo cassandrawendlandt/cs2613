@@ -3,5 +3,5 @@
 
 (require "hello.rkt")
 
-(hello)
+(hey)
 
