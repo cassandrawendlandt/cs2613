@@ -4,7 +4,69 @@
  <link rel="self" href="http://www.example.com/feeds/all.atom.xml" />
  <link href="http://www.example.com/index.html" />
  <id>urn:http-www-example-com:-index-html</id>
- <updated>2019-10-08T20:12:16Z</updated>
+ <updated>2019-10-15T13:28:36Z</updated>
+ <entry>
+  <title type="text">Lab 12</title>
+  <link rel="alternate" href="http://www.example.com/2019/10/lab-12.html?utm_source=all&amp;utm_medium=Atom" />
+  <id>urn:http-www-example-com:-2019-10-lab-12-html</id>
+  <published>2019-10-15T13:28:36Z</published>
+  <updated>2019-10-15T13:28:36Z</updated>
+  <author>
+   <name>Cassandra Wendlandt</name></author>
+  <content type="html">
+&lt;h1 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab"&gt;What new concepts (if any) did you learn about in this lab?&lt;/h1&gt;
+
+&lt;p&gt;This lab was mainly about completing the project The Robot from &lt;a href="http://eloquentjavascript.net/07_robot.html"&gt;Chapter 7&lt;/a&gt; of the Eloquent JavaScript. We were introduced to &lt;strong&gt;Spy&lt;/strong&gt; to use it as as tool to intercept calls to &lt;code&gt;console.log&lt;/code&gt; . Spy is to be used when methods are terrible to test because they do not return anything. This allows you to be able to test the source code without actually changing the source code. Spys essentially replaces &lt;code&gt;console.log&lt;/code&gt;. Another new concept was &lt;code&gt;class&lt;/code&gt; in JavaScript. They seem to work very similar was the classes in java which made it easier to understand what is going on.&lt;/p&gt;
+
+&lt;h1 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge"&gt;What concepts are familiar from other courses or from your own knowledge?&lt;/h1&gt;
+
+&lt;p&gt;There was not a lot of concepts that were familiar from other course or from my own knowledge.&lt;/p&gt;
+
+&lt;h1 id="what-new-skills-did-you-practice"&gt;What new skills did you practice?&lt;/h1&gt;
+
+&lt;p&gt;I did not practice any new skills. However I did practice writing test cases in jasmine. I did this by having to write the test cases for each method that was added to ensure it worked.&lt;/p&gt;
+
+&lt;h1 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important"&gt;What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?&lt;/h1&gt;
+
+&lt;p&gt;I found the ideas about spy’s to be pretty interesting. I found them to be interesting because it was a different way to test functions that did not return anything. They seem like they would be useful in testing things later on.&lt;/p&gt;
+
+&lt;h1 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab"&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h1&gt;
+
+&lt;p&gt;First we started with representing a graph. This was done by going to &lt;a href="https://eloquentjavascript.net/07_robot.html#h_UmFK5fYed8"&gt;Meadowfield&lt;/a&gt; and copying the code. Then we created jasmine test cases to test the code that we copied. Then we copy the &lt;code&gt;VillageState&lt;/code&gt; class from &lt;a href="https://eloquentjavascript.net/07_robot.html#h_oekYfM5x02"&gt;Eloquent JavaScript&lt;/a&gt;. Next we created jasmine test cases for the class. In order to do this we took the suggested output from chapter 7 and converted it into jasmine test cases. We had to add some extra cases in order to get full test coverage. Next we moved on to work with Spy’s. We read the &lt;a href="https://jasmine.github.io/tutorials/your_first_suite#section-Spies:_%3Ccode%3EcreateSpy%3C/code%3E"&gt;documentation&lt;/a&gt; on it quickly. We used spy’s to test the random robot section of the code.&lt;/p&gt;</content></entry>
+ <entry>
+  <title type="text">Lab 11</title>
+  <link rel="alternate" href="http://www.example.com/2019/10/lab-11.html?utm_source=all&amp;utm_medium=Atom" />
+  <id>urn:http-www-example-com:-2019-10-lab-11-html</id>
+  <published>2019-10-10T14:29:43Z</published>
+  <updated>2019-10-10T14:29:43Z</updated>
+  <author>
+   <name>Cassandra Wendlandt-Bloodsworth</name></author>
+  <content type="html">
+&lt;h1 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab"&gt;What new concepts (if any) did you learn about in this lab?&lt;/h1&gt;
+
+&lt;h2 id="array-methods"&gt;Array methods&lt;/h2&gt;
+
+&lt;p&gt;Looking at Array methods we learnt that they have higher order functions that can be really useful. Learning these functions ended up being useful for working with larger lists. For example using &lt;code&gt;reduced&lt;/code&gt; and an anonymous function to calculate the average of a list. Another array method that was new for me was &lt;code&gt;forEach&lt;/code&gt;. This method gives the users to iterate over a list with an arbitrary action without fussing with loops indices and bounds.&lt;/p&gt;
+
+&lt;h2 id="json-parsing"&gt;Json parsing&lt;/h2&gt;
+
+&lt;p&gt;Looking at json was not particular new since we used racket in the past to parse through them. However using JavaScript to parse through the json file to retrieve the information for a specific name was a new concept.&lt;/p&gt;
+
+&lt;h1 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge"&gt;What concepts are familiar from other courses or from your own knowledge?&lt;/h1&gt;
+
+&lt;p&gt;While looking at the &lt;a href="http://eloquentjavascript.net/05_higher_order.html"&gt;higher order functions&lt;/a&gt; that JavaScript has we learnt one of the higher order functions is &lt;code&gt;map&lt;/code&gt; and &lt;code&gt;filter&lt;/code&gt;. It turns out that &lt;code&gt;map&lt;/code&gt; and &lt;code&gt;filter&lt;/code&gt; behave similar to the Racket behavior. Knowing how they were used in Racket make it a lot easier to learn how they are used in JavaScript.&lt;/p&gt;
+
+&lt;h1 id="what-new-skills-did-you-practice"&gt;What new skills did you practice?&lt;/h1&gt;
+
+&lt;p&gt;There were no new skills that I practiced in this lab. However I practiced my coding skills in JavaScript. I also practiced my testing skills. I achieved this by making sure the few section of code I wrote was able to pass the test cases that were defined in the lab instructions.&lt;/p&gt;
+
+&lt;h1 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important"&gt;What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?&lt;/h1&gt;
+
+&lt;p&gt;I found the &lt;a href="http://eloquentjavascript.net/05_higher_order.html#h_TcUD2vzyMe"&gt;flattened exercise&lt;/a&gt; to be really interesting. I found this interesting because for Assignment 3 my code was about 20 lines long. However in the lab I was able to get the same results using one line of code by using the reduce and concat method. This showed how important it is to know the higher order functions and array methods because they can make things a lot more efficient.&lt;/p&gt;
+
+&lt;h1 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab"&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h1&gt;
+
+&lt;p&gt;First we had to read background information on JavaScript. This contained reading &lt;a href="http://eloquentjavascript.net/05_higher_order.html"&gt;chapter 5&lt;/a&gt; and &lt;a href="http://eloquentjavascript.net/06_object.html"&gt;chapter 6&lt;/a&gt; from Eloquent JavaScript. Then we looked at array methods. In this part of the lab we focused on chapter 5 a lot. We looked at how JavaScript arrays have higher order methods. Then we worked on solving the flatten exercise using the methods &lt;code&gt;reduce&lt;/code&gt; and &lt;code&gt;concat&lt;/code&gt;. Then we looked at parsing through a json file using JavaScript. Here we wrote a function to find the information that is associated with a particular name that is passed in. Then we looked at methods in JavaScript.&lt;/p&gt;</content></entry>
  <entry>
   <title type="text">Lab 10</title>
   <link rel="alternate" href="http://www.example.com/2019/10/lab-10.html?utm_source=all&amp;utm_medium=Atom" />

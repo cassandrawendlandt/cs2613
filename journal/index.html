@@ -53,6 +53,70 @@
 
           <article>
   <header>
+    <h2><a href='/2019/10/lab-12.html'>Lab 12</a></h2>
+    <p class='date-and-tags'>
+<time datetime="2019-10-15" pubdate="true">2019-10-15</time> :: <span class="tags"></span></p>
+    <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt.html">Cassandra Wendlandt</a></span></p>
+  </header>
+
+<h1 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab">What new concepts (if any) did you learn about in this lab?</h1>
+
+<p>This lab was mainly about completing the project The Robot from <a href="http://eloquentjavascript.net/07_robot.html">Chapter 7</a> of the Eloquent JavaScript. We were introduced to <strong>Spy</strong> to use it as as tool to intercept calls to <code>console.log</code> . Spy is to be used when methods are terrible to test because they do not return anything. This allows you to be able to test the source code without actually changing the source code. Spys essentially replaces <code>console.log</code>. Another new concept was <code>class</code> in JavaScript. They seem to work very similar was the classes in java which made it easier to understand what is going on.</p>
+
+<h1 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge">What concepts are familiar from other courses or from your own knowledge?</h1>
+
+<p>There was not a lot of concepts that were familiar from other course or from my own knowledge.</p>
+
+<h1 id="what-new-skills-did-you-practice">What new skills did you practice?</h1>
+
+<p>I did not practice any new skills. However I did practice writing test cases in jasmine. I did this by having to write the test cases for each method that was added to ensure it worked.</p>
+
+<h1 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important">What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h1>
+
+<p>I found the ideas about spy’s to be pretty interesting. I found them to be interesting because it was a different way to test functions that did not return anything. They seem like they would be useful in testing things later on.</p>
+
+<h1 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab">What explicit tasks (e.g. reading) were you given during this lab?</h1>
+
+<p>First we started with representing a graph. This was done by going to <a href="https://eloquentjavascript.net/07_robot.html#h_UmFK5fYed8">Meadowfield</a> and copying the code. Then we created jasmine test cases to test the code that we copied. Then we copy the <code>VillageState</code> class from <a href="https://eloquentjavascript.net/07_robot.html#h_oekYfM5x02">Eloquent JavaScript</a>. Next we created jasmine test cases for the class. In order to do this we took the suggested output from chapter 7 and converted it into jasmine test cases. We had to add some extra cases in order to get full test coverage. Next we moved on to work with Spy’s. We read the <a href="https://jasmine.github.io/tutorials/your_first_suite#section-Spies:_%3Ccode%3EcreateSpy%3C/code%3E">documentation</a> on it quickly. We used spy’s to test the random robot section of the code.</p>
+
+</article>
+<article>
+  <header>
+    <h2><a href='/2019/10/lab-11.html'>Lab 11</a></h2>
+    <p class='date-and-tags'>
+<time datetime="2019-10-10" pubdate="true">2019-10-10</time> :: <span class="tags"></span></p>
+    <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
+  </header>
+
+<h1 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab">What new concepts (if any) did you learn about in this lab?</h1>
+
+<h2 id="array-methods">Array methods</h2>
+
+<p>Looking at Array methods we learnt that they have higher order functions that can be really useful. Learning these functions ended up being useful for working with larger lists. For example using <code>reduced</code> and an anonymous function to calculate the average of a list. Another array method that was new for me was <code>forEach</code>. This method gives the users to iterate over a list with an arbitrary action without fussing with loops indices and bounds.</p>
+
+<h2 id="json-parsing">Json parsing</h2>
+
+<p>Looking at json was not particular new since we used racket in the past to parse through them. However using JavaScript to parse through the json file to retrieve the information for a specific name was a new concept.</p>
+
+<h1 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge">What concepts are familiar from other courses or from your own knowledge?</h1>
+
+<p>While looking at the <a href="http://eloquentjavascript.net/05_higher_order.html">higher order functions</a> that JavaScript has we learnt one of the higher order functions is <code>map</code> and <code>filter</code>. It turns out that <code>map</code> and <code>filter</code> behave similar to the Racket behavior. Knowing how they were used in Racket make it a lot easier to learn how they are used in JavaScript.</p>
+
+<h1 id="what-new-skills-did-you-practice">What new skills did you practice?</h1>
+
+<p>There were no new skills that I practiced in this lab. However I practiced my coding skills in JavaScript. I also practiced my testing skills. I achieved this by making sure the few section of code I wrote was able to pass the test cases that were defined in the lab instructions.</p>
+
+<h1 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important">What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h1>
+
+<p>I found the <a href="http://eloquentjavascript.net/05_higher_order.html#h_TcUD2vzyMe">flattened exercise</a> to be really interesting. I found this interesting because for Assignment 3 my code was about 20 lines long. However in the lab I was able to get the same results using one line of code by using the reduce and concat method. This showed how important it is to know the higher order functions and array methods because they can make things a lot more efficient.</p>
+
+<h1 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab">What explicit tasks (e.g. reading) were you given during this lab?</h1>
+
+<p>First we had to read background information on JavaScript. This contained reading <a href="http://eloquentjavascript.net/05_higher_order.html">chapter 5</a> and <a href="http://eloquentjavascript.net/06_object.html">chapter 6</a> from Eloquent JavaScript. Then we looked at array methods. In this part of the lab we focused on chapter 5 a lot. We looked at how JavaScript arrays have higher order methods. Then we worked on solving the flatten exercise using the methods <code>reduce</code> and <code>concat</code>. Then we looked at parsing through a json file using JavaScript. Here we wrote a function to find the information that is associated with a particular name that is passed in. Then we looked at methods in JavaScript.</p>
+
+</article>
+<article>
+  <header>
     <h2><a href='/2019/10/lab-10.html'>Lab 10</a></h2>
     <p class='date-and-tags'>
 <time datetime="2019-10-08" pubdate="true">2019-10-08</time> :: <span class="tags"></span></p>
@@ -313,60 +377,6 @@ published.</p>
 
 <p>During the lab I read through some different material that helped understand the did situations better. 
  <p>First I read the <a href="https://docs.racket-lang.org/scribble/getting-started.html?q=%40-syntax#%28part._how-to~3areader%29">Racket documentation</a> to gain a better understanding of the syntax used in scribble.</p> To gain a better understanding of how modules worked, I read the <a href="https://docs.racket-lang.org/guide/Module_Syntax.html#%28part._module-syntax%29">Racket module documentation</a>. The documentation was easy to follow and answered most of the questions on how to complete part 5 of the lab.</p>
-
-</article>
-<article>
-  <header>
-    <h2><a href='/2019/09/lab3.html'>Lab3</a></h2>
-    <p class='date-and-tags'>
-<time datetime="2019-09-12" pubdate="true">2019-09-12</time> :: <span class="tags"></span></p>
-    <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
-  </header>
-
-<h2>What new concepts (if any) did you learn about in this lab?</h2>
-
-<h3>Racket Recurison</h3>
-
-<p>In lab three there was a lot of new topics covered. The first new topic to me was recursion in Racket. The examples on the <a href="https://docs.racket-lang.org/guide/Lists__Iteration__and_Recursion.html#%28part._.List_.Iteration_from_.Scratch%29">Racket Guide site</a> helped me understand the concepts a lot more. For list recursion there is first and rest functions. Being able to use these functions made the recursion part much easier than in other programming languages.</p>
-
-<h3>Testing</h3>
-
-<p>Another new topic was unit test and test coverage in Racket. I found this an extremely helpful tool to use. Being able to see what lines of code were used for a test case is very helpful in debugging. I found that looking at the unused line of code after a test case is found made debugging a lot easier. It saved me a lot time because I no longer had to insert print statements to see where the code was going, I was just able to look at the lines the code to see what was and was not entered.</p>
-
-<h2>What new skills did you practice?</h2>
-
-<p>The new skill that I practised during the lab was my debugging skills in Racket. During the lab we were taught helpful tools to test the code in Racket. By having to fix the code and make sure all the test cases passed allowed me to gain some practice using them.</p>
-
-<h2>What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h2>
-
-<p>There are a few things during the lab that I found interesting. The first one was using the first and rest functions. I found them interesting because I have always struggled with recursion functions but using first and rest made recursion a lot easier to understand and solve the problem.</p>
-
-<h2>What explicit tasks (e.g. reading) were you given during this lab?</h2>
-
-<p>Throughout the lab there was a few different things I read to help gain a better understanding.</p>
-
-<p>One thing that I read was documentation on <a href="https://beautifulracket.com/explainer/unit-testing.html">Unit testing in racket</a>. This helped me understand the different things that I needed to know in order to complete the unit testing on the lab. It gave a nice explanation on how to be able to run the test cases.</p>
-
-<p>The other thing I read was the documentation on <a href="https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git">debugging with Git</a>. This was a helpful document to read to understand on what the lab instructions meant.</p>
-
-</article>
-<article>
-  <header>
-    <h2><a href='/2019/09/lab2.html'>Lab2</a></h2>
-    <p class='date-and-tags'>
-<time datetime="2019-09-10" pubdate="true">2019-09-10</time> :: <span class="tags"></span></p>
-    <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
-  </header>
-
-<p>Today in the lab we covered a fair bit of material that was new to me. The first new concept that was covered was some more different git commands. We looked at how to add just specific files, seeing what has changed after a file has been added.</p>
-
-<p>Another new concept that was covered today was Racket. I have never worked with racket before and it was a little confusing but after I read some of the documentation things become pretty interesting. There was a new tool that was introduced to me as well. I have new used DrRacket so at first it was hard to grasp the different concepts. Another thing that was confusing to me was all the brackets that Racket likes. I got a lot of errors because I forgot brackets on statements. The tutorial was laid out nicely that explained things very well.</p>
-
-<p>Working with DrRacket was a very interesting concept. I was really interesting working with the interactive window part. I found it very useful if you wanted to test something simple or small or see how it works. An example would be setting up the circles.</p>
-
-<p>A familiar concept that we looked at in todays lab was git cloning and lookking at the git log. I worked with cloning in the first lab to verify that the push was successful. I also worked with git log to track the commit messages that were being made.</p>
-
-<p>Some new skills i practiced in this lab was using git. I learned a few different commands and how to best use them so I am not committing things that dont need to be committed</p>
 
 </article>
 <footer>
