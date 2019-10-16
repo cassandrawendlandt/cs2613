@@ -20,6 +20,7 @@ describe("flatten",
             function () {
                 var data = [[[1],2,[3]],4,[5,6]];
                 var orig_data = data;
+                
                 expect(ms.flatten(data)).toEqual([1,2,3,4,5,6]);
                 expect(data).toEqual(orig_data);
             });
