@@ -6,7 +6,6 @@ let flat = require("./flatten.js");
   */
 function read_json_file(filename) {
     let contents = fs.readFileSync(filename);
-
     return JSON.parse(contents);
 }
 exports.read_json_file=read_json_file;
@@ -23,20 +22,19 @@ function summarize_mail(jsonFile) {
     var data = read_json_file(jsonFile);
     //the json file flattened
     var flattened_data = flat.flatten(data);
-    //list of objects that is going to be returned
     var summarized_data = [];
     //looping through the flattened data by item
     flattened_data.forEach(function(item) {
         var obj = {};
-        const subKeys = Object.keys(item["headers"]);
         //if the user did not submit any properties it returns an empty
         //list
         if (args.length === 0 ){
             summarized_data.push(obj);
         }//if
-        //otherwise it looks for it
+        //otherwise looks for it
         else {
             //loops through each key in the header section
+            const subKeys = Object.keys(item["headers"]);
             for (const i in subKeys) {
                 //loops through the length of the list of properties entered
                 //by the user
