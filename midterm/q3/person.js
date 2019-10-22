@@ -4,7 +4,7 @@ class Person {
         this.name = name; 
         this.age = age; 
     }
-
+    
     birthday(){
         this.name = this.name; 
         this.age = this.age;
