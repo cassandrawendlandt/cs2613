@@ -1,0 +1,15 @@
+#lang racket
+
+(define (sixes-and-sevens lst)
+    (define (helper lst acc)
+      (cond
+        [(empty? lst) acc]
+        [(equal? (remainder (first lst) 6) 0) (helper (rest lst) acc)]
+        [(equal? (remainder (first lst) 7) 0)(helper (rest lst) acc)]
+        [else (helper (rest lst) (remove (first lst) acc))]))
+  (helper lst lst))
+        
+
+(module+ test
+  (require rackunit)
+  (check-equal? (sixes-and-sevens '(1 6 7 12)) '(6 7 12)))
