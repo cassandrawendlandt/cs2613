@@ -4,7 +4,35 @@
  <link rel="self" href="http://www.example.com/feeds/all.atom.xml" />
  <link href="http://www.example.com/index.html" />
  <id>urn:http-www-example-com:-index-html</id>
- <updated>2019-10-15T13:28:36Z</updated>
+ <updated>2019-10-17T13:49:53Z</updated>
+ <entry>
+  <title type="text">Lab 13</title>
+  <link rel="alternate" href="http://www.example.com/2019/10/lab-13.html?utm_source=all&amp;utm_medium=Atom" />
+  <id>urn:http-www-example-com:-2019-10-lab-13-html</id>
+  <published>2019-10-17T13:49:53Z</published>
+  <updated>2019-10-17T13:49:53Z</updated>
+  <author>
+   <name>Cassandra Wendlandt-Bloodsworth</name></author>
+  <content type="html">
+&lt;h1 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab"&gt;What new concepts (if any) did you learn about in this lab?&lt;/h1&gt;
+
+&lt;p&gt;During this lab we looked at &lt;strong&gt;timers&lt;/strong&gt; and &lt;strong&gt;animations&lt;/strong&gt;. These were fairly new topics to me as I have not seen them much. It was really neat to see how the animation ran while using the robot example from &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/labs/L12/"&gt;lab 12&lt;/a&gt;. Setting the time interval was a brand new concept to me. Using the &lt;code&gt;timer = setInterval (frame, 300)&lt;/code&gt; seemed a lot easier to understand than the &lt;code&gt;setTimeout(function () {loop (i-1, str+”*”): }, 1000);&lt;/code&gt; to understand. It seemed easier to understand because you can easily place what is what by looking at it right away. They only bad thing about it, is that you need to remember to have a &lt;code&gt;clearInterval&lt;/code&gt; so it does not run forever.&lt;/p&gt;
+
+&lt;h1 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge"&gt;What concepts are familiar from other courses or from your own knowledge?&lt;/h1&gt;
+
+&lt;p&gt;There was not any concepts that I was familiar with from other courses or my own knowledge this time around.&lt;/p&gt;
+
+&lt;h1 id="what-new-skills-did-you-practice"&gt;What new skills did you practice?&lt;/h1&gt;
+
+&lt;p&gt;The new skills that I practiced was my debugging skills, JavaScript programming skills, and problem solving skills. I practiced my debugging skills by having to work through the errors that was given and try to fix them. There were a few problems that I could not get so I asked my classmates and they helped solve them and showed me new debugging techniques. By working with through my problems and getting my classmates help I practiced my problem solving skills. I improved my JavaScript coding skills since the whole lab was completed in JavaScript.&lt;/p&gt;
+
+&lt;h1 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important"&gt;What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?&lt;/h1&gt;
+
+&lt;p&gt;I found the animation part of the lab to be very interesting. It was cool to see a visual representation of the robot moving around the screen. I found this interesting because I find anything that is interactive or just constantly active for a set time to be very interesting.&lt;/p&gt;
+
+&lt;h1 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab"&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h1&gt;
+
+&lt;p&gt;First we looked at &lt;strong&gt;timers&lt;/strong&gt;. We had to run the provided code. While doing this we noticed that it was not 100 % correct since all done was being printed before the animation is actually complete. We then had to make changes to the code in order for it to work properly. The changes we made was putting the print statement into an else statement with the timer.  Then we implemented another timer. This one did not use recursion like the previous one.  After that the lab was just about setting up the &lt;strong&gt;animation&lt;/strong&gt; for the robot exercise that is in &lt;a href="http://eloquentjavascript.net/07_robot.html"&gt;chapter 7&lt;/a&gt; of Eloquent JavaScript and from last lab as well.&lt;/p&gt;</content></entry>
  <entry>
   <title type="text">Lab 12</title>
   <link rel="alternate" href="http://www.example.com/2019/10/lab-12.html?utm_source=all&amp;utm_medium=Atom" />
