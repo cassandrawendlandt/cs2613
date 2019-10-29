@@ -53,15 +53,50 @@
 
           <article>
   <header>
-    <h2><a href='/2019/10/lab-14.html'>Lab 14</a></h2>
+    <h2><a href='/2019/10/lab-15.html'>Lab 15</a></h2>
     <p class='date-and-tags'>
-<time datetime="2019-10-24" pubdate="true">2019-10-24</time> :: <span class="tags"></span></p>
-    <p class='authors'>By: <span class="authors">The Unknown Author</span></p>
+<time datetime="2019-10-29" pubdate="true">2019-10-29</time> :: <span class="tags"></span></p>
+    <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
   </header>
 
 <h2 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab">What new concepts (if any) did you learn about in this lab?</h2>
 
-<p>One new concepts I learnt this was testing in python. Today I learnt about the tool called <a href="https://docs.pytest.org/en/latest/">pytest</a> that is used to test the code. This is a similar concept to the testing tool we used in JavaScript called <code>jasmine</code>. This was nice because it made it easier to understand pytest in the beginning.</p>
+<h3 id="global-variables-from-files">Global variables from files</h3>
+
+<p>In this lab I learnt that you could use a global variable from the file for the test cases or in other files. To import a global variable the line of code we used was <code>from filename import variable</code>. This would make testing easier when it is hard to return variables that depends on what was called in the past.</p>
+
+<h3 id="pytest-commands">Pytest commands</h3>
+
+<p>In this lab we learnt some new commands that will show the coverage of the python program. The first new one we looked at was <code>pytest-3 --cov = rpn</code>. This command will produce a summary of the statements in the file rpn. It will provide the number of statements that were missed if there is any. It will also tell you the percentage of coverage for the file. The other pytest command we looked at was <code>pytest-3 --cov=rpn --cov-report=term-missing</code>. This command will display all the same information as the previous one but it also list any lines that were missed.</p>
+
+<h2 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge">What concepts are familiar from other courses or from your own knowledge?</h2>
+
+<p>The most familiar concept for this lab was programming in python. The overall base of the lab was really easy to follow along with since I already had a base knowledge in python from a previous course.</p>
+
+<h2 id="what-new-skills-did-you-practice">What new skills did you practice?</h2>
+
+<p>There was not any new skills that I really practiced. However, I did improve on my testing skills. This was done by learning the pytest commands. Knowing these commands will help ensure that I can get full coverage.</p>
+
+<h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important">What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h2>
+
+<p>In today’s lab I found the new commands for pytest to be the most interesting. I think the pytest commands were the most interesting because it will be very helpful later on when checking for full test coverage. I also found the lab easy to follow along which was really nice because it allowed me to be able to focus more on what was being said.</p>
+
+<h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab">What explicit tasks (e.g. reading) were you given during this lab?</h2>
+
+<p>First we looked at the <strong>reverse polish notation calculator</strong> problem described in <a href="https://en.wikipedia.org/wiki/Reverse_Polish_notation">wikipedia</a>. Then we started programming it. First we got the stack set up to store the numbers. Then we looked at the different pytest commands that may become helpful in test. Then we moved on to adding <code>if elif else</code> to the function to test if any arithmetic needs to be done. Once that was done we looked at improving the robustness of the tests. In this section of the lab we added and <code>elif</code> to the method to handle when <code>"clear”</code> is passed through. When clear is passed through it will empty the stack of numbers. Then we added <code>elif</code> to check for <code>"dup” “pop” “swap”</code>. Once we got those methods implemented we added an <code>elif</code> to check to see if <code>”print”</code> is passed through then prints the last element in the stack. Then we worked added a method to handle if a string of operations is passed through to go through and complete them in order.</p>
+
+</article>
+<article>
+  <header>
+    <h2><a href='/2019/10/lab-14.html'>Lab 14</a></h2>
+    <p class='date-and-tags'>
+<time datetime="2019-10-24" pubdate="true">2019-10-24</time> :: <span class="tags"></span></p>
+    <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
+  </header>
+
+<h2 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab">What new concepts (if any) did you learn about in this lab?</h2>
+
+<p>One new concepts I learnt this lab was testing in python. Today I learnt about the tool called <a href="https://docs.pytest.org/en/latest/">pytest</a> that is used to test the code. This is a similar concept to the testing tool we used in JavaScript called <code>jasmine</code>. This was nice because it made it easier to understand pytest in the beginning.</p>
 
 <h2 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge">What concepts are familiar from other courses or from your own knowledge?</h2>
 
@@ -69,15 +104,15 @@
 
 <h2 id="what-new-skills-did-you-practice">What new skills did you practice?</h2>
 
-<p>In this lab I did not practice any new skills. However I practice so existing skills. One skill that I improved on was my testing skills. In the lab I learnt a new tool to help me test python code. I improved my python skills as well since the lab was just coding in python.</p>
+<p>In this lab I did not practice any new skills. However I practice so existing skills. One skill that I improved on was my testing skills. In the lab I learnt how pytest worked to be able to use it to test the code created. I improved my python programming skills as well since the lab was an introduction to coding in python.</p>
 
 <h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important">What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h2>
 
-<p>An interesting topic in today&rsquo;s lab was the <strong>pytest</strong>. This was an interesting topic because I never knew about it. This functions appears to make testing the files so much easier than when I had to do it in other courses.</p>
+<p>An interesting topic in today&rsquo;s lab was the <strong>pytest</strong>. This was an interesting topic because I never knew about it. This functions appears to make testing python files a lot easier than when I had to do it in other courses.</p>
 
 <h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab">What explicit tasks (e.g. reading) were you given during this lab?</h2>
 
-<p>We were given <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/your-first-python-program.html#everythingisanobject">chapter 1</a> in <strong>Dive into Python 3</strong> to read for the lab. This reading was very helpful in the lab to explain topics a little more if I was confused on anything.  First we copied the python code <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/labs/L14/_humansize.py/">humansize.py</a> and ran it from the command line using <code>python3 humansize.py</code>. Then we ran them through the terminal using <code>python3</code> and typed in lines to run the function.  Then we moved to writing test cases using <a href="https://docs.pytest.org/en/latest/">pytest</a>. We first copied the <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/labs/L14/_test_humansize.py/">initial test cases</a>that were given during the lab. We ran the test cases in the terminal by using <code>pytest-3</code>. Then we ran it through vscodium but adding the <code>Python: Configure Tests</code> in the terminal then we were able to run the test cases.  After we moved onto looking at modules in python. Here we saw that if we just want a function from a file we can add <code>from humansize import approximate size</code>. Then if we want to be able to access all the functions in a file we add <code>import humansize</code>.  The last two topics we looked at was <strong>indentation</strong> and <strong>expectations</strong> in python. For the indentation section we looked at the FizzBuzz problem and added the indentations so the code will run properly. After that we looked at expectations. In this section we had to fix the function to make it check so it does not divide by 0.</p>
+<p>We were given <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/your-first-python-program.html#everythingisanobject">chapter 1</a> in <strong>Dive into Python 3</strong> to read for the lab. This reading was very helpful in the lab to explain topics I was having problems with.  First we copied the python code from <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/labs/L14/_humansize.py/">humansize.py</a> and ran it from the command line using <code>python3 humansize.py</code>. Then we ran them through the terminal using <code>python3</code> and typed in lines to run the function.  Then we moved to writing test cases using <a href="https://docs.pytest.org/en/latest/">pytest</a>. We first copied the <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/labs/L14/_test_humansize.py/">initial test cases</a>that were given during the lab. We ran the test cases in the terminal by using <code>pytest-3</code>. Then we ran it through vscodium but adding the <code>Python: Configure Tests</code> in the terminal then we were able to run the test cases.  After we moved onto looking at modules in python. Here we saw that if we want a function from a file we can add <code>from humansize import approximate size</code>. Then if we want to be able to access all the functions in a file we add <code>import humansize</code>.  The last two topics we looked at was <strong>indentation</strong> and <strong>expectations</strong> in python. For the indentation section we looked at the FizzBuzz problem and added the indentations so the code will run properly. After that we looked at expectations. In this section we had to fix the function to make it check so it does not divide by 0.</p>
 
 </article>
 <article>
@@ -333,43 +368,6 @@
 <h2>What explicit tasks (e.g. reading) were you given during this lab?</h2>
 
 <p>First we worked with hash tables. We had to fill in the accumulator in the code that was provided in the lab instructions.  Then we moved to work with explorer and ran a few different commands to see how it worked.  After we worked with plotting. In this section we had to plot the difference between <code>(deriv sin x)</code> and <code>(cos x)</code>.  Finally we moved to work with JSON and writing a function to collect all the statuses from the <code>errors.json</code> file.</p>
-
-</article>
-<article>
-  <header>
-    <h2><a href='/2019/09/lab-5.html'>Lab 5</a></h2>
-    <p class='date-and-tags'>
-<time datetime="2019-09-19" pubdate="true">2019-09-19</time> :: <span class="tags"></span></p>
-    <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
-  </header>
-
-<h2>What new concepts (if any) did you learn about in this lab?</h2>
-
-<h3>Trail Recursion</h3>
-
-<p>Trail recursion<a href="https://docs.racket-lang.org/guide/Lists__Iteration__and_Recursion.html#%28part._tail-recursion%29">Trail recursion</a> was an interesting concept to look at. At the beginning it was a little changeling to understand the question that was being asked. after looking at the trail recursion document and reading it through a few times it seemed to make more sense and the question became a lot easier to answer. The example on the document was really helpful for part 1 of the lab.</p>
-
-<h3>For Loops</h3>
-
-<p>The other new concept we looked at today was <a href="https://docs.racket-lang.org/guide/for.html">for loops</a>. These were pretty easy to understand because they looked a lot like the for loops in java. Understand the different types of for loops like for/fold was a bit tricky. The documentation explained it really well.</p>
-
-<h2>What concepts are familiar from other courses or from your own knowledge?</h2>
-
-<h3>For Loop</h3>
-
-<p>The for concept was a little familiar from Java and previous languages. Learning the syntax and different types were new tho. Having a base understanding of four loops made it a lot easier to understand them in Racket.</p>
-
-<h3>Range</h3>
-
-<p>Today in one of the code examples on the lab there was a function called range used. This was familiar to be because I used it on the assignment which I finished before the lab. Knowing range before had helped me understand what the code was doing a lot easier.</p>
-
-<h2>What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h2>
-
-<p>I found the trail recursion very interesting today. It was interesting because it was a new concept but it also makes sense in practice. Being able to increment as you go is really helpful to know because it can help save stack on the stack trace and it makes things a lot faster to run.</p>
-
-<h2>What explicit tasks (e.g. reading) were you given during this lab</h2>
-
-<p>First we copy the code provided in part 1 and observed how deep the stack trace went. Then we copied the code for odds-even2 and fixed the helper function to use trail recursion. Then we looked at for loop. We copied the code odds-even3 that used for loops instead of recursion. We then copied the function big-list to be able to compare the speeds between the three different functions. It turns out the odds-even2 was the fastest.  For part 4 we gained more practice working with trail recursion, for loops and higher order functions.</p>
 
 </article>
 <footer>

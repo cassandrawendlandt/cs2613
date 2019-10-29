@@ -4,7 +4,41 @@
  <link rel="self" href="http://www.example.com/feeds/all.atom.xml" />
  <link href="http://www.example.com/index.html" />
  <id>urn:http-www-example-com:-index-html</id>
- <updated>2019-10-24T13:52:29Z</updated>
+ <updated>2019-10-29T12:58:42Z</updated>
+ <entry>
+  <title type="text">Lab 15</title>
+  <link rel="alternate" href="http://www.example.com/2019/10/lab-15.html?utm_source=all&amp;utm_medium=Atom" />
+  <id>urn:http-www-example-com:-2019-10-lab-15-html</id>
+  <published>2019-10-29T12:58:42Z</published>
+  <updated>2019-10-29T12:58:42Z</updated>
+  <author>
+   <name>Cassandra Wendlandt-Bloodsworth</name></author>
+  <content type="html">
+&lt;h2 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab"&gt;What new concepts (if any) did you learn about in this lab?&lt;/h2&gt;
+
+&lt;h3 id="global-variables-from-files"&gt;Global variables from files&lt;/h3&gt;
+
+&lt;p&gt;In this lab I learnt that you could use a global variable from the file for the test cases or in other files. To import a global variable the line of code we used was &lt;code&gt;from filename import variable&lt;/code&gt;. This would make testing easier when it is hard to return variables that depends on what was called in the past.&lt;/p&gt;
+
+&lt;h3 id="pytest-commands"&gt;Pytest commands&lt;/h3&gt;
+
+&lt;p&gt;In this lab we learnt some new commands that will show the coverage of the python program. The first new one we looked at was &lt;code&gt;pytest-3 --cov = rpn&lt;/code&gt;. This command will produce a summary of the statements in the file rpn. It will provide the number of statements that were missed if there is any. It will also tell you the percentage of coverage for the file. The other pytest command we looked at was &lt;code&gt;pytest-3 --cov=rpn --cov-report=term-missing&lt;/code&gt;. This command will display all the same information as the previous one but it also list any lines that were missed.&lt;/p&gt;
+
+&lt;h2 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge"&gt;What concepts are familiar from other courses or from your own knowledge?&lt;/h2&gt;
+
+&lt;p&gt;The most familiar concept for this lab was programming in python. The overall base of the lab was really easy to follow along with since I already had a base knowledge in python from a previous course.&lt;/p&gt;
+
+&lt;h2 id="what-new-skills-did-you-practice"&gt;What new skills did you practice?&lt;/h2&gt;
+
+&lt;p&gt;There was not any new skills that I really practiced. However, I did improve on my testing skills. This was done by learning the pytest commands. Knowing these commands will help ensure that I can get full coverage.&lt;/p&gt;
+
+&lt;h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important"&gt;What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?&lt;/h2&gt;
+
+&lt;p&gt;In today’s lab I found the new commands for pytest to be the most interesting. I think the pytest commands were the most interesting because it will be very helpful later on when checking for full test coverage. I also found the lab easy to follow along which was really nice because it allowed me to be able to focus more on what was being said.&lt;/p&gt;
+
+&lt;h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab"&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h2&gt;
+
+&lt;p&gt;First we looked at the &lt;strong&gt;reverse polish notation calculator&lt;/strong&gt; problem described in &lt;a href="https://en.wikipedia.org/wiki/Reverse_Polish_notation"&gt;wikipedia&lt;/a&gt;. Then we started programming it. First we got the stack set up to store the numbers. Then we looked at the different pytest commands that may become helpful in test. Then we moved on to adding &lt;code&gt;if elif else&lt;/code&gt; to the function to test if any arithmetic needs to be done. Once that was done we looked at improving the robustness of the tests. In this section of the lab we added and &lt;code&gt;elif&lt;/code&gt; to the method to handle when &lt;code&gt;"clear”&lt;/code&gt; is passed through. When clear is passed through it will empty the stack of numbers. Then we added &lt;code&gt;elif&lt;/code&gt; to check for &lt;code&gt;"dup” “pop” “swap”&lt;/code&gt;. Once we got those methods implemented we added an &lt;code&gt;elif&lt;/code&gt; to check to see if &lt;code&gt;”print”&lt;/code&gt; is passed through then prints the last element in the stack. Then we worked added a method to handle if a string of operations is passed through to go through and complete them in order.&lt;/p&gt;</content></entry>
  <entry>
   <title type="text">Lab 14</title>
   <link rel="alternate" href="http://www.example.com/2019/10/lab-14.html?utm_source=all&amp;utm_medium=Atom" />
@@ -12,11 +46,11 @@
   <published>2019-10-24T13:52:29Z</published>
   <updated>2019-10-24T13:52:29Z</updated>
   <author>
-   <name>The Unknown Author</name></author>
+   <name>Cassandra Wendlandt-Bloodsworth</name></author>
   <content type="html">
 &lt;h2 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab"&gt;What new concepts (if any) did you learn about in this lab?&lt;/h2&gt;
 
-&lt;p&gt;One new concepts I learnt this was testing in python. Today I learnt about the tool called &lt;a href="https://docs.pytest.org/en/latest/"&gt;pytest&lt;/a&gt; that is used to test the code. This is a similar concept to the testing tool we used in JavaScript called &lt;code&gt;jasmine&lt;/code&gt;. This was nice because it made it easier to understand pytest in the beginning.&lt;/p&gt;
+&lt;p&gt;One new concepts I learnt this lab was testing in python. Today I learnt about the tool called &lt;a href="https://docs.pytest.org/en/latest/"&gt;pytest&lt;/a&gt; that is used to test the code. This is a similar concept to the testing tool we used in JavaScript called &lt;code&gt;jasmine&lt;/code&gt;. This was nice because it made it easier to understand pytest in the beginning.&lt;/p&gt;
 
 &lt;h2 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge"&gt;What concepts are familiar from other courses or from your own knowledge?&lt;/h2&gt;
 
@@ -24,15 +58,15 @@
 
 &lt;h2 id="what-new-skills-did-you-practice"&gt;What new skills did you practice?&lt;/h2&gt;
 
-&lt;p&gt;In this lab I did not practice any new skills. However I practice so existing skills. One skill that I improved on was my testing skills. In the lab I learnt a new tool to help me test python code. I improved my python skills as well since the lab was just coding in python.&lt;/p&gt;
+&lt;p&gt;In this lab I did not practice any new skills. However I practice so existing skills. One skill that I improved on was my testing skills. In the lab I learnt how pytest worked to be able to use it to test the code created. I improved my python programming skills as well since the lab was an introduction to coding in python.&lt;/p&gt;
 
 &lt;h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important"&gt;What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?&lt;/h2&gt;
 
-&lt;p&gt;An interesting topic in today&amp;rsquo;s lab was the &lt;strong&gt;pytest&lt;/strong&gt;. This was an interesting topic because I never knew about it. This functions appears to make testing the files so much easier than when I had to do it in other courses.&lt;/p&gt;
+&lt;p&gt;An interesting topic in today&amp;rsquo;s lab was the &lt;strong&gt;pytest&lt;/strong&gt;. This was an interesting topic because I never knew about it. This functions appears to make testing python files a lot easier than when I had to do it in other courses.&lt;/p&gt;
 
 &lt;h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab"&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h2&gt;
 
-&lt;p&gt;We were given &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/your-first-python-program.html#everythingisanobject"&gt;chapter 1&lt;/a&gt; in &lt;strong&gt;Dive into Python 3&lt;/strong&gt; to read for the lab. This reading was very helpful in the lab to explain topics a little more if I was confused on anything.  First we copied the python code &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/labs/L14/_humansize.py/"&gt;humansize.py&lt;/a&gt; and ran it from the command line using &lt;code&gt;python3 humansize.py&lt;/code&gt;. Then we ran them through the terminal using &lt;code&gt;python3&lt;/code&gt; and typed in lines to run the function.  Then we moved to writing test cases using &lt;a href="https://docs.pytest.org/en/latest/"&gt;pytest&lt;/a&gt;. We first copied the &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/labs/L14/_test_humansize.py/"&gt;initial test cases&lt;/a&gt;that were given during the lab. We ran the test cases in the terminal by using &lt;code&gt;pytest-3&lt;/code&gt;. Then we ran it through vscodium but adding the &lt;code&gt;Python: Configure Tests&lt;/code&gt; in the terminal then we were able to run the test cases.  After we moved onto looking at modules in python. Here we saw that if we just want a function from a file we can add &lt;code&gt;from humansize import approximate size&lt;/code&gt;. Then if we want to be able to access all the functions in a file we add &lt;code&gt;import humansize&lt;/code&gt;.  The last two topics we looked at was &lt;strong&gt;indentation&lt;/strong&gt; and &lt;strong&gt;expectations&lt;/strong&gt; in python. For the indentation section we looked at the FizzBuzz problem and added the indentations so the code will run properly. After that we looked at expectations. In this section we had to fix the function to make it check so it does not divide by 0.&lt;/p&gt;</content></entry>
+&lt;p&gt;We were given &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/your-first-python-program.html#everythingisanobject"&gt;chapter 1&lt;/a&gt; in &lt;strong&gt;Dive into Python 3&lt;/strong&gt; to read for the lab. This reading was very helpful in the lab to explain topics I was having problems with.  First we copied the python code from &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/labs/L14/_humansize.py/"&gt;humansize.py&lt;/a&gt; and ran it from the command line using &lt;code&gt;python3 humansize.py&lt;/code&gt;. Then we ran them through the terminal using &lt;code&gt;python3&lt;/code&gt; and typed in lines to run the function.  Then we moved to writing test cases using &lt;a href="https://docs.pytest.org/en/latest/"&gt;pytest&lt;/a&gt;. We first copied the &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/labs/L14/_test_humansize.py/"&gt;initial test cases&lt;/a&gt;that were given during the lab. We ran the test cases in the terminal by using &lt;code&gt;pytest-3&lt;/code&gt;. Then we ran it through vscodium but adding the &lt;code&gt;Python: Configure Tests&lt;/code&gt; in the terminal then we were able to run the test cases.  After we moved onto looking at modules in python. Here we saw that if we want a function from a file we can add &lt;code&gt;from humansize import approximate size&lt;/code&gt;. Then if we want to be able to access all the functions in a file we add &lt;code&gt;import humansize&lt;/code&gt;.  The last two topics we looked at was &lt;strong&gt;indentation&lt;/strong&gt; and &lt;strong&gt;expectations&lt;/strong&gt; in python. For the indentation section we looked at the FizzBuzz problem and added the indentations so the code will run properly. After that we looked at expectations. In this section we had to fix the function to make it check so it does not divide by 0.&lt;/p&gt;</content></entry>
  <entry>
   <title type="text">Lab 13</title>
   <link rel="alternate" href="http://www.example.com/2019/10/lab-13.html?utm_source=all&amp;utm_medium=Atom" />
