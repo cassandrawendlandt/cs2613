@@ -7,21 +7,28 @@ def process(line):
     if line == "+":
         num1 = stack.pop()
         stack[-1] = stack[-1]+num1
+
     elif line == "-":
         num1 = stack.pop()
         stack[-1] = stack[-1]-num1
+
     elif line == "*":
         num1 = stack.pop()
         stack[-1] = stack[-1]*num1
+
     elif  line == "/":
         num1 = stack.pop()
         stack[-1] = stack[-1]//num1
+
     elif line == "^": 
         stack[-1] = stack [-1] ** stack[-1]
+
     elif line == "clear":
         stack.clear()
+
     elif line == "dup": 
         stack.append(stack[-1])
+        
     elif line == "pop":
         stack.pop()
     elif line == "swap":

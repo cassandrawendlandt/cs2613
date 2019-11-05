@@ -4,7 +4,79 @@
  <link rel="self" href="http://www.example.com/feeds/all.atom.xml" />
  <link href="http://www.example.com/index.html" />
  <id>urn:http-www-example-com:-index-html</id>
- <updated>2019-10-29T12:58:42Z</updated>
+ <updated>2019-11-05T14:10:41Z</updated>
+ <entry>
+  <title type="text">Lab 17</title>
+  <link rel="alternate" href="http://www.example.com/2019/11/lab-17.html?utm_source=all&amp;utm_medium=Atom" />
+  <id>urn:http-www-example-com:-2019-11-lab-17-html</id>
+  <published>2019-11-05T14:10:41Z</published>
+  <updated>2019-11-05T14:10:41Z</updated>
+  <author>
+   <name>Cassandra Wendlandt-Bloodsworth</name></author>
+  <content type="html">
+&lt;h2 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab"&gt;What new concepts (if any) did you learn about in this lab?&lt;/h2&gt;
+
+&lt;h3 id="regular-expression"&gt;Regular Expression&lt;/h3&gt;
+
+&lt;p&gt;During this section of the lab we looked at how regular expressions worked. We followed the &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/regular-expressions.html#streetaddresses"&gt;example&lt;/a&gt; for the textbook. This example helped make regular expression much easier to understand. In the demo we ran &lt;code&gt;re.sub('Road$','RD.',s)&lt;/code&gt;. This little section of the code looks in the string s, and tries to find &amp;lsquo;Road&amp;rsquo;. The dollar signs make it so that &amp;lsquo;Road&amp;rsquo; has to be at the end of the string. Once &amp;lsquo;Road&amp;rsquo; is found then it will replace it with &amp;lsquo;RD.&amp;rsquo;. The quick demo made it much easier to understand regular expression. Another thing that really helped to understand the regular expressions was reading &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/regular-expressions.html"&gt;chapter5&lt;/a&gt; of the book &lt;strong&gt;Dive Into Python 3&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id="stripping-quotes"&gt;Stripping Quotes&lt;/h3&gt;
+
+&lt;p&gt;This section of the lab builds off the previous section.This section we used regular expressions to remove all the &lt;strong&gt;""&lt;/strong&gt; that may be in a string. During this part there was a lot of new concepts introduced like the &lt;code&gt;[^"]&lt;/code&gt; is a character class. This section of the lab was a bit difficult to understand at the beginning. Once the topics were explained a bit more in details it was a little easier to understand. The&lt;/p&gt;
+
+&lt;h3 id="handling-quoted-commas"&gt;Handling Quoted Commas&lt;/h3&gt;
+
+&lt;p&gt;During this section of the lab we worked on creating a function that will break things up into three different columns. This section of the lab was pretty tricky to understand at the beginning. A document that really helped me understand the topic a lot more was from the textbook &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/regular-expressions.html#verbosere"&gt;Dive Into Python 3&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge"&gt;What concepts are familiar from other courses or from your own knowledge?&lt;/h2&gt;
+
+&lt;p&gt;One of the familiar topics in today&amp;rsquo;s lab was splitting strings. This was familiar for a course I took last year. At the beginning I had a hard to remembering how &lt;code&gt;split&lt;/code&gt; and &lt;code&gt;splitlines&lt;/code&gt; work. After looking at &lt;a href="https://www.w3schools.com/python/ref_string_split.asp"&gt;split&lt;/a&gt; and &lt;a href="https://www.w3schools.com/python/ref_string_splitlines.asp"&gt;splitlines&lt;/a&gt; I was able to complete the section of the lab without any problem.&lt;/p&gt;
+
+&lt;h2 id="what-new-skills-did-you-practice"&gt;What new skills did you practice?&lt;/h2&gt;
+
+&lt;p&gt;Some of the new skills I practiced during the lab was using regular expressions. I also improved on my python coding skills because the whole lab was programming in python. During the lab I also improved on my debugging skills and problem solving skills. This was improved by having to examine the different errors my code was throwing and trying to figure out how to fix them.&lt;/p&gt;
+
+&lt;h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important"&gt;What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?&lt;/h2&gt;
+
+&lt;p&gt;During the lab one of the easiest topics cover was &lt;strong&gt;splitting strings&lt;/strong&gt;. This was easier because I already had some experience working with them. The topics on &lt;strong&gt;regular expressions&lt;/strong&gt; were a bit more tricky to follow and understand at the beginning.&lt;/p&gt;
+
+&lt;h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab"&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h2&gt;
+
+&lt;p&gt;In the lab we first worked with &lt;strong&gt;splitting strings&lt;/strong&gt;. In this section of the lab we had to separate strings when a comma appears. Then we moved on to working with &lt;strong&gt;regular expressions&lt;/strong&gt;. In this section we looked at an &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/regular-expressions.html#streetaddresses"&gt;example&lt;/a&gt; from &lt;strong&gt;Dive Into Python 3&lt;/strong&gt;. We went through this example as group and discussed each of the lines a bit. Then we looked at &lt;strong&gt;stripping quotes&lt;/strong&gt;. In this section we took what we talked about regular expression and put it into practice. Some of the documents we read in this section was on &lt;a href="https://docs.python.org/3/library/re.html#match-objects"&gt;groups&lt;/a&gt; and &lt;a href="https://docs.python.org/3/library/re.html#regular-expression-syntax"&gt;regular expression syntax&lt;/a&gt;from the python documentation. Then we looked at &lt;strong&gt;handling quoted comma&lt;/strong&gt;. In this section we completed the definition of &lt;code&gt;split_row_3&lt;/code&gt; that was given in the lab. The code was suppose to add the strings into 3 different columns then remove the commas. During this section we read the document on &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/regular-expressions.html#verbosere"&gt;verbose reqular expressions&lt;/a&gt; from &lt;strong&gt;Dive Into Python 3&lt;/strong&gt;.&lt;/p&gt;</content></entry>
+ <entry>
+  <title type="text">Lab 16</title>
+  <link rel="alternate" href="http://www.example.com/2019/10/lab-16.html?utm_source=all&amp;utm_medium=Atom" />
+  <id>urn:http-www-example-com:-2019-10-lab-16-html</id>
+  <published>2019-10-31T15:02:58Z</published>
+  <updated>2019-10-31T15:02:58Z</updated>
+  <author>
+   <name>Cassandra Wendlandt-Bloodsworth</name></author>
+  <content type="html">
+&lt;h1 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab"&gt;What new concepts (if any) did you learn about in this lab?&lt;/h1&gt;
+
+&lt;h2 id="map"&gt;Map&lt;/h2&gt;
+
+&lt;p&gt;Today we talked what &lt;a href="https://docs.python.org/3/library/functions.html#map"&gt;map&lt;/a&gt; does in python. It acts similar to the map we saw in racket which made it easier to understand. It was a little confusing to understand at the beginning but the &lt;a href="https://www.w3schools.com/python/ref_func_map.asp"&gt;following link&lt;/a&gt; really helped to understand it a lot more.&lt;/p&gt;
+
+&lt;h2 id="format"&gt;Format&lt;/h2&gt;
+
+&lt;p&gt;The other new concept we covered today in the lab was &lt;a href="https://docs.python.org/3/library/stdtypes.html#str.format"&gt;format strings&lt;/a&gt;. This concept seemed a lot similar to the format in c. This was helpful to gain a better understanding of what was going on.&lt;/p&gt;
+
+&lt;h1 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge"&gt;What concepts are familiar from other courses or from your own knowledge?&lt;/h1&gt;
+
+&lt;p&gt;Most of this lab was familiar to me because I have already worked with it in a previous class. I also worked with a lot of the topics in the lab for the assignment as well. This was helpful because I picked up on some tips I can use in the assignment to improve my code.&lt;/p&gt;
+
+&lt;h1 id="what-new-skills-did-you-practice"&gt;What new skills did you practice?&lt;/h1&gt;
+
+&lt;p&gt;During the lab I did not practice any new skills but I did improve on skills that I already have. The first skill I improved on was my python coding skills. This skill was improved because the whole lab was programming in python. The next skill I improved on was my problem solving skills. I improved this skill because a good chunk of the lab was working by yourself.&lt;/p&gt;
+
+&lt;h1 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important"&gt;What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?&lt;/h1&gt;
+
+&lt;p&gt;I found that the lab was pretty easy overall. There were some spots that I found hard to get like the map question. The rest I had a pretty good understanding before the lab so it made it easy to follow along and gain more from the lab as well.&lt;/p&gt;
+
+&lt;h1 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab"&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h1&gt;
+
+&lt;p&gt;During this lab we started by looking at &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/comprehensions.html#listcomprehension"&gt;list comprehensions&lt;/a&gt;. First we had to fill in the blank of the missing code.Then we moved onto &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/comprehensions.html#dictionarycomprehension"&gt;dictionary comprehensions&lt;/a&gt; . This section was fairly familiar with since I used in the assignment already. In this part of the lab we had to turn a list into a dictionary. The line of code I used to complete this was &lt;code&gt;{i+1: lst[i] for i in range ( 0 , len (lst))}&lt;/code&gt; but then after having a discussion I found a more concise way of writing the same line. The better way to write this is &lt;code&gt;{i+1: lst[i] for i in range ( len (lst))}&lt;/code&gt;.&lt;/p&gt;</content></entry>
  <entry>
   <title type="text">Lab 15</title>
   <link rel="alternate" href="http://www.example.com/2019/10/lab-15.html?utm_source=all&amp;utm_medium=Atom" />
