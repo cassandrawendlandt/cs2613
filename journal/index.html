@@ -53,6 +53,154 @@
 
           <article>
   <header>
+    <h2><a href='/2019/11/lab-19.html'>lab 19</a></h2>
+    <p class='date-and-tags'>
+<time datetime="2019-11-19" pubdate="true">2019-11-19</time> :: <span class="tags"></span></p>
+    <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
+  </header>
+
+<h2 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab">What new concepts (if any) did you learn about in this lab?</h2>
+
+<p>In today&rsquo;s lab there was a lot of topics I was familiar with from previous courses. However, there were a few topics that were new to me. The topics that were new to me was <code>__inter__</code> and <code>__next__</code>. At the beginning they were difficult to understand but after reading <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/iterators.html">DiP3 Chapter 7</a> helped me to understand them better.</p>
+
+<h2 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge">What concepts are familiar from other courses or from your own knowledge?</h2>
+
+<p>A lot of the topics in today’s lab was very familiar to me from a previous course I took. There were a few things that were not familiar when I first started working on them. As I worked through the lab and some of the documentation then everything started to come back to me. I found that having a little bit of previous knowledge made the lab easier to follow. It also allowed me to fully understand everything that was discussed in the lab.</p>
+
+<h2 id="what-new-skills-did-you-practice">What new skills did you practice?</h2>
+
+<p>In this lab I did not gain any new skills. However, I did improve on a couple skills I already have. The first skill I improved was my python programming skills. I accomplished this because having the whole lab in python. I also improved writing classes in python. I improved writing classes by learning how the <code>__inter__</code> and <code>__next__</code> methods work. This will help me later on when I am writing my own classes in the future.</p>
+
+<h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important">What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h2>
+
+<p>During this lab I found understanding how the <code>__next__</code> method a bit difficult in the beginning. Once I got an understanding how it works, then the rest of the lab was easier to complete because I was familiar with most of the topics from a previous course.</p>
+
+<h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab">What explicit tasks (e.g. reading) were you given during this lab?</h2>
+
+<p>We started the lab with looking at <strong>Counters, generators and classes</strong>. We looked at the counter code from Lab 18 and generated the numbers by providing a compatible interface by using a <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/iterators.html#defining-classes">python class</a>.  Then we looked at the Fibonacci series and completed the definition of <code>__next__</code> so it will act like the generator.</p>
+
+<div class="brush: python">
+ <table class="sourcetable">
+  <tbody>
+   <tr>
+    <td class="linenos">
+     <div class="linenodiv">
+      <pre>1
+2
+3
+4
+5
+6</pre></div></td>
+    <td class="code">
+     <div class="source">
+      <pre><span></span><span class="k">def</span> <span class="nf">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">max</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">:</span> 
+		<span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span>
+	<span class="k">else</span><span class="p">:</span> 
+		<span class="k">raise</span> <span class="ne">StopIteration</span>
+</pre></div>
+</td></tr></tbody></table>
+</div>
+
+<p>The code above shows what the <code>__next__</code> function would look like. I found it was basically just taking the closure code from the last lab which made it easy to grasp the concept of how it was done.  Then we looked <strong>object copying and equality</strong>. During this part of the lab we had to write the code for the method<a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/special-method-names.html#rich-comparisons"> <code>__eq__</code></a>inorder for the test to pass. Then we also wrote an <code>eqal</code> method to be able to do arithmetic.  Then in the lab we used <a href="https://docs.python.org/3/library/copy.html">deepCopy</a> to update one of our test sets to make sure the ‘eqal` method does not change the object self.</p>
+
+</article>
+<article>
+  <header>
+    <h2><a href='/2019/11/lab-18.html'>lab 18</a></h2>
+    <p class='date-and-tags'>
+<time datetime="2019-11-07" pubdate="true">2019-11-07</time> :: <span class="tags"></span></p>
+    <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
+  </header>
+
+<h2 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab">What new concepts (if any) did you learn about in this lab?</h2>
+
+<p>In today’s lab we covered <strong>closures</strong>. We used closures to mimic generator code which I found a bit interesting. This topic was completely new to me. I found that after I read <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/generators.html">chapter 6 from DiP3</a> the topics seemed a bit easier to follow. At the beginning, the topic was a bit difficult to understand. Then I found that after working on examples it became much easier to understand.</p>
+
+<h2 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge">What concepts are familiar from other courses or from your own knowledge?</h2>
+
+<p>In this lab there wasn&rsquo;t any concepts that were familiar to me. This made it a little hard to follow along at the beginning of the lab but once I started to understand the material it was much easier to follow along and understand what was happening.</p>
+
+<h2 id="what-new-skills-did-you-practice">What new skills did you practice?</h2>
+
+<p>I did not practice any new skills in this lab. However I did improve on my python programming skills as well as my debugging skills. I improved on my debugging skills because I made a lot of errors so I had to go through and find where the errors were. Then I had to use my previous knowledge to figure out how to fix it, I improved my python programming skills because the whole lab was coding in python.</p>
+
+<h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important">What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h2>
+
+<p>In the beginning I found the concept of the was a little tricky to understand. Once we finished going over the first example, it made more sense and the rest of the questions seem to be a bit easier. This helped me to really grasp the topic because I was able to understand the basic concepts when we the class discussed it more.</p>
+
+<h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab">What explicit tasks (e.g. reading) were you given during this lab?</h2>
+
+<p>The whole lab was just looking at how <strong>closures</strong> work to simulate generators and then a few examples. The first example we looked at was <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/generators.html#generators">Counter</a>. For this example we were given the code that uses the generator. Then we had to write a function that mimics the behaviour of the other one. Below is an example of the function that we had to write.</p>
+
+<div class="brush: python">
+ <table class="sourcetable">
+  <tbody>
+   <tr>
+    <td class="linenos">
+     <div class="linenodiv">
+      <pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td>
+    <td class="code">
+     <div class="source">
+      <pre><span></span><span class="k">def</span> <span class="nf">make_counter2</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+	<span class="n">count</span> <span class="o">=</span> <span class="n">x</span>
+	<span class="k">def</span> <span class="nf">counter</span><span class="p">():</span>
+		<span class="n">nonlocal</span> <span class="n">count</span><span class="p">,</span><span class="n">x</span>
+		<span class="k">if</span> <span class="n">count</span> <span class="o">==</span><span class="n">x</span><span class="p">:</span>
+			<span class="k">print</span> <span class="p">(</span><span class="s1">&#39;Entering make_counter&#39;</span><span class="p">)</span>
+		<span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">+</span><span class="mi">1</span>
+		<span class="k">return</span> <span class="n">x</span><span class="o">-</span><span class="mi">1</span>
+	<span class="k">return</span> <span class="n">counter</span>
+</pre></div>
+</td></tr></tbody></table>
+</div>
+
+<p>The next example we looked at is the <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/generators.html#a-fibonacci-generator">Fibonacci series</a>. Here we had to fill in the function <code>fib2</code> that will mimic the function <code>fib</code>. Below is an example of the definition for <code>fib2</code>.</p>
+
+<div class="brush: python">
+ <table class="sourcetable">
+  <tbody>
+   <tr>
+    <td class="linenos">
+     <div class="linenodiv">
+      <pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td>
+    <td class="code">
+     <div class="source">
+      <pre><span></span><span class="k">def</span> <span class="nf">fib2</span><span class="p">(</span><span class="nb">max</span><span class="p">):</span>
+    <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="mi">1</span>
+    <span class="k">def</span> <span class="nf">next</span><span class="p">():</span>
+        <span class="n">nonlocal</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span>
+        <span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="nb">max</span><span class="p">:</span>
+            <span class="n">a</span> <span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+            <span class="k">return</span> <span class="n">b</span><span class="o">-</span><span class="n">a</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">None</span>
+    <span class="k">return</span> <span class="nb">next</span>
+</pre></div>
+</td></tr></tbody></table>
+</div>
+
+</article>
+<article>
+  <header>
     <h2><a href='/2019/11/lab-17.html'>Lab 17</a></h2>
     <p class='date-and-tags'>
 <time datetime="2019-11-05" pubdate="true">2019-11-05</time> :: <span class="tags"></span></p>
@@ -98,29 +246,29 @@
     <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
   </header>
 
-<h1 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab">What new concepts (if any) did you learn about in this lab?</h1>
+<h2 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab">What new concepts (if any) did you learn about in this lab?</h2>
 
-<h2 id="map">Map</h2>
+<h3 id="map">Map</h3>
 
 <p>Today we talked what <a href="https://docs.python.org/3/library/functions.html#map">map</a> does in python. It acts similar to the map we saw in racket which made it easier to understand. It was a little confusing to understand at the beginning but the <a href="https://www.w3schools.com/python/ref_func_map.asp">following link</a> really helped to understand it a lot more.</p>
 
-<h2 id="format">Format</h2>
+<h3 id="format">Format</h3>
 
 <p>The other new concept we covered today in the lab was <a href="https://docs.python.org/3/library/stdtypes.html#str.format">format strings</a>. This concept seemed a lot similar to the format in c. This was helpful to gain a better understanding of what was going on.</p>
 
-<h1 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge">What concepts are familiar from other courses or from your own knowledge?</h1>
+<h2 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge">What concepts are familiar from other courses or from your own knowledge?</h2>
 
 <p>Most of this lab was familiar to me because I have already worked with it in a previous class. I also worked with a lot of the topics in the lab for the assignment as well. This was helpful because I picked up on some tips I can use in the assignment to improve my code.</p>
 
-<h1 id="what-new-skills-did-you-practice">What new skills did you practice?</h1>
+<h2 id="what-new-skills-did-you-practice">What new skills did you practice?</h2>
 
 <p>During the lab I did not practice any new skills but I did improve on skills that I already have. The first skill I improved on was my python coding skills. This skill was improved because the whole lab was programming in python. The next skill I improved on was my problem solving skills. I improved this skill because a good chunk of the lab was working by yourself.</p>
 
-<h1 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important">What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h1>
+<h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important">What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h2>
 
 <p>I found that the lab was pretty easy overall. There were some spots that I found hard to get like the map question. The rest I had a pretty good understanding before the lab so it made it easy to follow along and gain more from the lab as well.</p>
 
-<h1 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab">What explicit tasks (e.g. reading) were you given during this lab?</h1>
+<h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab">What explicit tasks (e.g. reading) were you given during this lab?</h2>
 
 <p>During this lab we started by looking at <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/comprehensions.html#listcomprehension">list comprehensions</a>. First we had to fill in the blank of the missing code.Then we moved onto <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/comprehensions.html#dictionarycomprehension">dictionary comprehensions</a> . This section was fairly familiar with since I used in the assignment already. In this part of the lab we had to turn a list into a dictionary. The line of code I used to complete this was <code>{i+1: lst[i] for i in range ( 0 , len (lst))}</code> but then after having a discussion I found a more concise way of writing the same line. The better way to write this is <code>{i+1: lst[i] for i in range ( len (lst))}</code>.</p>
 
@@ -316,61 +464,6 @@
  <b>deep comparison</b>. We had to follow the deep comparison <a href="http://eloquentjavascript.net/04_data.html#i_IJBU+aXOIC">exercise</a> from the following link.  Next topic covered was 
  <b>JavaScript arrays</b>. Here we read a section from the link on what the <a href="http://eloquentjavascript.net/04_data.html#h_HjL/otjEJn">JavaScript arrays</a> were. Then we had some practice working with JavaScript arrays. we had to follow the steps to the sum of the range exercise to write a sum function that passes all the tests that were provided in the lab instructions. Finally we covered 
  <b>variadic functions</b>.</p>
-
-</article>
-<article>
-  <header>
-    <h2><a href='/2019/10/lab-9.html'>Lab 9</a></h2>
-    <p class='date-and-tags'>
-<time datetime="2019-10-08" pubdate="true">2019-10-08</time> :: <span class="tags"></span></p>
-    <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
-  </header>
-
-<h2>What new concepts (if any) did you learn about in this lab?</h2>
-
-<p>In this lab we continued looking JavaScript. This concepts covered in the lab was all new concept from me.</p>
-
-<h3>JavaScript</h3>
-
-<p>In this lab we looked at creating functions in JavaScript and using modules. This was an interesting section because it a lot of things were very similar to racket and java. Creating functions was very similar to the way they are done in java. Creating the modules were very similar to the way it was done in racket.</p>
-
-<h3>Jasmine</h3>
-
-<p>The next new thing we covered was jasmine. This is a unit testing tool that is used. This was a very interesting thing to cover because it is always nice to find other tools that can be used to help test the code.</p>
-
-<h2>What concepts are familiar from other courses or from your own knowledge?</h2>
-
-<p>There was nothing that was too familiar in this lab. The structure of JavaScript was familiar from racket and java. This familiar structure made it easier to gain a basic understanding of javascript.  I was also familiar with recursion from the past coding languages. Having the past knowledge made applying recursion in java script a lot easier to understand.</p>
-
-<h2>What new skills did you practice?</h2>
-
-<p>Some new skills I practiced was coding in JavaScript and testing through different tools.  The skills in JavaScript was practiced by having the whole lab be based on coding in Javascript.  The testing skills were practiced by using jasmine to run different test cases. What specific details did you find surprising, interesting, confusing, difficult, or otherwise important? I found the close similarities to Java and racket very interesting. It made the process of learning the new language a lot easier to begin.</p>
-
-<h2>What explicit tasks (e.g. reading) were you given during this lab?</h2>
-
-<p>First we looked at the 
- <b>JavaScript equality</b> and type coercion. During this we looked different statements that use <code>==</code> and looked at the results.  Then we looked at 
- <b>JavaScript functions</b>. We read <a href="http://eloquentjavascript.net/03_functions.html">JavaScript function</a> to help gain a better understanding of what they are.These are outlined very similar to the way the functions that are in Java which made it easier to understand.  After we looked at 
- <b>Node.js modules</b>. This was a very similar way of setting up modules as racket did. For this section we quickly read <a href="http://eloquentjavascript.net/10_modules.html">chapter 10</a> of the JavaScript book to gain a better understanding of modules in JavaScript. After we looked at Jasmine. First I read the <a href="https://jasmine.github.io/index.html">documentation</a> and the <a href="https://jasmine.github.io/tutorials/your_first_suite">tutorial</a> to git better understanding of how the unit testing framework. Then we moved to testing to see how it worked with creating small simple unit test cases. FInally we looked at 
- <b>recursion in JavaScript</b>. This was a very similar to racket and Java.</p>
-
-</article>
-<article>
-  <header>
-    <h2><a href='/2019/10/lab-8.html'>Lab 8</a></h2>
-    <p class='date-and-tags'>
-<time datetime="2019-10-01" pubdate="true">2019-10-01</time> :: <span class="tags"></span></p>
-    <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
-  </header>
-
-<h2>What new concepts (if any) did you learn about in this lab?</h2>
-
-<p>This lab was mainly focused around JavaScript. JavaScript was a new language for me to learn today. In the lab it was really helpful to have the background knowledge of Java because it made things a lot easier to understand. It was also helpful knowing racket because there was a lot of shortcut ways of do things that you could not do in Java.   
- <h2>What concepts are familiar from other courses or from your own knowledge?</h2>  There was nothing that I knew from the past used that was used in this lab. However my knowledge of Java really helped to understand JavaScript a lot easier. It also helped me pick up on the JavaScript syntax.   
- <h2>What new skills did you practice?</h2> Some new skills I practiced today was using debugging in JavaScript. Another skill I practiced was coding in JavaScript. The skills I practiced today are going to become helpful throughout the course as we more more into JavaScript stuff.   
- <h2>What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h2> In this lab, I found the 
- <b>VSCodium</b> really interesting. It seems like it would be very handy to debug the JavaScript in. I also found trying to solve the JavaScript problems really interesting. It was interesting to see the different ways that they could be solved.   
- <h2>What explicit tasks (e.g. reading) were you given during this lab?</h2> In this lab we started working with JavaScript. First we started with understanding a little about JavaScript by reading a few different links posted in the lab. Then there was a demonstration on how to use VSCodium. During the demonstration we were also shown that in order to run JavaScript through the terminal, we use <code>node hello-world.js</code> . Then we used JavaScript to translate some Racket expressions. Then finally we looked at two coding problems in JavaScript.</p>
 
 </article>
 <footer>

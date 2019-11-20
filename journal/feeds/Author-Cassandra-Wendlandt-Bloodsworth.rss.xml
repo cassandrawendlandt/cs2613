@@ -4,9 +4,151 @@
   <title>My Blog: Posts tagged 'Author: Cassandra Wendlandt-Bloodsworth'</title>
   <description>My Blog: Posts tagged 'Author: Cassandra Wendlandt-Bloodsworth'</description>
   <link>http://www.example.com/tags/Author-Cassandra-Wendlandt-Bloodsworth.html</link>
-  <lastBuildDate>Tue, 05 Nov 2019 14:10:41 UT</lastBuildDate>
-  <pubDate>Tue, 05 Nov 2019 14:10:41 UT</pubDate>
+  <lastBuildDate>Tue, 19 Nov 2019 11:32:27 UT</lastBuildDate>
+  <pubDate>Tue, 19 Nov 2019 11:32:27 UT</pubDate>
   <ttl>1800</ttl>
+  <item>
+   <title>lab 19</title>
+   <link>http://www.example.com/2019/11/lab-19.html?utm_source=Author-Cassandra-Wendlandt-Bloodsworth&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-www-example-com:-2019-11-lab-19-html</guid>
+   <pubDate>Tue, 19 Nov 2019 11:32:27 UT</pubDate>
+   <author>Cassandra Wendlandt-Bloodsworth</author>
+   <description>
+&lt;h2 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab"&gt;What new concepts (if any) did you learn about in this lab?&lt;/h2&gt;
+
+&lt;p&gt;In today&amp;rsquo;s lab there was a lot of topics I was familiar with from previous courses. However, there were a few topics that were new to me. The topics that were new to me was &lt;code&gt;__inter__&lt;/code&gt; and &lt;code&gt;__next__&lt;/code&gt;. At the beginning they were difficult to understand but after reading &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/iterators.html"&gt;DiP3 Chapter 7&lt;/a&gt; helped me to understand them better.&lt;/p&gt;
+
+&lt;h2 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge"&gt;What concepts are familiar from other courses or from your own knowledge?&lt;/h2&gt;
+
+&lt;p&gt;A lot of the topics in today’s lab was very familiar to me from a previous course I took. There were a few things that were not familiar when I first started working on them. As I worked through the lab and some of the documentation then everything started to come back to me. I found that having a little bit of previous knowledge made the lab easier to follow. It also allowed me to fully understand everything that was discussed in the lab.&lt;/p&gt;
+
+&lt;h2 id="what-new-skills-did-you-practice"&gt;What new skills did you practice?&lt;/h2&gt;
+
+&lt;p&gt;In this lab I did not gain any new skills. However, I did improve on a couple skills I already have. The first skill I improved was my python programming skills. I accomplished this because having the whole lab in python. I also improved writing classes in python. I improved writing classes by learning how the &lt;code&gt;__inter__&lt;/code&gt; and &lt;code&gt;__next__&lt;/code&gt; methods work. This will help me later on when I am writing my own classes in the future.&lt;/p&gt;
+
+&lt;h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important"&gt;What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?&lt;/h2&gt;
+
+&lt;p&gt;During this lab I found understanding how the &lt;code&gt;__next__&lt;/code&gt; method a bit difficult in the beginning. Once I got an understanding how it works, then the rest of the lab was easier to complete because I was familiar with most of the topics from a previous course.&lt;/p&gt;
+
+&lt;h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab"&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h2&gt;
+
+&lt;p&gt;We started the lab with looking at &lt;strong&gt;Counters, generators and classes&lt;/strong&gt;. We looked at the counter code from Lab 18 and generated the numbers by providing a compatible interface by using a &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/iterators.html#defining-classes"&gt;python class&lt;/a&gt;.  Then we looked at the Fibonacci series and completed the definition of &lt;code&gt;__next__&lt;/code&gt; so it will act like the generator.&lt;/p&gt;
+
+&lt;div class="brush: python"&gt;
+ &lt;table class="sourcetable"&gt;
+  &lt;tbody&gt;
+   &lt;tr&gt;
+    &lt;td class="linenos"&gt;
+     &lt;div class="linenodiv"&gt;
+      &lt;pre&gt;1
+2
+3
+4
+5
+6&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;
+    &lt;td class="code"&gt;
+     &lt;div class="source"&gt;
+      &lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;__next__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;max&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; 
+		&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;
+		&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;
+	&lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; 
+		&lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="ne"&gt;StopIteration&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The code above shows what the &lt;code&gt;__next__&lt;/code&gt; function would look like. I found it was basically just taking the closure code from the last lab which made it easy to grasp the concept of how it was done.  Then we looked &lt;strong&gt;object copying and equality&lt;/strong&gt;. During this part of the lab we had to write the code for the method&lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/special-method-names.html#rich-comparisons"&gt; &lt;code&gt;__eq__&lt;/code&gt;&lt;/a&gt;inorder for the test to pass. Then we also wrote an &lt;code&gt;eqal&lt;/code&gt; method to be able to do arithmetic.  Then in the lab we used &lt;a href="https://docs.python.org/3/library/copy.html"&gt;deepCopy&lt;/a&gt; to update one of our test sets to make sure the ‘eqal` method does not change the object self.&lt;/p&gt;</description></item>
+  <item>
+   <title>lab 18</title>
+   <link>http://www.example.com/2019/11/lab-18.html?utm_source=Author-Cassandra-Wendlandt-Bloodsworth&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-www-example-com:-2019-11-lab-18-html</guid>
+   <pubDate>Thu, 07 Nov 2019 11:32:16 UT</pubDate>
+   <author>Cassandra Wendlandt-Bloodsworth</author>
+   <description>
+&lt;h2 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab"&gt;What new concepts (if any) did you learn about in this lab?&lt;/h2&gt;
+
+&lt;p&gt;In today’s lab we covered &lt;strong&gt;closures&lt;/strong&gt;. We used closures to mimic generator code which I found a bit interesting. This topic was completely new to me. I found that after I read &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/generators.html"&gt;chapter 6 from DiP3&lt;/a&gt; the topics seemed a bit easier to follow. At the beginning, the topic was a bit difficult to understand. Then I found that after working on examples it became much easier to understand.&lt;/p&gt;
+
+&lt;h2 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge"&gt;What concepts are familiar from other courses or from your own knowledge?&lt;/h2&gt;
+
+&lt;p&gt;In this lab there wasn&amp;rsquo;t any concepts that were familiar to me. This made it a little hard to follow along at the beginning of the lab but once I started to understand the material it was much easier to follow along and understand what was happening.&lt;/p&gt;
+
+&lt;h2 id="what-new-skills-did-you-practice"&gt;What new skills did you practice?&lt;/h2&gt;
+
+&lt;p&gt;I did not practice any new skills in this lab. However I did improve on my python programming skills as well as my debugging skills. I improved on my debugging skills because I made a lot of errors so I had to go through and find where the errors were. Then I had to use my previous knowledge to figure out how to fix it, I improved my python programming skills because the whole lab was coding in python.&lt;/p&gt;
+
+&lt;h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important"&gt;What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?&lt;/h2&gt;
+
+&lt;p&gt;In the beginning I found the concept of the was a little tricky to understand. Once we finished going over the first example, it made more sense and the rest of the questions seem to be a bit easier. This helped me to really grasp the topic because I was able to understand the basic concepts when we the class discussed it more.&lt;/p&gt;
+
+&lt;h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab"&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h2&gt;
+
+&lt;p&gt;The whole lab was just looking at how &lt;strong&gt;closures&lt;/strong&gt; work to simulate generators and then a few examples. The first example we looked at was &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/generators.html#generators"&gt;Counter&lt;/a&gt;. For this example we were given the code that uses the generator. Then we had to write a function that mimics the behaviour of the other one. Below is an example of the function that we had to write.&lt;/p&gt;
+
+&lt;div class="brush: python"&gt;
+ &lt;table class="sourcetable"&gt;
+  &lt;tbody&gt;
+   &lt;tr&gt;
+    &lt;td class="linenos"&gt;
+     &lt;div class="linenodiv"&gt;
+      &lt;pre&gt;1
+2
+3
+4
+5
+6
+7
+8
+9&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;
+    &lt;td class="code"&gt;
+     &lt;div class="source"&gt;
+      &lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;make_counter2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	&lt;span class="n"&gt;count&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;
+	&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;counter&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+		&lt;span class="n"&gt;nonlocal&lt;/span&gt; &lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;
+		&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;count&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+			&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Entering make_counter&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+		&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+		&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+	&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;counter&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The next example we looked at is the &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/generators.html#a-fibonacci-generator"&gt;Fibonacci series&lt;/a&gt;. Here we had to fill in the function &lt;code&gt;fib2&lt;/code&gt; that will mimic the function &lt;code&gt;fib&lt;/code&gt;. Below is an example of the definition for &lt;code&gt;fib2&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class="brush: python"&gt;
+ &lt;table class="sourcetable"&gt;
+  &lt;tbody&gt;
+   &lt;tr&gt;
+    &lt;td class="linenos"&gt;
+     &lt;div class="linenodiv"&gt;
+      &lt;pre&gt; 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;
+    &lt;td class="code"&gt;
+     &lt;div class="source"&gt;
+      &lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;fib2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;max&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;next&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+        &lt;span class="n"&gt;nonlocal&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="nb"&gt;max&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;
+            &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;
+        &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;next&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;</description></item>
   <item>
    <title>Lab 17</title>
    <link>http://www.example.com/2019/11/lab-17.html?utm_source=Author-Cassandra-Wendlandt-Bloodsworth&amp;utm_medium=RSS</link>
@@ -50,29 +192,29 @@
    <pubDate>Thu, 31 Oct 2019 15:02:58 UT</pubDate>
    <author>Cassandra Wendlandt-Bloodsworth</author>
    <description>
-&lt;h1 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab"&gt;What new concepts (if any) did you learn about in this lab?&lt;/h1&gt;
+&lt;h2 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab"&gt;What new concepts (if any) did you learn about in this lab?&lt;/h2&gt;
 
-&lt;h2 id="map"&gt;Map&lt;/h2&gt;
+&lt;h3 id="map"&gt;Map&lt;/h3&gt;
 
 &lt;p&gt;Today we talked what &lt;a href="https://docs.python.org/3/library/functions.html#map"&gt;map&lt;/a&gt; does in python. It acts similar to the map we saw in racket which made it easier to understand. It was a little confusing to understand at the beginning but the &lt;a href="https://www.w3schools.com/python/ref_func_map.asp"&gt;following link&lt;/a&gt; really helped to understand it a lot more.&lt;/p&gt;
 
-&lt;h2 id="format"&gt;Format&lt;/h2&gt;
+&lt;h3 id="format"&gt;Format&lt;/h3&gt;
 
 &lt;p&gt;The other new concept we covered today in the lab was &lt;a href="https://docs.python.org/3/library/stdtypes.html#str.format"&gt;format strings&lt;/a&gt;. This concept seemed a lot similar to the format in c. This was helpful to gain a better understanding of what was going on.&lt;/p&gt;
 
-&lt;h1 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge"&gt;What concepts are familiar from other courses or from your own knowledge?&lt;/h1&gt;
+&lt;h2 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge"&gt;What concepts are familiar from other courses or from your own knowledge?&lt;/h2&gt;
 
 &lt;p&gt;Most of this lab was familiar to me because I have already worked with it in a previous class. I also worked with a lot of the topics in the lab for the assignment as well. This was helpful because I picked up on some tips I can use in the assignment to improve my code.&lt;/p&gt;
 
-&lt;h1 id="what-new-skills-did-you-practice"&gt;What new skills did you practice?&lt;/h1&gt;
+&lt;h2 id="what-new-skills-did-you-practice"&gt;What new skills did you practice?&lt;/h2&gt;
 
 &lt;p&gt;During the lab I did not practice any new skills but I did improve on skills that I already have. The first skill I improved on was my python coding skills. This skill was improved because the whole lab was programming in python. The next skill I improved on was my problem solving skills. I improved this skill because a good chunk of the lab was working by yourself.&lt;/p&gt;
 
-&lt;h1 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important"&gt;What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?&lt;/h1&gt;
+&lt;h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important"&gt;What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?&lt;/h2&gt;
 
 &lt;p&gt;I found that the lab was pretty easy overall. There were some spots that I found hard to get like the map question. The rest I had a pretty good understanding before the lab so it made it easy to follow along and gain more from the lab as well.&lt;/p&gt;
 
-&lt;h1 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab"&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h1&gt;
+&lt;h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab"&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h2&gt;
 
 &lt;p&gt;During this lab we started by looking at &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/comprehensions.html#listcomprehension"&gt;list comprehensions&lt;/a&gt;. First we had to fill in the blank of the missing code.Then we moved onto &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/comprehensions.html#dictionarycomprehension"&gt;dictionary comprehensions&lt;/a&gt; . This section was fairly familiar with since I used in the assignment already. In this part of the lab we had to turn a list into a dictionary. The line of code I used to complete this was &lt;code&gt;{i+1: lst[i] for i in range ( 0 , len (lst))}&lt;/code&gt; but then after having a discussion I found a more concise way of writing the same line. The better way to write this is &lt;code&gt;{i+1: lst[i] for i in range ( len (lst))}&lt;/code&gt;.&lt;/p&gt;</description></item>
   <item>
