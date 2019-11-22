@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Lab 15</title>
+    <meta name="description" content="What new concepts (if any) did you learn about in this lab?:  Global variables from files:  In this lab I learnt that you could use a global variable from the file for the test cases or in other files. To import a global variable the line of code we used ...">
+    <meta name="author"      content="The Unknown Author">
+    <meta name="keywords"    content="Author: Cassandra Wendlandt-Bloodsworth">
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+    <link rel="icon"      href="/favicon.ico">
+    <link rel="canonical" href="http://www.example.com/2019/10/lab-15.html">
+    <link rel="next" href="/2019/10/lab-14.html">
+    <link rel="prev" href="/2019/10/lab-16.html">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/pygments.css">
+    <link rel="stylesheet" type="text/css" href="/css/scribble.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <!-- Feeds -->
+    <link rel="alternate" type="application/atom+xml"
+          href="/feeds/all.atom.xml" title="Atom Feed">
+    <link rel="alternate" type="application/rss+xml"
+          href="/feeds/all.rss.xml" title="RSS Feed">
+    <!-- JS -->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-xxxxx', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+
+
+
+
+    <div class="container">
+      <div class="row">
+
+        <!-- Main column -->
+        <div id="content" class="col-md-12">
+
+
+
+
+
+          <article>
+  <header>
+    <h1>Lab 15</h1>
+    <p class='date-and-tags'>
+<time datetime="2019-10-29" pubdate="true">2019-10-29</time> :: <span class="tags"></span></p>
+    <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
+  </header>
+
+<h2 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab">What new concepts (if any) did you learn about in this lab?</h2>
+
+<h3 id="global-variables-from-files">Global variables from files</h3>
+
+<p>In this lab I learnt that you could use a global variable from the file for the test cases or in other files. To import a global variable the line of code we used was <code>from filename import variable</code>. This would make testing easier when it is hard to return variables that depends on what was called in the past.</p>
+
+<h3 id="pytest-commands">Pytest commands</h3>
+
+<p>In this lab we learnt some new commands that will show the coverage of the python program. The first new one we looked at was <code>pytest-3 --cov = rpn</code>. This command will produce a summary of the statements in the file rpn. It will provide the number of statements that were missed if there is any. It will also tell you the percentage of coverage for the file. The other pytest command we looked at was <code>pytest-3 --cov=rpn --cov-report=term-missing</code>. This command will display all the same information as the previous one but it also list any lines that were missed.</p>
+
+<h2 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge">What concepts are familiar from other courses or from your own knowledge?</h2>
+
+<p>The most familiar concept for this lab was programming in python. The overall base of the lab was really easy to follow along with since I already had a base knowledge in python from a previous course.</p>
+
+<h2 id="what-new-skills-did-you-practice">What new skills did you practice?</h2>
+
+<p>There was not any new skills that I really practiced. However, I did improve on my testing skills. This was done by learning the pytest commands. Knowing these commands will help ensure that I can get full coverage.</p>
+
+<h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important">What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h2>
+
+<p>In today’s lab I found the new commands for pytest to be the most interesting. I think the pytest commands were the most interesting because it will be very helpful later on when checking for full test coverage. I also found the lab easy to follow along which was really nice because it allowed me to be able to focus more on what was being said.</p>
+
+<h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab">What explicit tasks (e.g. reading) were you given during this lab?</h2>
+
+<p>First we looked at the <strong>reverse polish notation calculator</strong> problem described in <a href="https://en.wikipedia.org/wiki/Reverse_Polish_notation">wikipedia</a>. Then we started programming it. First we got the stack set up to store the numbers. Then we looked at the different pytest commands that may become helpful in test. Then we moved on to adding <code>if elif else</code> to the function to test if any arithmetic needs to be done. Once that was done we looked at improving the robustness of the tests. In this section of the lab we added and <code>elif</code> to the method to handle when <code>"clear”</code> is passed through. When clear is passed through it will empty the stack of numbers. Then we added <code>elif</code> to check for <code>"dup” “pop” “swap”</code>. Once we got those methods implemented we added an <code>elif</code> to check to see if <code>”print”</code> is passed through then prints the last element in the stack. Then we worked added a method to handle if a string of operations is passed through to go through and complete them in order.</p>
+  <footer>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_config = function () {
+        this.page.identifier = undefined;
+        this.page.url = undefined;
+        this.page.title = undefined;
+        this.page.category_id = undefined;
+      };
+      var disqus_shortname = 'shortname';
+      (function() {
+          var dsq = document.createElement('script');
+          dsq.type = 'text/javascript';
+          dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.setAttribute('data-timestamp', +new Date());
+          (document.head || document.body).appendChild(dsq);
+      })();
+    </script>
+    <noscript>
+      Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+    <div class="row justify-content-center">
+      <nav aria-label="Page Navigation">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="/2019/10/lab-14.html"
+               aria-label="Previous">
+              <span aria-hidden="true">&larr; Lab 14</span>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="/2019/10/lab-16.html"
+               aria-label="Next">
+              <span aria-hidden="true">Lab 16 &rarr;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</article>
+        </div>
+      </div>
+      <footer>
+        <hr />
+        <p>Site generated
+        by <a href="https://github.com/greghendershott/frog">Frog</a>,
+        the <strong>fr</strong>ozen bl<strong>og</strong> tool.</p>
+        <p>Using <a href="http://twitter.github.com/bootstrap/index.html">Bootstrap</a>.</p>
+        <p><em>Your legal notice here</em>.</p>
+      </footer>
+    </div>
+    <!-- </body> JS -->
+    <script type="text/javascript" src="/js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
