@@ -14,7 +14,7 @@ class Type(Enum):
     TRANSFER =5
 
 '''
-Question 3.2 Creating a token object with a type and value for the scanner to return 
+Question 3.2 Creating a token object with a type and value 
 
 __str__ returns the token to be printed out
 
@@ -24,7 +24,7 @@ If the type is currency it compares the number
 
 If the type is IDENT it will compare based on the value, this is case sensitive 
 
-Other wise it will compare the type and the value, the values are not case sensitive 
+compare the type and the value, the values are not case sensitive 
 '''
 class Token: 
     def __init__ (self, type, value): 
@@ -55,8 +55,7 @@ class Token:
         
            
 '''
-    Question 3.3 Creates the scanner as an interator class
-
+Question 3.3 Creates the scanner as an interator class
 '''
 class Scanner:
     def __init__(self, seq):
@@ -66,7 +65,7 @@ class Scanner:
 
         for i in self.data:
             s = i.upper()
-            if (re.match('^[-+]?[0-9]+[.]?[0-9]+$',i)  == None):
+            if (re.match('^[-+]?[0-9]*?[.]?[0-9]+$',i)  == None):
                 if (s in Type.__members__):
                     tok = Token(Type[s],i)
                     self.tokens.append(tok)
@@ -84,10 +83,9 @@ class Scanner:
     def __next__(self):
         self.pos =self.pos+1
         if self.pos < len(self.data):
-            if (re.search('^&.*$',self.data[self.pos]) != None): 
+            if (re.search('^([-+]?[0-9]?[a-z]?[A-Z])+$',self.data[self.pos]) == None): 
                 raise ValueError (self.data[self.pos])
             else :
-            
                 return self.tokens[self.pos]
         else :
             raise StopIteration

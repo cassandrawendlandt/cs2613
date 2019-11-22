@@ -19,6 +19,7 @@ def test_enum2():
                                                         "ident", "OPeN", "transfer"]
 ''' 
 Question 3.2
+
 this test cases test to make sure the token objects are being created correctly
 '''
 def test_token():
@@ -38,6 +39,7 @@ def test_token_TRANSFER():
 
 '''
 Tests for question 3.2 
+
 Make sures the Token will return the correct string 
 '''
 def test_str():
@@ -54,10 +56,15 @@ def test_str_2():
 
 '''
 Tests for question 3.2.1
+
 These test make sure that the equals method will return the proper answer
+
 Test Type IDENT to see if the values are the same (case sensitive)
+
 Test Type CURRENCY to compare the values 
-Compare the other Types based on the keywords and the values but the values are not case sensitive 
+
+Compare the other Types based on the keywords 
+and the values but the values are not case sensitive 
 '''
 def test_equal_ident():
     assert Token(Type.IDENT,"Bob") == Token(Type.IDENT,"Bob")
@@ -83,10 +90,12 @@ def test_equal_keywords_2():
 
 '''
 Tests for 3.3
+
 Test that the scanner will read the input then return the current token items 
-Test to make sure that the scanner does not change the object 
-Test to see if what is passed in is a memeber of Type. If it is then return a token of that type 
-If the input is not a member of type or number then returns a token of type IDENT and the input as the value
+
+Test to make sure that the scanner does not change after the first for loop
+
+Test to see if input is a memeber of Type If so return a token of that type 
 '''
 def test_scan_keywords():
     scanner=Scanner('''TrAnsFer transfer 
@@ -115,8 +124,10 @@ def test_scan_identifiers_2():
 
 '''
 Tests for 3.3.1
+
 Test that the scanner will read the input then return the current token items 
-Test to see if the input is a number then it creates a token with the type of currency 
+
+Test to see if input is a number if so creates a token with type currency 
 '''
 def test_scan_currency():
     scanner=Scanner("100 100.00 100.42 -123.45")
@@ -133,7 +144,10 @@ def test_scan_currency_2():
                              Token(Type.CURRENCY,-12345)]
 '''
 Tests for 3.3.2
-Test to see if the scanner will through an ValueError if unmatched text is entered
+
+Test to see if scanner will throw an error if the string starts with 
+
+something other than a number +/- or a number
 '''
 def test_scan_bad():
     scanner=Scanner("&crash")
@@ -141,7 +155,12 @@ def test_scan_bad():
         next(scanner)
         
 def test_scan_bad_2():
-    scanner=Scanner("&FAIL")
-    with pytest.raises(ValueError, match="&FAIL"):
+    scanner=Scanner("@FAIL")
+    with pytest.raises(ValueError, match="@FAIL"):
+        next(scanner)
+
+def test_scan_bad_3():
+    scanner=Scanner("!NO")
+    with pytest.raises(ValueError, match="!NO"):
         next(scanner)
 
