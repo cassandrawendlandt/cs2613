@@ -19,7 +19,6 @@ def ledger(userInput):
         ScannerValues = Scanner(userInput)
         for tok in ScannerValues : 
             tokenList.append(tok)
-
         i = 0
         while (i < len(tokenList)):
             if (tokenList[i].type == Type.OPEN): 
@@ -31,9 +30,14 @@ def ledger(userInput):
                         valueDic[tokenList[i+1].value] = 0
                         i = i+2
 
-            elif (tokenList[i]. type == Type.TRANSFER): 
-                valueDic[tokenList[i+1].value] = (float)(valueDic[tokenList[i+1].value]) - (float)(tokenList[i+3].value)
-                valueDic[tokenList[i+2].value] = (float)(valueDic[tokenList[i+2].value]) + (float)(tokenList[i+3].value)
+            elif (tokenList[i]. type == Type.TRANSFER):
+                accFrom = tokenList[i+1].value
+                accTo =tokenList[i+2].value
+                value= (float)(tokenList[i+3].value)
+                valueDic[accFrom] = valueDic[accFrom] - value
+                valueDic[accTo] = valueDic[accTo] + value
+                print (valueDic[accFrom] , accFrom)
+                print (valueDic[accTo], accTo)
                 i = i+4
 
             elif (tokenList[i].type == Type.BALANCE):
