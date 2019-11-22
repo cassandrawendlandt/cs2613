@@ -59,7 +59,7 @@ def test_transfer_3():
 '''
 This tests to see if the balance will print out other accounts 
 '''
-def test_transfer_3():
+def test_transfer_4():
     assert list(ledger('''
                         open cash 100
                         open expenses 0
