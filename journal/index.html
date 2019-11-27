@@ -6,7 +6,7 @@
     <title>My Blog</title>
     <meta name="description" content="My Blog">
     <meta name="author"      content="The Unknown Author">
-    <meta name="keywords"    content="Author: Cassandra Wendlandt, Author: Cassandra Wendlandt-Bloodsworth, all">
+    <meta name="keywords"    content="Author: Cassandra Wendlandt, all, Author: Cassandra Wendlandt-Bloodsworth">
     <meta name="viewport"    content="width=device-width, initial-scale=1.0">
     <link rel="icon"      href="/favicon.ico">
     <link rel="canonical" href="http://www.example.com/index.html">
@@ -53,6 +53,167 @@
 
           <article>
   <header>
+    <h2><a href='/2019/11/lab-21.html'>Lab 21</a></h2>
+    <p class='date-and-tags'>
+<time datetime="2019-11-26" pubdate="true">2019-11-26</time> :: <span class="tags"></span></p>
+    <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
+  </header>
+
+<h2 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab">What new concepts (if any) did you learn about in this lab?</h2>
+
+<h3 id="working-with-grids">Working with grids</h3>
+
+<p>During this section of the lab we observed how ranges work and how <code>surf</code> work. The function <code>surf</code> takes in points and plots them in a graph. We also saw how the <a href="https://octave.org/doc/v4.2.1/Three_002dDimensional-Plots.html#XREFmeshgrid">meshgrid</a> function that Octave had built in works. Meshgrid will take a cartesian product of two arrays.</p>
+
+<h3 id="creating-3d-plots">Creating 3d plots</h3>
+
+<p>The next new topic we looked at was making 3D plots. In the past labs we used <code>surf()</code> which created a 3D plot but we never looked much into writing the code to initialize the points. This was a pretty interesting section because the plot that was produced was very interesting. We also discovered that there is something called <code>contourf()</code>. This will produce a 2D version of the plot.  Using arrayfun</p>
+
+<p>In this section we learnt what <code>arrayfun</code> is and how to use <a href="https://octave.org/doc/v4.2.0/Anonymous-Functions.html">anonymous functions</a>.</p>
+
+<h4 id="arrayfun">arrayfun</h4>
+
+<p>The function <code>arrayfun</code> will take a function as the first parameter then the other functions will be arrays. This function will take one or more arrays in. Then <code>arrayfun</code> will apply the given function to each of the element in the arrays.</p>
+
+<h4 id="anonymous-function">anonymous function</h4>
+
+<p>Anonymous functions in the Octave can appear in two different formats. Below is the first format. It takes the function and assigns it to a variable. Then pass the variable where the function would go.  Below is the second format that an anonymous function can appear. Here the function is directly written in.</p>
+
+<h2 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge">What concepts are familiar from other courses or from your own knowledge?</h2>
+
+<p>In the lab there was only one concepts that I was familiar with. This made the lab a little tricky to do. At the beginning I was confused on what was going. When we got about half way through the lab it started to make sense. This made the last half of the lab a bit easier to follow.</p>
+
+<p>The concept I was familiar with was defining and testing a function. I was only a little familiar with this topic because we looked at in the last lab. This did not really help me to understand the lab because I still did not understand them completely. At the end of today&rsquo;s lab I understand them a bit better.</p>
+
+<h2 id="what-new-skills-did-you-practice">What new skills did you practice?</h2>
+
+<p>During the lab I worked on my Octave programming skills. I did this because the whole lab was programming in Octave. I also worked on my debugging skills. This skill was improved because throughout the lab I got a couple errors and I had to figure out how to fix them. The most frequent error I got was that I was not calling the files with the test cases in them properly. Instead of calling them by <code>test delta</code>, I was just calling <code>delta</code>.</p>
+
+<h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important">What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h2>
+
+<p>I found how to create a range interesting. This seemed similar to some of the languages we looked at. The code to create a range is <code>r = [-1:0.5:1]</code>. The first parameter (&ndash;1) is the starting point in the range. The second parameter (0.5) is how much to increment by. The third parameter (1) is the end number.</p>
+
+<h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab">What explicit tasks (e.g. reading) were you given during this lab?</h2>
+
+<p>First we looked at girds and how you can create them in Octave. We also explore how Octave creates ranges.</p>
+
+<p>Then we moved to defining and testing functions. During this section of the lab we filled in the function that was provided in the lab instructions. We then had to complete the three test cases that was also provided.</p>
+
+<p>Then we moved to creating 3D plots. We had to fill in the code for the file <code>surfvex</code> that was provided in the lab instructions. Below is an example of what the code would look like for <code>surfvex</code>.</p>
+
+<pre><code>a = [4;4];
+beta = 7.5;
+
+%% Generating vectors
+range = [-4:0.1:8];
+
+% Compute cartesian product (grid)
+[X,Y] = meshgrid(range,range);
+[rows,cols] = size(X);
+
+for i = 1:rows
+  for j = 1:cols
+    b = [X(i,j); Y(i,j)];
+    Z(i,j) = delta (beta,a,b);
+  endfor
+endfor
+
+surf(X,Y,Z);
+%contourf(X,Y,Z);</code></pre>
+
+<p>During this section we replaced <code>surf(X,Y,Z)</code> with <code>contour(X,Y,Z)</code>.</p>
+
+<p>Then we moved on to look at arrayfun and anonymous functions. The previous graphs were created in the file <code>surfvex</code>. For this section we had to create a file called <code>surfvex2</code>. This will produce the same graphs as above by using anonymous functions instead of the for loop. We had to fill in <code>f</code> so it becomes an anonymous function. Below is what the code looks like with the anonymous function.</p>
+
+<p>We compared the time it took the anonymous function to run compared to the one with the for loop. It turns out that the function that uses the anonymous function is a bit faster. Below is a copy of what was typed into the command line.</p>
+
+<pre><code>&gt;&gt; surfvex
+Elapsed time is 0.672515 seconds.
+&gt;&gt; surfvex2
+Elapsed time is 0.548361 seconds.</code></pre>
+
+</article>
+<article>
+  <header>
+    <h2><a href='/2019/11/lab20.html'>Lab20</a></h2>
+    <p class='date-and-tags'>
+<time datetime="2019-11-21" pubdate="true">2019-11-21</time> :: <span class="tags"></span></p>
+    <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
+  </header>
+
+<h2 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab">What new concepts (if any) did you learn about in this lab?</h2>
+
+<h3 id="octave">Octave</h3>
+
+<p>In the lab most of the material was a new concept to me. I never worked with matlab or octave so it was an interesting experience.</p>
+
+<p>A big lesson I learnt in the lab was the need for semicolons. I found out that if you do not have a semicolon at the end of setting a variable, octave will print out the variable. This caused my function <code>fib()</code> to print out the variables every time it went through the for loop.</p>
+
+<p>We used the Fibonacci series, matrices and vectors as examples to get to know Octave and how it works. I found that Octave is a language that is good for working with numbers and graphs.</p>
+
+<h3 id="performance-comparison-and-measuring-cpu-time">Performance comparison and measuring CPU time</h3>
+
+<p>Comparing performance between the two different functions in octave was an interesting topic. I thought the function <code>tic()</code>and <code>toc()</code> were really interesting. The function <code>tic()</code> started counting the time and <code>toc()</code> will stop the counting.</p>
+
+<p>When we measured the CPU time we did not use <code>tic()</code> and <code>toc()</code>. However, we did use octaves built in <code>cputime</code>.</p>
+
+<p>We found that the first function <code>fib()</code> that only used the for loop was a lot slower than the second function <code>fibmat()</code>.</p>
+
+<h3 id="using-the-profiler">Using the profiler</h3>
+
+<p>The <a href="https://octave.org/doc/v4.0.3/Profiling.html">profiling tool</a> was interesting to work with. The tool would tell you where your code spends most of the time. To run the it you would first type <code>profile on</code> in the command line. Then you would type the function that you want to evaluate. So an example from class would be <code>fib(1000)</code>. Once the function is done you would type <code>profile off</code>. In order to get the results from the you would have to type <code>profshow</code>. It will produce a table like the below showing the hot spot for that function.</p>
+
+<pre><code>&gt;&gt; profshow
+   #            Function Attr     Time (s)   Time (%)        Calls
+------------------------------------------------------------------
+   1                 fib             0.012      90.50            1
+   2            binary +             0.001       6.12         1001
+   5             profile             0.000       1.26            1
+   4                disp             0.000       1.00            1
+   3             display             0.000       0.89            1
+   6              nargin             0.000       0.08            1
+   8               false             0.000       0.07            1
+   7           binary !=             0.000       0.06            1
+   9 __profiler_enable__             0.000       0.00            1
+</code></pre>
+
+<p>An important thing is that you have to clear the profile each time before you use it.</p>
+
+<h2 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge">What concepts are familiar from other courses or from your own knowledge?</h2>
+
+<p>In the lab there was no concepts that were familiar from my own knowledge. The only thing that I was familiar with was the Fibonacci series. Knowing the Fibonacci series helped me understand how Octave works better. I was able to understand the syntax a lot better since I knew how the problem works.</p>
+
+<h2 id="what-new-skills-did-you-practice">What new skills did you practice?</h2>
+
+<p>The new skills I worked on was programming in Octave. I improved this skill because the whole lab was working in Octave. The other skills I worked on was debugging in Octave. I did this because I had a few times where the code was not working or was not printing the same output as others. Then I need to figure out why.</p>
+
+<h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important">What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h2>
+
+<p>During the lab I found working with Octave to be confusing to work with in the beginning. I found it to be difficult because it has been a while since I worked with matrices and vectors. It was difficult because I was trying to remember how matrices and vectors work as well as learning how the new language worked as well.</p>
+
+<h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab">What explicit tasks (e.g. reading) were you given during this lab?</h2>
+
+<p>First we ran added code to the for loop so the Fibonacci series would work. Then we ran test cases to make sure it produces the correct answers. In octave the test cases are written in the code as comments.</p>
+
+<p>Then in order to run the test cases you type <code>test fib(1000)</code> in the command line in Octave. Then we looked at the Fibonacci series as matrix multiplication. We used a <a href="https://en.wikipedia.org/wiki/Fibonacci_number#Matrix_form">well known</a> identity about the Fibonacci numbers F(i) to help use write the code.</p>
+
+<p>Then we did a performance comparison between the two functions. We created a function called <code>timeit</code> and <code>bench</code> to measure the how long it takes the function. The following is a example of how we called the <code>bench</code> function and the output. We can see that the second function <code>fibmat</code> takes a lot less time than the first method <code>fib</code>.</p>
+
+<pre><code>&gt;&gt; bench
+fib     median=0.117ms mean=0.120ms total=11960.450ms
+fibmat  median=0.024ms mean=0.024ms total=2414.605ms</code></pre>
+
+<p>Then we compared the CPU time for each function as well. We created a function called <code>ctimeit</code> and <code>cbench</code> to measure the CPU time. The following is a example of how we called the <code>cbench</code> function and the output. We can see that the second function <code>fibmat</code> takes a lot less CPU time than the first method <code>fib</code>.</p>
+
+<pre><code>&gt;&gt; cbench
+fib     median=0.119ms mean=0.125ms total=12512.951ms
+fibmat  median=0.026ms mean=0.028ms total=2771.087ms</code></pre>
+
+<p>The last thing we looked at was how to use the <a href="https://octave.org/doc/v4.0.3/Profiling.html">profiling tool</a>. We used the profiler to look where the functions hotspots are. When we compared the time it took the functions we looked at the overall time. The profile tool allowed us to see how much time each call took.</p>
+
+</article>
+<article>
+  <header>
     <h2><a href='/2019/11/lab-19.html'>lab 19</a></h2>
     <p class='date-and-tags'>
 <time datetime="2019-11-19" pubdate="true">2019-11-19</time> :: <span class="tags"></span></p>
@@ -80,28 +241,12 @@
 <p>We started the lab with looking at <strong>Counters, generators and classes</strong>. We looked at the counter code from Lab 18 and generated the numbers by providing a compatible interface by using a <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/iterators.html#defining-classes">python class</a>.  Then we looked at the Fibonacci series and completed the definition of <code>__next__</code> so it will act like the generator.</p>
 
 <div class="brush: python">
- <table class="sourcetable">
-  <tbody>
-   <tr>
-    <td class="linenos">
-     <div class="linenodiv">
-      <pre>1
-2
-3
-4
-5
-6</pre></div></td>
-    <td class="code">
-     <div class="source">
-      <pre><span></span><span class="k">def</span> <span class="nf">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-	<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">max</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">:</span> 
-		<span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span>
-		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span>
-	<span class="k">else</span><span class="p">:</span> 
-		<span class="k">raise</span> <span class="ne">StopIteration</span>
-</pre></div>
-</td></tr></tbody></table>
-</div>
+ <pre><code>def __next__(self):
+	if self.max &gt; self.a: 
+		self.a,self.b = self.b,self.a + self.b
+		return self.b-self.a
+	else: 
+		raise StopIteration</code></pre></div>
 
 <p>The code above shows what the <code>__next__</code> function would look like. I found it was basically just taking the closure code from the last lab which made it easy to grasp the concept of how it was done.  Then we looked <strong>object copying and equality</strong>. During this part of the lab we had to write the code for the method<a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/special-method-names.html#rich-comparisons"> <code>__eq__</code></a>inorder for the test to pass. Then we also wrote an <code>eqal</code> method to be able to do arithmetic.  Then in the lab we used <a href="https://docs.python.org/3/library/copy.html">deepCopy</a> to update one of our test sets to make sure the ‘eqal` method does not change the object self.</p>
 
@@ -135,68 +280,29 @@
 <p>The whole lab was just looking at how <strong>closures</strong> work to simulate generators and then a few examples. The first example we looked at was <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/generators.html#generators">Counter</a>. For this example we were given the code that uses the generator. Then we had to write a function that mimics the behaviour of the other one. Below is an example of the function that we had to write.</p>
 
 <div class="brush: python">
- <table class="sourcetable">
-  <tbody>
-   <tr>
-    <td class="linenos">
-     <div class="linenodiv">
-      <pre>1
-2
-3
-4
-5
-6
-7
-8
-9</pre></div></td>
-    <td class="code">
-     <div class="source">
-      <pre><span></span><span class="k">def</span> <span class="nf">make_counter2</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-	<span class="n">count</span> <span class="o">=</span> <span class="n">x</span>
-	<span class="k">def</span> <span class="nf">counter</span><span class="p">():</span>
-		<span class="n">nonlocal</span> <span class="n">count</span><span class="p">,</span><span class="n">x</span>
-		<span class="k">if</span> <span class="n">count</span> <span class="o">==</span><span class="n">x</span><span class="p">:</span>
-			<span class="k">print</span> <span class="p">(</span><span class="s1">&#39;Entering make_counter&#39;</span><span class="p">)</span>
-		<span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">+</span><span class="mi">1</span>
-		<span class="k">return</span> <span class="n">x</span><span class="o">-</span><span class="mi">1</span>
-	<span class="k">return</span> <span class="n">counter</span>
-</pre></div>
-</td></tr></tbody></table>
-</div>
+ <pre><code>def make_counter2(x):
+	count = x
+	def counter():
+		nonlocal count,x
+		if count ==x:
+			print ('Entering make_counter')
+		x = x+1
+		return x-1
+	return counter</code></pre></div>
 
 <p>The next example we looked at is the <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/generators.html#a-fibonacci-generator">Fibonacci series</a>. Here we had to fill in the function <code>fib2</code> that will mimic the function <code>fib</code>. Below is an example of the definition for <code>fib2</code>.</p>
 
 <div class="brush: python">
- <table class="sourcetable">
-  <tbody>
-   <tr>
-    <td class="linenos">
-     <div class="linenodiv">
-      <pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10</pre></div></td>
-    <td class="code">
-     <div class="source">
-      <pre><span></span><span class="k">def</span> <span class="nf">fib2</span><span class="p">(</span><span class="nb">max</span><span class="p">):</span>
-    <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="mi">1</span>
-    <span class="k">def</span> <span class="nf">next</span><span class="p">():</span>
-        <span class="n">nonlocal</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span>
-        <span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="nb">max</span><span class="p">:</span>
-            <span class="n">a</span> <span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
-            <span class="k">return</span> <span class="n">b</span><span class="o">-</span><span class="n">a</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="bp">None</span>
-    <span class="k">return</span> <span class="nb">next</span>
-</pre></div>
-</td></tr></tbody></table>
-</div>
+ <pre><code>def fib2(max):
+    a,b = 0,1
+    def next():
+        nonlocal a,b
+        if a &lt; max:
+            a , b = b, a+b
+            return b-a
+        else:
+            return None
+    return next</code></pre></div>
 
 </article>
 <article>
@@ -395,83 +501,13 @@
 <p>First we started with representing a graph. This was done by going to <a href="https://eloquentjavascript.net/07_robot.html#h_UmFK5fYed8">Meadowfield</a> and copying the code. Then we created jasmine test cases to test the code that we copied. Then we copy the <code>VillageState</code> class from <a href="https://eloquentjavascript.net/07_robot.html#h_oekYfM5x02">Eloquent JavaScript</a>. Next we created jasmine test cases for the class. In order to do this we took the suggested output from chapter 7 and converted it into jasmine test cases. We had to add some extra cases in order to get full test coverage. Next we moved on to work with Spy’s. We read the <a href="https://jasmine.github.io/tutorials/your_first_suite#section-Spies:_%3Ccode%3EcreateSpy%3C/code%3E">documentation</a> on it quickly. We used spy’s to test the random robot section of the code.</p>
 
 </article>
-<article>
-  <header>
-    <h2><a href='/2019/10/lab-11.html'>Lab 11</a></h2>
-    <p class='date-and-tags'>
-<time datetime="2019-10-10" pubdate="true">2019-10-10</time> :: <span class="tags"></span></p>
-    <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
-  </header>
-
-<h1 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab">What new concepts (if any) did you learn about in this lab?</h1>
-
-<h2 id="array-methods">Array methods</h2>
-
-<p>Looking at Array methods we learnt that they have higher order functions that can be really useful. Learning these functions ended up being useful for working with larger lists. For example using <code>reduced</code> and an anonymous function to calculate the average of a list. Another array method that was new for me was <code>forEach</code>. This method gives the users to iterate over a list with an arbitrary action without fussing with loops indices and bounds.</p>
-
-<h2 id="json-parsing">Json parsing</h2>
-
-<p>Looking at json was not particular new since we used racket in the past to parse through them. However using JavaScript to parse through the json file to retrieve the information for a specific name was a new concept.</p>
-
-<h1 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge">What concepts are familiar from other courses or from your own knowledge?</h1>
-
-<p>While looking at the <a href="http://eloquentjavascript.net/05_higher_order.html">higher order functions</a> that JavaScript has we learnt one of the higher order functions is <code>map</code> and <code>filter</code>. It turns out that <code>map</code> and <code>filter</code> behave similar to the Racket behavior. Knowing how they were used in Racket make it a lot easier to learn how they are used in JavaScript.</p>
-
-<h1 id="what-new-skills-did-you-practice">What new skills did you practice?</h1>
-
-<p>There were no new skills that I practiced in this lab. However I practiced my coding skills in JavaScript. I also practiced my testing skills. I achieved this by making sure the few section of code I wrote was able to pass the test cases that were defined in the lab instructions.</p>
-
-<h1 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important">What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h1>
-
-<p>I found the <a href="http://eloquentjavascript.net/05_higher_order.html#h_TcUD2vzyMe">flattened exercise</a> to be really interesting. I found this interesting because for Assignment 3 my code was about 20 lines long. However in the lab I was able to get the same results using one line of code by using the reduce and concat method. This showed how important it is to know the higher order functions and array methods because they can make things a lot more efficient.</p>
-
-<h1 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab">What explicit tasks (e.g. reading) were you given during this lab?</h1>
-
-<p>First we had to read background information on JavaScript. This contained reading <a href="http://eloquentjavascript.net/05_higher_order.html">chapter 5</a> and <a href="http://eloquentjavascript.net/06_object.html">chapter 6</a> from Eloquent JavaScript. Then we looked at array methods. In this part of the lab we focused on chapter 5 a lot. We looked at how JavaScript arrays have higher order methods. Then we worked on solving the flatten exercise using the methods <code>reduce</code> and <code>concat</code>. Then we looked at parsing through a json file using JavaScript. Here we wrote a function to find the information that is associated with a particular name that is passed in. Then we looked at methods in JavaScript.</p>
-
-</article>
-<article>
-  <header>
-    <h2><a href='/2019/10/lab-10.html'>Lab 10</a></h2>
-    <p class='date-and-tags'>
-<time datetime="2019-10-08" pubdate="true">2019-10-08</time> :: <span class="tags"></span></p>
-    <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
-  </header>
-
-<h2>What new concepts (if any) did you learn about in this lab?</h2>
-
-<p>In this lab working with 
- <b>JavaScript objects</b> was a new concept. It was interesting to see that the JavaScript objects were similar to the hash table in Racket. The next new concept was 
- <b>Deep Comparison</b>. This was a were we had to write a method to compare the values of the object's actual properties. The next new concept was 
- <b>JavaScript Arrays</b>. These were very similar to arrays that are used in Java.</p>
-
-<h2>What concepts are familiar from other courses or from your own knowledge?</h2>
-
-<p>In this lab there was not anything that was super familiar. The concept of JavaScript arrays were similar to those in Java. This helped made learning JavaScript arrays a lot easier to understand. Also having background knowledge of how arrays work too was very helpful to understand JavaScript arrays.</p>
-
-<h2>What new skills did you practice?</h2>
-
-<p>I practiced my coding skills in JavaScript. This was done by working with arrays in JavaScript and objects within JavaScript.  I also practiced my testing skills. This was done by working with jasmine in the lab to test the methods that have been created to make sure they actually worked.</p>
-
-<h2>What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h2>
-
-<p>I found how JavaScript concepts that were covered in today&rsquo;s lab was very similar to others languages we learnt in the past very interesting. It made understanding those concepts a lot easier.</p>
-
-<h2>What explicit tasks (e.g. reading) were you given during this lab?</h2>
-
-<p>First there were some background readings ton JavaScript and function arguments.  Then we moved on to 
- <b>JavaScript objects</b>. Here we did a quick reading on what <a href="http://eloquentjavascript.net/04_data.html#h_cqg63Sxe3o">JavaScript</a> objects were. Then we moved to do a quick demonstrations about JavaScript objects.  Next topic covered was 
- <b>deep comparison</b>. We had to follow the deep comparison <a href="http://eloquentjavascript.net/04_data.html#i_IJBU+aXOIC">exercise</a> from the following link.  Next topic covered was 
- <b>JavaScript arrays</b>. Here we read a section from the link on what the <a href="http://eloquentjavascript.net/04_data.html#h_HjL/otjEJn">JavaScript arrays</a> were. Then we had some practice working with JavaScript arrays. we had to follow the steps to the sum of the range exercise to write a sum function that passes all the tests that were provided in the lab instructions. Finally we covered 
- <b>variadic functions</b>.</p>
-
-</article>
 <footer>
  <ul class="pagination">
   <li class="page-item disabled"><a class="page-link" href="#">
     <quote>&larr;</quote></a></li>
   <li class="page-item active"><a class="page-link" href="/index.html">1</a></li>
   <li class="page-item"><a class="page-link" href="/index-2.html">2</a></li>
+  <li class="page-item"><a class="page-link" href="/index-3.html">3</a></li>
   <li class="page-item"><a class="page-link" href="/index-2.html">
     <quote>&rarr;</quote></a></li></ul></footer>
         </div>
