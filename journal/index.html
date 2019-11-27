@@ -6,7 +6,7 @@
     <title>My Blog</title>
     <meta name="description" content="My Blog">
     <meta name="author"      content="The Unknown Author">
-    <meta name="keywords"    content="Author: Cassandra Wendlandt, all, Author: Cassandra Wendlandt-Bloodsworth">
+    <meta name="keywords"    content="Author: Cassandra Wendlandt, Author: Cassandra Wendlandt-Bloodsworth, all">
     <meta name="viewport"    content="width=device-width, initial-scale=1.0">
     <link rel="icon"      href="/favicon.ico">
     <link rel="canonical" href="http://www.example.com/index.html">
@@ -63,27 +63,36 @@
 
 <h3 id="working-with-grids">Working with grids</h3>
 
-<p>During this section of the lab we observed how ranges work and how <code>surf</code> work. The function <code>surf</code> takes in points and plots them in a graph. We also saw how the <a href="https://octave.org/doc/v4.2.1/Three_002dDimensional-Plots.html#XREFmeshgrid">meshgrid</a> function that Octave had built in works. Meshgrid will take a cartesian product of two arrays.</p>
+<p>During this section of the lab we observed how ranges work and how <code>surf</code> work. The function <code>surf</code> takes in points and plots them in a graph. We also saw how the Octaves built in <a href="https://octave.org/doc/v4.2.1/Three_002dDimensional-Plots.html#XREFmeshgrid">meshgrid</a> function works. Meshgrid will take a cartesian product of two arrays. This second on the lab was very interesting because we also explored how range in Octave works. The out put of <code>surf</code> was very interesting because it plotted the points in a 3D graph.</p>
 
 <h3 id="creating-3d-plots">Creating 3d plots</h3>
 
-<p>The next new topic we looked at was making 3D plots. In the past labs we used <code>surf()</code> which created a 3D plot but we never looked much into writing the code to initialize the points. This was a pretty interesting section because the plot that was produced was very interesting. We also discovered that there is something called <code>contourf()</code>. This will produce a 2D version of the plot.  Using arrayfun</p>
+<p>The next new topic we looked at was making 3D plots. In the past labs we used <code>surf()</code> which created a 3D plot but we never looked much into writing the code to initialize the points. This was a pretty interesting section because the plot that was produced was very interesting. We also discovered that there is something called <code>contourf()</code>. This will produce a 2D version of the plot.</p>
+
+<h3 id="using-arrayfun">Using arrayfun</h3>
 
 <p>In this section we learnt what <code>arrayfun</code> is and how to use <a href="https://octave.org/doc/v4.2.0/Anonymous-Functions.html">anonymous functions</a>.</p>
 
 <h4 id="arrayfun">arrayfun</h4>
 
-<p>The function <code>arrayfun</code> will take a function as the first parameter then the other functions will be arrays. This function will take one or more arrays in. Then <code>arrayfun</code> will apply the given function to each of the element in the arrays.</p>
+<p>The function <code>arrayfun</code> will take a function as the first parameter then the other parameters will be arrays. This function will take one or more arrays in. Then <code>arrayfun</code> will apply the given function to each of the element in the arrays. At the beginning I fond it a little hard to understand how <code>arrayfun</code> works. Then I found <a href="https://www.mathworks.com/help/matlab/ref/arrayfun.html">this site</a> and it really helped me understand <code>arrayfun</code> a lot more.</p>
 
 <h4 id="anonymous-function">anonymous function</h4>
 
-<p>Anonymous functions in the Octave can appear in two different formats. Below is the first format. It takes the function and assigns it to a variable. Then pass the variable where the function would go.  Below is the second format that an anonymous function can appear. Here the function is directly written in.</p>
+<p>Anonymous functions in the Octave can appear in two different formats. The first format takes the function and assigns it to a variable. Then pass the variable where the function would go. Below is an example of what the code would look like.</p>
+
+<pre><code>f=@(x,y)(delta(beta,a,[x;y]));
+Z=arrayfun(f,X,Y);</code></pre>
+
+<p>The second format will have the anonymous function written in as the first parameter. Below is an example of how that could would work.</p>
+
+<pre><code>arrayfun(@(x,y)(delta(beta,a,[x;y]))</code></pre>
 
 <h2 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge">What concepts are familiar from other courses or from your own knowledge?</h2>
 
-<p>In the lab there was only one concepts that I was familiar with. This made the lab a little tricky to do. At the beginning I was confused on what was going. When we got about half way through the lab it started to make sense. This made the last half of the lab a bit easier to follow.</p>
+<p>In the lab there was only one concepts that I was familiar with. At the beginning I was finding the tasks we were expected to do a bit hard. When we got about half way through the lab I found I was understanding the material a bit more. This made the last half of the lab a bit easier to follow.</p>
 
-<p>The concept I was familiar with was defining and testing a function. I was only a little familiar with this topic because we looked at in the last lab. This did not really help me to understand the lab because I still did not understand them completely. At the end of today&rsquo;s lab I understand them a bit better.</p>
+<p>The concept I was familiar with was <strong>defining and testing a function</strong>. I was only a little familiar with this topic because we looked at in the last lab. This did not really help me to understand the lab because I still did not understand them completely. At the end of today&rsquo;s lab I understand them a bit better.</p>
 
 <h2 id="what-new-skills-did-you-practice">What new skills did you practice?</h2>
 
@@ -145,15 +154,15 @@ Elapsed time is 0.548361 seconds.</code></pre>
 
 <h3 id="octave">Octave</h3>
 
-<p>In the lab most of the material was a new concept to me. I never worked with matlab or octave so it was an interesting experience.</p>
+<p>In the lab most of the material was a new concept to me. I never worked with matlab or octave, so it was an interesting experience.</p>
 
 <p>A big lesson I learnt in the lab was the need for semicolons. I found out that if you do not have a semicolon at the end of setting a variable, octave will print out the variable. This caused my function <code>fib()</code> to print out the variables every time it went through the for loop.</p>
 
-<p>We used the Fibonacci series, matrices and vectors as examples to get to know Octave and how it works. I found that Octave is a language that is good for working with numbers and graphs.</p>
+<p>We used the Fibonacci series, matrices, and vectors as examples to get to know Octave and how it works. I found that Octave is a language that is good for working with numbers and graphs.</p>
 
 <h3 id="performance-comparison-and-measuring-cpu-time">Performance comparison and measuring CPU time</h3>
 
-<p>Comparing performance between the two different functions in octave was an interesting topic. I thought the function <code>tic()</code>and <code>toc()</code> were really interesting. The function <code>tic()</code> started counting the time and <code>toc()</code> will stop the counting.</p>
+<p>Comparing performance between the two different functions in octave was an interesting topic. I thought the function <code>tic()</code> and <code>toc()</code> were really interesting. The function <code>tic()</code> started counting the time and <code>toc()</code> will stop the counting.</p>
 
 <p>When we measured the CPU time we did not use <code>tic()</code> and <code>toc()</code>. However, we did use octaves built in <code>cputime</code>.</p>
 
@@ -161,7 +170,7 @@ Elapsed time is 0.548361 seconds.</code></pre>
 
 <h3 id="using-the-profiler">Using the profiler</h3>
 
-<p>The <a href="https://octave.org/doc/v4.0.3/Profiling.html">profiling tool</a> was interesting to work with. The tool would tell you where your code spends most of the time. To run the it you would first type <code>profile on</code> in the command line. Then you would type the function that you want to evaluate. So an example from class would be <code>fib(1000)</code>. Once the function is done you would type <code>profile off</code>. In order to get the results from the you would have to type <code>profshow</code>. It will produce a table like the below showing the hot spot for that function.</p>
+<p>The <a href="https://octave.org/doc/v4.0.3/Profiling.html">profiling tool</a> was interesting to work with. The tool would tell you where your code spends most of the time. To run it you would first type <code>profile on</code> in the command line. Then you would type the function that you want to evaluate. So an example from the class would be <code>fib(1000)</code>. Once the function is done you would type <code>profile off</code>. In order to get the results from the you would have to type <code>profshow</code>. It will produce a table like the below showing the hot spot for that function.</p>
 
 <pre><code>&gt;&gt; profshow
    #            Function Attr     Time (s)   Time (%)        Calls
@@ -189,15 +198,15 @@ Elapsed time is 0.548361 seconds.</code></pre>
 
 <h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important">What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h2>
 
-<p>During the lab I found working with Octave to be confusing to work with in the beginning. I found it to be difficult because it has been a while since I worked with matrices and vectors. It was difficult because I was trying to remember how matrices and vectors work as well as learning how the new language worked as well.</p>
+<p>During the lab I found working with Octave to be confusing to work with in the beginning. I found it to be difficult because it has been a while since I worked with matrices and vectors. It was difficult because I was trying to remember how matrices and vectors work as well as learn how a new language works as well.</p>
 
 <h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab">What explicit tasks (e.g. reading) were you given during this lab?</h2>
 
-<p>First we ran added code to the for loop so the Fibonacci series would work. Then we ran test cases to make sure it produces the correct answers. In octave the test cases are written in the code as comments.</p>
+<p>First we ran added code to the for loop, so the Fibonacci series would work. Then we ran test cases to make sure it produces the correct answers. In octave the test cases are written in the code as comments.</p>
 
-<p>Then in order to run the test cases you type <code>test fib(1000)</code> in the command line in Octave. Then we looked at the Fibonacci series as matrix multiplication. We used a <a href="https://en.wikipedia.org/wiki/Fibonacci_number#Matrix_form">well known</a> identity about the Fibonacci numbers F(i) to help use write the code.</p>
+<p>Then, in order to run the test cases you type <code>test fib(1000)</code> in the command line in Octave. Then we looked at the Fibonacci series as matrix multiplication. We used a <a href="https://en.wikipedia.org/wiki/Fibonacci_number#Matrix_form">well-known</a> identity about the Fibonacci numbers F(i) to help us write the code.</p>
 
-<p>Then we did a performance comparison between the two functions. We created a function called <code>timeit</code> and <code>bench</code> to measure the how long it takes the function. The following is a example of how we called the <code>bench</code> function and the output. We can see that the second function <code>fibmat</code> takes a lot less time than the first method <code>fib</code>.</p>
+<p>Then we did a performance comparison between the two functions. We created a function called <code>timeit</code> and <code>bench</code> to measure how long it takes the function. The following is an example of how we called the <code>bench</code> function and the output. We can see that the second function <code>fibmat</code> takes a lot less time than the first method <code>fib</code>.</p>
 
 <pre><code>&gt;&gt; bench
 fib     median=0.117ms mean=0.120ms total=11960.450ms
@@ -241,12 +250,28 @@ fibmat  median=0.026ms mean=0.028ms total=2771.087ms</code></pre>
 <p>We started the lab with looking at <strong>Counters, generators and classes</strong>. We looked at the counter code from Lab 18 and generated the numbers by providing a compatible interface by using a <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/iterators.html#defining-classes">python class</a>.  Then we looked at the Fibonacci series and completed the definition of <code>__next__</code> so it will act like the generator.</p>
 
 <div class="brush: python">
- <pre><code>def __next__(self):
-	if self.max &gt; self.a: 
-		self.a,self.b = self.b,self.a + self.b
-		return self.b-self.a
-	else: 
-		raise StopIteration</code></pre></div>
+ <table class="sourcetable">
+  <tbody>
+   <tr>
+    <td class="linenos">
+     <div class="linenodiv">
+      <pre>1
+2
+3
+4
+5
+6</pre></div></td>
+    <td class="code">
+     <div class="source">
+      <pre><span></span><span class="k">def</span> <span class="nf">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">max</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">:</span> 
+		<span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span>
+	<span class="k">else</span><span class="p">:</span> 
+		<span class="k">raise</span> <span class="ne">StopIteration</span>
+</pre></div>
+</td></tr></tbody></table>
+</div>
 
 <p>The code above shows what the <code>__next__</code> function would look like. I found it was basically just taking the closure code from the last lab which made it easy to grasp the concept of how it was done.  Then we looked <strong>object copying and equality</strong>. During this part of the lab we had to write the code for the method<a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/special-method-names.html#rich-comparisons"> <code>__eq__</code></a>inorder for the test to pass. Then we also wrote an <code>eqal</code> method to be able to do arithmetic.  Then in the lab we used <a href="https://docs.python.org/3/library/copy.html">deepCopy</a> to update one of our test sets to make sure the ‘eqal` method does not change the object self.</p>
 
@@ -280,29 +305,68 @@ fibmat  median=0.026ms mean=0.028ms total=2771.087ms</code></pre>
 <p>The whole lab was just looking at how <strong>closures</strong> work to simulate generators and then a few examples. The first example we looked at was <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/generators.html#generators">Counter</a>. For this example we were given the code that uses the generator. Then we had to write a function that mimics the behaviour of the other one. Below is an example of the function that we had to write.</p>
 
 <div class="brush: python">
- <pre><code>def make_counter2(x):
-	count = x
-	def counter():
-		nonlocal count,x
-		if count ==x:
-			print ('Entering make_counter')
-		x = x+1
-		return x-1
-	return counter</code></pre></div>
+ <table class="sourcetable">
+  <tbody>
+   <tr>
+    <td class="linenos">
+     <div class="linenodiv">
+      <pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td>
+    <td class="code">
+     <div class="source">
+      <pre><span></span><span class="k">def</span> <span class="nf">make_counter2</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+	<span class="n">count</span> <span class="o">=</span> <span class="n">x</span>
+	<span class="k">def</span> <span class="nf">counter</span><span class="p">():</span>
+		<span class="n">nonlocal</span> <span class="n">count</span><span class="p">,</span><span class="n">x</span>
+		<span class="k">if</span> <span class="n">count</span> <span class="o">==</span><span class="n">x</span><span class="p">:</span>
+			<span class="k">print</span> <span class="p">(</span><span class="s1">&#39;Entering make_counter&#39;</span><span class="p">)</span>
+		<span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">+</span><span class="mi">1</span>
+		<span class="k">return</span> <span class="n">x</span><span class="o">-</span><span class="mi">1</span>
+	<span class="k">return</span> <span class="n">counter</span>
+</pre></div>
+</td></tr></tbody></table>
+</div>
 
 <p>The next example we looked at is the <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/generators.html#a-fibonacci-generator">Fibonacci series</a>. Here we had to fill in the function <code>fib2</code> that will mimic the function <code>fib</code>. Below is an example of the definition for <code>fib2</code>.</p>
 
 <div class="brush: python">
- <pre><code>def fib2(max):
-    a,b = 0,1
-    def next():
-        nonlocal a,b
-        if a &lt; max:
-            a , b = b, a+b
-            return b-a
-        else:
-            return None
-    return next</code></pre></div>
+ <table class="sourcetable">
+  <tbody>
+   <tr>
+    <td class="linenos">
+     <div class="linenodiv">
+      <pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td>
+    <td class="code">
+     <div class="source">
+      <pre><span></span><span class="k">def</span> <span class="nf">fib2</span><span class="p">(</span><span class="nb">max</span><span class="p">):</span>
+    <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="mi">1</span>
+    <span class="k">def</span> <span class="nf">next</span><span class="p">():</span>
+        <span class="n">nonlocal</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span>
+        <span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="nb">max</span><span class="p">:</span>
+            <span class="n">a</span> <span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+            <span class="k">return</span> <span class="n">b</span><span class="o">-</span><span class="n">a</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">None</span>
+    <span class="k">return</span> <span class="nb">next</span>
+</pre></div>
+</td></tr></tbody></table>
+</div>
 
 </article>
 <article>
