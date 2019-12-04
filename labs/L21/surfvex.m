@@ -21,5 +21,5 @@ toc();
 
 
 
-surf(X,Y,Z);
-%contourf(X,Y,Z);
+%surf(X,Y,Z);
+contourf(X,Y,Z);

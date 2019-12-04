@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Lab20</title>
+    <meta name="description" content="What new concepts (if any) did you learn about in this lab?:  Octave:  In the lab most of the material was a new concept to me. I never worked with matlab or octave, so it was an interesting experience.  A big lesson I learnt in the lab was the need for s...">
+    <meta name="author"      content="The Unknown Author">
+    <meta name="keywords"    content="Author: Cassandra Wendlandt-Bloodsworth">
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+    <link rel="icon"      href="/favicon.ico">
+    <link rel="canonical" href="http://www.example.com/2019/11/lab20.html">
+    <link rel="next" href="/2019/11/lab-19.html">
+    <link rel="prev" href="/2019/11/lab-21.html">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/pygments.css">
+    <link rel="stylesheet" type="text/css" href="/css/scribble.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <!-- Feeds -->
+    <link rel="alternate" type="application/atom+xml"
+          href="/feeds/all.atom.xml" title="Atom Feed">
+    <link rel="alternate" type="application/rss+xml"
+          href="/feeds/all.rss.xml" title="RSS Feed">
+    <!-- JS -->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-xxxxx', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+
+
+
+
+    <div class="container">
+      <div class="row">
+
+        <!-- Main column -->
+        <div id="content" class="col-md-12">
+
+
+
+
+
+          <article>
+  <header>
+    <h1>Lab20</h1>
+    <p class='date-and-tags'>
+<time datetime="2019-11-21" pubdate="true">2019-11-21</time> :: <span class="tags"></span></p>
+    <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
+  </header>
+
+<h2 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab">What new concepts (if any) did you learn about in this lab?</h2>
+
+<h3 id="octave">Octave</h3>
+
+<p>In the lab most of the material was a new concept to me. I never worked with matlab or octave, so it was an interesting experience.</p>
+
+<p>A big lesson I learnt in the lab was the need for semicolons. I found out that if you do not have a semicolon at the end of setting a variable, octave will print out the variable. This caused my function <code>fib()</code> to print out the variables every time it went through the for loop.</p>
+
+<p>We used the Fibonacci series, matrices, and vectors as examples to get to know Octave and how it works. I found that Octave is a language that is good for working with numbers and graphs.</p>
+
+<h3 id="performance-comparison-and-measuring-cpu-time">Performance comparison and measuring CPU time</h3>
+
+<p>Comparing performance between the two different functions in octave was an interesting topic. I thought the function <code>tic()</code> and <code>toc()</code> were really interesting. The function <code>tic()</code> started counting the time and <code>toc()</code> will stop the counting.</p>
+
+<p>When we measured the CPU time we did not use <code>tic()</code> and <code>toc()</code>. However, we did use octaves built in <code>cputime</code>.</p>
+
+<p>We found that the first function <code>fib()</code> that only used the for loop was a lot slower than the second function <code>fibmat()</code>.</p>
+
+<h3 id="using-the-profiler">Using the profiler</h3>
+
+<p>The <a href="https://octave.org/doc/v4.0.3/Profiling.html">profiling tool</a> was interesting to work with. The tool would tell you where your code spends most of the time. To run it you would first type <code>profile on</code> in the command line. Then you would type the function that you want to evaluate. So an example from the class would be <code>fib(1000)</code>. Once the function is done you would type <code>profile off</code>. In order to get the results from the you would have to type <code>profshow</code>. It will produce a table like the below showing the hot spot for that function.</p>
+
+<pre><code>&gt;&gt; profshow
+   #            Function Attr     Time (s)   Time (%)        Calls
+------------------------------------------------------------------
+   1                 fib             0.012      90.50            1
+   2            binary +             0.001       6.12         1001
+   5             profile             0.000       1.26            1
+   4                disp             0.000       1.00            1
+   3             display             0.000       0.89            1
+   6              nargin             0.000       0.08            1
+   8               false             0.000       0.07            1
+   7           binary !=             0.000       0.06            1
+   9 __profiler_enable__             0.000       0.00            1
+</code></pre>
+
+<p>An important thing is that you have to clear the profile each time before you use it.</p>
+
+<h2 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge">What concepts are familiar from other courses or from your own knowledge?</h2>
+
+<p>In the lab there was no concepts that were familiar from my own knowledge. The only thing that I was familiar with was the Fibonacci series. Knowing the Fibonacci series helped me understand how Octave works better. I was able to understand the syntax a lot better since I knew how the problem works.</p>
+
+<h2 id="what-new-skills-did-you-practice">What new skills did you practice?</h2>
+
+<p>The new skills I worked on was programming in Octave. I improved this skill because the whole lab was working in Octave. The other skills I worked on was debugging in Octave. I did this because I had a few times where the code was not working or was not printing the same output as others. Then I need to figure out why.</p>
+
+<h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important">What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h2>
+
+<p>During the lab I found working with Octave to be confusing to work with in the beginning. I found it to be difficult because it has been a while since I worked with matrices and vectors. It was difficult because I was trying to remember how matrices and vectors work as well as learn how a new language works as well.</p>
+
+<h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab">What explicit tasks (e.g. reading) were you given during this lab?</h2>
+
+<p>First we ran added code to the for loop, so the Fibonacci series would work. Then we ran test cases to make sure it produces the correct answers. In octave the test cases are written in the code as comments.</p>
+
+<p>Then, in order to run the test cases you type <code>test fib(1000)</code> in the command line in Octave. Then we looked at the Fibonacci series as matrix multiplication. We used a <a href="https://en.wikipedia.org/wiki/Fibonacci_number#Matrix_form">well-known</a> identity about the Fibonacci numbers F(i) to help us write the code.</p>
+
+<p>Then we did a performance comparison between the two functions. We created a function called <code>timeit</code> and <code>bench</code> to measure how long it takes the function. The following is an example of how we called the <code>bench</code> function and the output. We can see that the second function <code>fibmat</code> takes a lot less time than the first method <code>fib</code>.</p>
+
+<pre><code>&gt;&gt; bench
+fib     median=0.117ms mean=0.120ms total=11960.450ms
+fibmat  median=0.024ms mean=0.024ms total=2414.605ms</code></pre>
+
+<p>Then we compared the CPU time for each function as well. We created a function called <code>ctimeit</code> and <code>cbench</code> to measure the CPU time. The following is a example of how we called the <code>cbench</code> function and the output. We can see that the second function <code>fibmat</code> takes a lot less CPU time than the first method <code>fib</code>.</p>
+
+<pre><code>&gt;&gt; cbench
+fib     median=0.119ms mean=0.125ms total=12512.951ms
+fibmat  median=0.026ms mean=0.028ms total=2771.087ms</code></pre>
+
+<p>The last thing we looked at was how to use the <a href="https://octave.org/doc/v4.0.3/Profiling.html">profiling tool</a>. We used the profiler to look where the functions hotspots are. When we compared the time it took the functions we looked at the overall time. The profile tool allowed us to see how much time each call took.</p>
+  <footer>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_config = function () {
+        this.page.identifier = undefined;
+        this.page.url = undefined;
+        this.page.title = undefined;
+        this.page.category_id = undefined;
+      };
+      var disqus_shortname = 'shortname';
+      (function() {
+          var dsq = document.createElement('script');
+          dsq.type = 'text/javascript';
+          dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.setAttribute('data-timestamp', +new Date());
+          (document.head || document.body).appendChild(dsq);
+      })();
+    </script>
+    <noscript>
+      Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+    <div class="row justify-content-center">
+      <nav aria-label="Page Navigation">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="/2019/11/lab-19.html"
+               aria-label="Previous">
+              <span aria-hidden="true">&larr; lab 19</span>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="/2019/11/lab-21.html"
+               aria-label="Next">
+              <span aria-hidden="true">Lab 21 &rarr;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</article>
+        </div>
+      </div>
+      <footer>
+        <hr />
+        <p>Site generated
+        by <a href="https://github.com/greghendershott/frog">Frog</a>,
+        the <strong>fr</strong>ozen bl<strong>og</strong> tool.</p>
+        <p>Using <a href="http://twitter.github.com/bootstrap/index.html">Bootstrap</a>.</p>
+        <p><em>Your legal notice here</em>.</p>
+      </footer>
+    </div>
+    <!-- </body> JS -->
+    <script type="text/javascript" src="/js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

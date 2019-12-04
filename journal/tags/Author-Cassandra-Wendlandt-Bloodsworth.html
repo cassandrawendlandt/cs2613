@@ -50,6 +50,53 @@
 
           <article>
   <header>
+    <h2><a href='/2019/12/lab-22.html'>Lab 22</a></h2>
+    <p class='date-and-tags'>
+<time datetime="2019-12-03" pubdate="true">2019-12-03</time> :: <span class="tags"></span></p>
+    <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
+  </header>
+
+<h2 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab">What new concepts (if any) did you learn about in this lab?</h2>
+
+<p>In this lab there were a lot of new concepts to me. One of the new topics was <strong>variable-length argument list</strong>. It was an interesting concept because some of the old ideas from previous topics were used as reference. We learnt that the function <code>varargin</code> provides similar functionality to the <code>.rest</code> argument in racket or the <code>...rest</code> function in JavaScript. This made it a bit easier to understand the main concept of the function.</p>
+
+<p>The other new concept was the <strong>k nearest neighbour</strong> algorithm. Here we read a bit about the <a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm">k nearest neighbour</a> to better understand it. This was a neat concept because it was different compared to the other topics we have been looking at. It was also easier to understand this concept because I could easily rely it to a real world scenario.</p>
+
+<h2 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge">What concepts are familiar from other courses or from your own knowledge?</h2>
+
+<p>In this lab there were no concepts that were familiar to me from other courses or my own knowledge. There were topics that I should’ve known, like the linear algebra stuff since I did take a previous class on it.</p>
+
+<h2 id="what-new-skills-did-you-practice">What new skills did you practice?</h2>
+
+<p>I did not learn any new skills. I did however practice my octave programming skills and my debugging skills. I practiced my octave programming skills because the whole lab was working in octave. I also improved my debugging skills because when I find out what caused my errors through the lab.</p>
+
+<h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important">What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h2>
+
+<p>I found this lab to be particularly difficult because there was a lot of concepts that we should know from the course <strong>linear algebra</strong>. This made it difficult because it&rsquo;s been a while since I took linear algebra. This meant in the lab I was trying to relearn linear algebra and the new material at the same time.</p>
+
+<h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab">What explicit tasks (e.g. reading) were you given during this lab?</h2>
+
+<p>First topic we looked at in the lab was cell arrays. In this section we looked at using the cell arrays as a list of vectors. Below is the few commands we used to get a better understanding on how it works.</p>
+
+<pre><code>data = [0,0,0; 0,0,1; 0,1,0; 1,1,1]
+cells = num2cell(data,2)
+cellfun(@sum,cells)</code></pre>
+
+<p>Next we moved on to look at variable-length argument list. In this section of the lab we used <a href="https://octave.org/doc/v4.2.0/Variable_002dlength-Argument-Lists.html">varargin</a> to complete the function that was given.</p>
+
+<p>Then we looked at the <strong>K nearest neighbour</strong> section. In this section we had to fill in the function so it returns the row of indices of the k closest rows of <code>data</code> to <code>v</code>. Then we called the following lines of code from the command window to time our nearest neighbour function.</p>
+
+<pre><code>load training
+load testing
+timeit(1000,@nearest,testing(1,:), 3, training);</code></pre>
+
+<p>Then we looked at <strong>using rowfun</strong>. In this section we had to use the find function to complete a loop free version of the [K nearest neighbour] problem. Then we added the following <code>timeit</code> call to compare the time to the other k nearest neighbour solutions.</p>
+
+<pre><code>timeit(10,@rowknn,3,training,testing);</code></pre>
+
+</article>
+<article>
+  <header>
     <h2><a href='/2019/11/lab-21.html'>Lab 21</a></h2>
     <p class='date-and-tags'>
 <time datetime="2019-11-26" pubdate="true">2019-11-26</time> :: <span class="tags"></span></p>
@@ -247,28 +294,12 @@ fibmat  median=0.026ms mean=0.028ms total=2771.087ms</code></pre>
 <p>We started the lab with looking at <strong>Counters, generators and classes</strong>. We looked at the counter code from Lab 18 and generated the numbers by providing a compatible interface by using a <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/iterators.html#defining-classes">python class</a>.  Then we looked at the Fibonacci series and completed the definition of <code>__next__</code> so it will act like the generator.</p>
 
 <div class="brush: python">
- <table class="sourcetable">
-  <tbody>
-   <tr>
-    <td class="linenos">
-     <div class="linenodiv">
-      <pre>1
-2
-3
-4
-5
-6</pre></div></td>
-    <td class="code">
-     <div class="source">
-      <pre><span></span><span class="k">def</span> <span class="nf">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-	<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">max</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">:</span> 
-		<span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span>
-		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span>
-	<span class="k">else</span><span class="p">:</span> 
-		<span class="k">raise</span> <span class="ne">StopIteration</span>
-</pre></div>
-</td></tr></tbody></table>
-</div>
+ <pre><code>def __next__(self):
+	if self.max &gt; self.a: 
+		self.a,self.b = self.b,self.a + self.b
+		return self.b-self.a
+	else: 
+		raise StopIteration</code></pre></div>
 
 <p>The code above shows what the <code>__next__</code> function would look like. I found it was basically just taking the closure code from the last lab which made it easy to grasp the concept of how it was done.  Then we looked <strong>object copying and equality</strong>. During this part of the lab we had to write the code for the method<a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/special-method-names.html#rich-comparisons"> <code>__eq__</code></a>inorder for the test to pass. Then we also wrote an <code>eqal</code> method to be able to do arithmetic.  Then in the lab we used <a href="https://docs.python.org/3/library/copy.html">deepCopy</a> to update one of our test sets to make sure the ‘eqal` method does not change the object self.</p>
 
@@ -302,68 +333,29 @@ fibmat  median=0.026ms mean=0.028ms total=2771.087ms</code></pre>
 <p>The whole lab was just looking at how <strong>closures</strong> work to simulate generators and then a few examples. The first example we looked at was <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/generators.html#generators">Counter</a>. For this example we were given the code that uses the generator. Then we had to write a function that mimics the behaviour of the other one. Below is an example of the function that we had to write.</p>
 
 <div class="brush: python">
- <table class="sourcetable">
-  <tbody>
-   <tr>
-    <td class="linenos">
-     <div class="linenodiv">
-      <pre>1
-2
-3
-4
-5
-6
-7
-8
-9</pre></div></td>
-    <td class="code">
-     <div class="source">
-      <pre><span></span><span class="k">def</span> <span class="nf">make_counter2</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-	<span class="n">count</span> <span class="o">=</span> <span class="n">x</span>
-	<span class="k">def</span> <span class="nf">counter</span><span class="p">():</span>
-		<span class="n">nonlocal</span> <span class="n">count</span><span class="p">,</span><span class="n">x</span>
-		<span class="k">if</span> <span class="n">count</span> <span class="o">==</span><span class="n">x</span><span class="p">:</span>
-			<span class="k">print</span> <span class="p">(</span><span class="s1">&#39;Entering make_counter&#39;</span><span class="p">)</span>
-		<span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">+</span><span class="mi">1</span>
-		<span class="k">return</span> <span class="n">x</span><span class="o">-</span><span class="mi">1</span>
-	<span class="k">return</span> <span class="n">counter</span>
-</pre></div>
-</td></tr></tbody></table>
-</div>
+ <pre><code>def make_counter2(x):
+	count = x
+	def counter():
+		nonlocal count,x
+		if count ==x:
+			print ('Entering make_counter')
+		x = x+1
+		return x-1
+	return counter</code></pre></div>
 
 <p>The next example we looked at is the <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/generators.html#a-fibonacci-generator">Fibonacci series</a>. Here we had to fill in the function <code>fib2</code> that will mimic the function <code>fib</code>. Below is an example of the definition for <code>fib2</code>.</p>
 
 <div class="brush: python">
- <table class="sourcetable">
-  <tbody>
-   <tr>
-    <td class="linenos">
-     <div class="linenodiv">
-      <pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10</pre></div></td>
-    <td class="code">
-     <div class="source">
-      <pre><span></span><span class="k">def</span> <span class="nf">fib2</span><span class="p">(</span><span class="nb">max</span><span class="p">):</span>
-    <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="mi">1</span>
-    <span class="k">def</span> <span class="nf">next</span><span class="p">():</span>
-        <span class="n">nonlocal</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span>
-        <span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="nb">max</span><span class="p">:</span>
-            <span class="n">a</span> <span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
-            <span class="k">return</span> <span class="n">b</span><span class="o">-</span><span class="n">a</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="bp">None</span>
-    <span class="k">return</span> <span class="nb">next</span>
-</pre></div>
-</td></tr></tbody></table>
-</div>
+ <pre><code>def fib2(max):
+    a,b = 0,1
+    def next():
+        nonlocal a,b
+        if a &lt; max:
+            a , b = b, a+b
+            return b-a
+        else:
+            return None
+    return next</code></pre></div>
 
 </article>
 <article>
@@ -531,41 +523,6 @@ fibmat  median=0.026ms mean=0.028ms total=2771.087ms</code></pre>
 <h1 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab">What explicit tasks (e.g. reading) were you given during this lab?</h1>
 
 <p>First we looked at <strong>timers</strong>. We had to run the provided code. While doing this we noticed that it was not 100 % correct since all done was being printed before the animation is actually complete. We then had to make changes to the code in order for it to work properly. The changes we made was putting the print statement into an else statement with the timer.  Then we implemented another timer. This one did not use recursion like the previous one.  After that the lab was just about setting up the <strong>animation</strong> for the robot exercise that is in <a href="http://eloquentjavascript.net/07_robot.html">chapter 7</a> of Eloquent JavaScript and from last lab as well.</p>
-
-</article>
-<article>
-  <header>
-    <h2><a href='/2019/10/lab-11.html'>Lab 11</a></h2>
-    <p class='date-and-tags'>
-<time datetime="2019-10-10" pubdate="true">2019-10-10</time> :: <span class="tags"></span></p>
-    <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
-  </header>
-
-<h1 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab">What new concepts (if any) did you learn about in this lab?</h1>
-
-<h2 id="array-methods">Array methods</h2>
-
-<p>Looking at Array methods we learnt that they have higher order functions that can be really useful. Learning these functions ended up being useful for working with larger lists. For example using <code>reduced</code> and an anonymous function to calculate the average of a list. Another array method that was new for me was <code>forEach</code>. This method gives the users to iterate over a list with an arbitrary action without fussing with loops indices and bounds.</p>
-
-<h2 id="json-parsing">Json parsing</h2>
-
-<p>Looking at json was not particular new since we used racket in the past to parse through them. However using JavaScript to parse through the json file to retrieve the information for a specific name was a new concept.</p>
-
-<h1 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge">What concepts are familiar from other courses or from your own knowledge?</h1>
-
-<p>While looking at the <a href="http://eloquentjavascript.net/05_higher_order.html">higher order functions</a> that JavaScript has we learnt one of the higher order functions is <code>map</code> and <code>filter</code>. It turns out that <code>map</code> and <code>filter</code> behave similar to the Racket behavior. Knowing how they were used in Racket make it a lot easier to learn how they are used in JavaScript.</p>
-
-<h1 id="what-new-skills-did-you-practice">What new skills did you practice?</h1>
-
-<p>There were no new skills that I practiced in this lab. However I practiced my coding skills in JavaScript. I also practiced my testing skills. I achieved this by making sure the few section of code I wrote was able to pass the test cases that were defined in the lab instructions.</p>
-
-<h1 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important">What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h1>
-
-<p>I found the <a href="http://eloquentjavascript.net/05_higher_order.html#h_TcUD2vzyMe">flattened exercise</a> to be really interesting. I found this interesting because for Assignment 3 my code was about 20 lines long. However in the lab I was able to get the same results using one line of code by using the reduce and concat method. This showed how important it is to know the higher order functions and array methods because they can make things a lot more efficient.</p>
-
-<h1 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab">What explicit tasks (e.g. reading) were you given during this lab?</h1>
-
-<p>First we had to read background information on JavaScript. This contained reading <a href="http://eloquentjavascript.net/05_higher_order.html">chapter 5</a> and <a href="http://eloquentjavascript.net/06_object.html">chapter 6</a> from Eloquent JavaScript. Then we looked at array methods. In this part of the lab we focused on chapter 5 a lot. We looked at how JavaScript arrays have higher order methods. Then we worked on solving the flatten exercise using the methods <code>reduce</code> and <code>concat</code>. Then we looked at parsing through a json file using JavaScript. Here we wrote a function to find the information that is associated with a particular name that is passed in. Then we looked at methods in JavaScript.</p>
 
 </article>
 <footer>

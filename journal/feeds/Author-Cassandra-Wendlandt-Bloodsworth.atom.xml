@@ -4,7 +4,53 @@
  <link rel="self" href="http://www.example.com/feeds/Author-Cassandra-Wendlandt-Bloodsworth.atom.xml" />
  <link href="http://www.example.com/tags/Author-Cassandra-Wendlandt-Bloodsworth.html" />
  <id>urn:http-www-example-com:-tags-Author-Cassandra-Wendlandt-Bloodsworth-html</id>
- <updated>2019-11-26T21:11:27Z</updated>
+ <updated>2019-12-04T00:35:46Z</updated>
+ <entry>
+  <title type="text">Lab 22</title>
+  <link rel="alternate" href="http://www.example.com/2019/12/lab-22.html?utm_source=Author-Cassandra-Wendlandt-Bloodsworth&amp;utm_medium=Atom" />
+  <id>urn:http-www-example-com:-2019-12-lab-22-html</id>
+  <published>2019-12-04T00:35:46Z</published>
+  <updated>2019-12-04T00:35:46Z</updated>
+  <author>
+   <name>Cassandra Wendlandt-Bloodsworth</name></author>
+  <content type="html">
+&lt;h2 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab"&gt;What new concepts (if any) did you learn about in this lab?&lt;/h2&gt;
+
+&lt;p&gt;In this lab there were a lot of new concepts to me. One of the new topics was &lt;strong&gt;variable-length argument list&lt;/strong&gt;. It was an interesting concept because some of the old ideas from previous topics were used as reference. We learnt that the function &lt;code&gt;varargin&lt;/code&gt; provides similar functionality to the &lt;code&gt;.rest&lt;/code&gt; argument in racket or the &lt;code&gt;...rest&lt;/code&gt; function in JavaScript. This made it a bit easier to understand the main concept of the function.&lt;/p&gt;
+
+&lt;p&gt;The other new concept was the &lt;strong&gt;k nearest neighbour&lt;/strong&gt; algorithm. Here we read a bit about the &lt;a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm"&gt;k nearest neighbour&lt;/a&gt; to better understand it. This was a neat concept because it was different compared to the other topics we have been looking at. It was also easier to understand this concept because I could easily rely it to a real world scenario.&lt;/p&gt;
+
+&lt;h2 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge"&gt;What concepts are familiar from other courses or from your own knowledge?&lt;/h2&gt;
+
+&lt;p&gt;In this lab there were no concepts that were familiar to me from other courses or my own knowledge. There were topics that I should’ve known, like the linear algebra stuff since I did take a previous class on it.&lt;/p&gt;
+
+&lt;h2 id="what-new-skills-did-you-practice"&gt;What new skills did you practice?&lt;/h2&gt;
+
+&lt;p&gt;I did not learn any new skills. I did however practice my octave programming skills and my debugging skills. I practiced my octave programming skills because the whole lab was working in octave. I also improved my debugging skills because when I find out what caused my errors through the lab.&lt;/p&gt;
+
+&lt;h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important"&gt;What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?&lt;/h2&gt;
+
+&lt;p&gt;I found this lab to be particularly difficult because there was a lot of concepts that we should know from the course &lt;strong&gt;linear algebra&lt;/strong&gt;. This made it difficult because it&amp;rsquo;s been a while since I took linear algebra. This meant in the lab I was trying to relearn linear algebra and the new material at the same time.&lt;/p&gt;
+
+&lt;h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab"&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h2&gt;
+
+&lt;p&gt;First topic we looked at in the lab was cell arrays. In this section we looked at using the cell arrays as a list of vectors. Below is the few commands we used to get a better understanding on how it works.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;data = [0,0,0; 0,0,1; 0,1,0; 1,1,1]
+cells = num2cell(data,2)
+cellfun(@sum,cells)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next we moved on to look at variable-length argument list. In this section of the lab we used &lt;a href="https://octave.org/doc/v4.2.0/Variable_002dlength-Argument-Lists.html"&gt;varargin&lt;/a&gt; to complete the function that was given.&lt;/p&gt;
+
+&lt;p&gt;Then we looked at the &lt;strong&gt;K nearest neighbour&lt;/strong&gt; section. In this section we had to fill in the function so it returns the row of indices of the k closest rows of &lt;code&gt;data&lt;/code&gt; to &lt;code&gt;v&lt;/code&gt;. Then we called the following lines of code from the command window to time our nearest neighbour function.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;load training
+load testing
+timeit(1000,@nearest,testing(1,:), 3, training);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then we looked at &lt;strong&gt;using rowfun&lt;/strong&gt;. In this section we had to use the find function to complete a loop free version of the [K nearest neighbour] problem. Then we added the following &lt;code&gt;timeit&lt;/code&gt; call to compare the time to the other k nearest neighbour solutions.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;timeit(10,@rowknn,3,training,testing);&lt;/code&gt;&lt;/pre&gt;</content></entry>
  <entry>
   <title type="text">Lab 21</title>
   <link rel="alternate" href="http://www.example.com/2019/11/lab-21.html?utm_source=Author-Cassandra-Wendlandt-Bloodsworth&amp;utm_medium=Atom" />
@@ -203,28 +249,12 @@ fibmat  median=0.026ms mean=0.028ms total=2771.087ms&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;We started the lab with looking at &lt;strong&gt;Counters, generators and classes&lt;/strong&gt;. We looked at the counter code from Lab 18 and generated the numbers by providing a compatible interface by using a &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/iterators.html#defining-classes"&gt;python class&lt;/a&gt;.  Then we looked at the Fibonacci series and completed the definition of &lt;code&gt;__next__&lt;/code&gt; so it will act like the generator.&lt;/p&gt;
 
 &lt;div class="brush: python"&gt;
- &lt;table class="sourcetable"&gt;
-  &lt;tbody&gt;
-   &lt;tr&gt;
-    &lt;td class="linenos"&gt;
-     &lt;div class="linenodiv"&gt;
-      &lt;pre&gt;1
-2
-3
-4
-5
-6&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;
-    &lt;td class="code"&gt;
-     &lt;div class="source"&gt;
-      &lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;__next__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-	&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;max&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; 
-		&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;
-		&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;
-	&lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; 
-		&lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="ne"&gt;StopIteration&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
-&lt;/div&gt;
+ &lt;pre&gt;&lt;code&gt;def __next__(self):
+	if self.max &amp;gt; self.a: 
+		self.a,self.b = self.b,self.a + self.b
+		return self.b-self.a
+	else: 
+		raise StopIteration&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The code above shows what the &lt;code&gt;__next__&lt;/code&gt; function would look like. I found it was basically just taking the closure code from the last lab which made it easy to grasp the concept of how it was done.  Then we looked &lt;strong&gt;object copying and equality&lt;/strong&gt;. During this part of the lab we had to write the code for the method&lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/special-method-names.html#rich-comparisons"&gt; &lt;code&gt;__eq__&lt;/code&gt;&lt;/a&gt;inorder for the test to pass. Then we also wrote an &lt;code&gt;eqal&lt;/code&gt; method to be able to do arithmetic.  Then in the lab we used &lt;a href="https://docs.python.org/3/library/copy.html"&gt;deepCopy&lt;/a&gt; to update one of our test sets to make sure the ‘eqal` method does not change the object self.&lt;/p&gt;</content></entry>
  <entry>
@@ -257,68 +287,29 @@ fibmat  median=0.026ms mean=0.028ms total=2771.087ms&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The whole lab was just looking at how &lt;strong&gt;closures&lt;/strong&gt; work to simulate generators and then a few examples. The first example we looked at was &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/generators.html#generators"&gt;Counter&lt;/a&gt;. For this example we were given the code that uses the generator. Then we had to write a function that mimics the behaviour of the other one. Below is an example of the function that we had to write.&lt;/p&gt;
 
 &lt;div class="brush: python"&gt;
- &lt;table class="sourcetable"&gt;
-  &lt;tbody&gt;
-   &lt;tr&gt;
-    &lt;td class="linenos"&gt;
-     &lt;div class="linenodiv"&gt;
-      &lt;pre&gt;1
-2
-3
-4
-5
-6
-7
-8
-9&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;
-    &lt;td class="code"&gt;
-     &lt;div class="source"&gt;
-      &lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;make_counter2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-	&lt;span class="n"&gt;count&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;
-	&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;counter&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
-		&lt;span class="n"&gt;nonlocal&lt;/span&gt; &lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;
-		&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;count&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-			&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Entering make_counter&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-		&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
-		&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
-	&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;counter&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
-&lt;/div&gt;
+ &lt;pre&gt;&lt;code&gt;def make_counter2(x):
+	count = x
+	def counter():
+		nonlocal count,x
+		if count ==x:
+			print ('Entering make_counter')
+		x = x+1
+		return x-1
+	return counter&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The next example we looked at is the &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/generators.html#a-fibonacci-generator"&gt;Fibonacci series&lt;/a&gt;. Here we had to fill in the function &lt;code&gt;fib2&lt;/code&gt; that will mimic the function &lt;code&gt;fib&lt;/code&gt;. Below is an example of the definition for &lt;code&gt;fib2&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class="brush: python"&gt;
- &lt;table class="sourcetable"&gt;
-  &lt;tbody&gt;
-   &lt;tr&gt;
-    &lt;td class="linenos"&gt;
-     &lt;div class="linenodiv"&gt;
-      &lt;pre&gt; 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;
-    &lt;td class="code"&gt;
-     &lt;div class="source"&gt;
-      &lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;fib2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;max&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;next&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
-        &lt;span class="n"&gt;nonlocal&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;
-        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="nb"&gt;max&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-            &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;
-            &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;
-        &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-            &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;next&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
-&lt;/div&gt;</content></entry>
+ &lt;pre&gt;&lt;code&gt;def fib2(max):
+    a,b = 0,1
+    def next():
+        nonlocal a,b
+        if a &amp;lt; max:
+            a , b = b, a+b
+            return b-a
+        else:
+            return None
+    return next&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content></entry>
  <entry>
   <title type="text">Lab 17</title>
   <link rel="alternate" href="http://www.example.com/2019/11/lab-17.html?utm_source=Author-Cassandra-Wendlandt-Bloodsworth&amp;utm_medium=Atom" />
