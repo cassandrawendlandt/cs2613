@@ -12,15 +12,15 @@
   <published>2019-12-04T00:36:07Z</published>
   <updated>2019-12-04T00:36:07Z</updated>
   <author>
-   <name>The Unknown Author</name></author>
+   <name>Cassandra Wendlandt-Bloodsworth</name></author>
   <content type="html">
 &lt;h2 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab"&gt;What new concepts (if any) did you learn about in this lab?&lt;/h2&gt;
 
-&lt;p&gt;In today’s lab we focused mainly on &lt;strong&gt;manipulating photos&lt;/strong&gt;. Using Octave to manipulate photos was a new concept to me. We covered how to turn a photo black and white, applying gradient to a photo and added a yellow tint to them. It was a very interesting topic to explore. It was also a very confusing to follow the lab in the beginning&lt;/p&gt;
+&lt;p&gt;In today’s lab we focused mainly on &lt;strong&gt;manipulating photos&lt;/strong&gt; using Octave. This was a new concept to me. We covered how to turn a photo black and white, applying gradient to a photo and adding a yellow tint to them. It was a very interesting topic to explore. It was also a very confusing to follow the lab in the beginning&lt;/p&gt;
 
 &lt;h2 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge"&gt;What concepts are familiar from other courses or from your own knowledge?&lt;/h2&gt;
 
-&lt;p&gt;There was no concepts that were familiar to be from previous courses or my own knowledge. This made the lab a bit tricky to follow along. I kept getting lost in what was being explained it was hard to catch up.&lt;/p&gt;
+&lt;p&gt;There was no concepts that were familiar to me from previous courses or my own knowledge. This made the lab a bit tricky to follow along. I kept getting lost in what was being explained which made it hard to stay caught up.&lt;/p&gt;
 
 &lt;h2 id="what-new-skills-did-you-practice"&gt;What new skills did you practice?&lt;/h2&gt;
 
@@ -28,13 +28,13 @@
 
 &lt;h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important"&gt;What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?&lt;/h2&gt;
 
-&lt;p&gt;I found this lab pretty hard to follow along. I found the topics were very hard to follow and understand. It think the hardest thing for me to understand is how everything works in octave. This is the first time I ever worked with Octave and I found that I am having an extremely hard time understanding it and how it works.&lt;/p&gt;
+&lt;p&gt;I found this lab pretty hard to follow along. The topics were very hard to follow and understand. I think the hardest thing for me to understand is how everything works in octave. This is the first time I ever worked with Octave and I found that I am having an extremely hard time understanding it and how it works.&lt;/p&gt;
 
 &lt;h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab"&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h2&gt;
 
-&lt;p&gt;First we looked at &lt;strong&gt;broadcasting&lt;/strong&gt;. We read a broadcasting section that is in the &lt;a href="https://octave.org/doc/v4.0.3/Broadcasting.html"&gt;octave documentation&lt;/a&gt; ** add link** to help gain a better understanding of the topic.&lt;/p&gt;
+&lt;p&gt;First we looked at &lt;strong&gt;broadcasting&lt;/strong&gt;. We read a broadcasting section that is in the &lt;a href="https://octave.org/doc/v4.0.3/Broadcasting.html"&gt;octave documentation&lt;/a&gt;to help gain a better understanding of the topic.&lt;/p&gt;
 
-&lt;p&gt;Then we moved on and looked at &lt;strong&gt;reshaping arrays&lt;/strong&gt;. In this part we ran the two lines of code that is below in the command window. Then we looked at the result to get a sense of of the method &lt;code&gt;reshape&lt;/code&gt; works so we can use it later in the lab.&lt;/p&gt;
+&lt;p&gt;Then we moved on and looked at &lt;strong&gt;reshaping arrays&lt;/strong&gt;. In this part we ran the two lines of code that is below in the command window. Then we looked at the result to get a sense of how the method &lt;code&gt;reshape&lt;/code&gt; works so we can use it later in the lab.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;ones(3,3,3) .* reshape([1,2,3],[1,1,3])
 ones(3,3,3) .* reshape([1,2,3],[1,3,1])&lt;/code&gt;&lt;/pre&gt;
@@ -59,10 +59,10 @@ endfunction&lt;/code&gt;&lt;/pre&gt;
 endfunction&lt;/code&gt;&lt;/pre&gt;</content></entry>
  <entry>
   <title type="text">Lab 22</title>
-  <link rel="alternate" href="http://www.example.com/2019/12/lab-22.html?utm_source=all&amp;utm_medium=Atom" />
-  <id>urn:http-www-example-com:-2019-12-lab-22-html</id>
-  <published>2019-12-04T00:35:46Z</published>
-  <updated>2019-12-04T00:35:46Z</updated>
+  <link rel="alternate" href="http://www.example.com/2019/11/lab-22.html?utm_source=all&amp;utm_medium=Atom" />
+  <id>urn:http-www-example-com:-2019-11-lab-22-html</id>
+  <published>2019-11-29T00:35:46Z</published>
+  <updated>2019-11-29T00:35:46Z</updated>
   <author>
    <name>Cassandra Wendlandt-Bloodsworth</name></author>
   <content type="html">
@@ -78,11 +78,11 @@ endfunction&lt;/code&gt;&lt;/pre&gt;</content></entry>
 
 &lt;h2 id="what-new-skills-did-you-practice"&gt;What new skills did you practice?&lt;/h2&gt;
 
-&lt;p&gt;I did not learn any new skills. I did however practice my octave programming skills and my debugging skills. I practiced my octave programming skills because the whole lab was working in octave. I also improved my debugging skills because when I find out what caused my errors through the lab.&lt;/p&gt;
+&lt;p&gt;I did not practice any new skills. I did however practiced my octave programming skills and my debugging skills. I practiced my octave programming skills because the whole lab was working in octave. I also improved my debugging skills when I had to trace through my code to find out what caused my errors through the lab.&lt;/p&gt;
 
 &lt;h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important"&gt;What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?&lt;/h2&gt;
 
-&lt;p&gt;I found this lab to be particularly difficult because there was a lot of concepts that we should know from the course &lt;strong&gt;linear algebra&lt;/strong&gt;. This made it difficult because it&amp;rsquo;s been a while since I took linear algebra. This meant in the lab I was trying to relearn linear algebra and the new material at the same time.&lt;/p&gt;
+&lt;p&gt;I found this lab to be particularly difficult because there was a lot of concepts that we should have known from the course &lt;strong&gt;linear algebra&lt;/strong&gt;. This made it difficult because it&amp;rsquo;s been a while since I took linear algebra. This meant in the lab I was trying to relearn linear algebra and the new material at the same time.&lt;/p&gt;
 
 &lt;h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab"&gt;What explicit tasks (e.g. reading) were you given during this lab?&lt;/h2&gt;
 
@@ -301,12 +301,28 @@ fibmat  median=0.026ms mean=0.028ms total=2771.087ms&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;We started the lab with looking at &lt;strong&gt;Counters, generators and classes&lt;/strong&gt;. We looked at the counter code from Lab 18 and generated the numbers by providing a compatible interface by using a &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/iterators.html#defining-classes"&gt;python class&lt;/a&gt;.  Then we looked at the Fibonacci series and completed the definition of &lt;code&gt;__next__&lt;/code&gt; so it will act like the generator.&lt;/p&gt;
 
 &lt;div class="brush: python"&gt;
- &lt;pre&gt;&lt;code&gt;def __next__(self):
-	if self.max &amp;gt; self.a: 
-		self.a,self.b = self.b,self.a + self.b
-		return self.b-self.a
-	else: 
-		raise StopIteration&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;table class="sourcetable"&gt;
+  &lt;tbody&gt;
+   &lt;tr&gt;
+    &lt;td class="linenos"&gt;
+     &lt;div class="linenodiv"&gt;
+      &lt;pre&gt;1
+2
+3
+4
+5
+6&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;
+    &lt;td class="code"&gt;
+     &lt;div class="source"&gt;
+      &lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;__next__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;max&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; 
+		&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;
+		&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;
+	&lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; 
+		&lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="ne"&gt;StopIteration&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
 
 &lt;p&gt;The code above shows what the &lt;code&gt;__next__&lt;/code&gt; function would look like. I found it was basically just taking the closure code from the last lab which made it easy to grasp the concept of how it was done.  Then we looked &lt;strong&gt;object copying and equality&lt;/strong&gt;. During this part of the lab we had to write the code for the method&lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/special-method-names.html#rich-comparisons"&gt; &lt;code&gt;__eq__&lt;/code&gt;&lt;/a&gt;inorder for the test to pass. Then we also wrote an &lt;code&gt;eqal&lt;/code&gt; method to be able to do arithmetic.  Then in the lab we used &lt;a href="https://docs.python.org/3/library/copy.html"&gt;deepCopy&lt;/a&gt; to update one of our test sets to make sure the ‘eqal` method does not change the object self.&lt;/p&gt;</content></entry>
  <entry>
@@ -339,29 +355,68 @@ fibmat  median=0.026ms mean=0.028ms total=2771.087ms&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The whole lab was just looking at how &lt;strong&gt;closures&lt;/strong&gt; work to simulate generators and then a few examples. The first example we looked at was &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/generators.html#generators"&gt;Counter&lt;/a&gt;. For this example we were given the code that uses the generator. Then we had to write a function that mimics the behaviour of the other one. Below is an example of the function that we had to write.&lt;/p&gt;
 
 &lt;div class="brush: python"&gt;
- &lt;pre&gt;&lt;code&gt;def make_counter2(x):
-	count = x
-	def counter():
-		nonlocal count,x
-		if count ==x:
-			print ('Entering make_counter')
-		x = x+1
-		return x-1
-	return counter&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;table class="sourcetable"&gt;
+  &lt;tbody&gt;
+   &lt;tr&gt;
+    &lt;td class="linenos"&gt;
+     &lt;div class="linenodiv"&gt;
+      &lt;pre&gt;1
+2
+3
+4
+5
+6
+7
+8
+9&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;
+    &lt;td class="code"&gt;
+     &lt;div class="source"&gt;
+      &lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;make_counter2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	&lt;span class="n"&gt;count&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;
+	&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;counter&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+		&lt;span class="n"&gt;nonlocal&lt;/span&gt; &lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;
+		&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;count&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+			&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Entering make_counter&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+		&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+		&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+	&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;counter&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
 
 &lt;p&gt;The next example we looked at is the &lt;a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/generators.html#a-fibonacci-generator"&gt;Fibonacci series&lt;/a&gt;. Here we had to fill in the function &lt;code&gt;fib2&lt;/code&gt; that will mimic the function &lt;code&gt;fib&lt;/code&gt;. Below is an example of the definition for &lt;code&gt;fib2&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class="brush: python"&gt;
- &lt;pre&gt;&lt;code&gt;def fib2(max):
-    a,b = 0,1
-    def next():
-        nonlocal a,b
-        if a &amp;lt; max:
-            a , b = b, a+b
-            return b-a
-        else:
-            return None
-    return next&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content></entry>
+ &lt;table class="sourcetable"&gt;
+  &lt;tbody&gt;
+   &lt;tr&gt;
+    &lt;td class="linenos"&gt;
+     &lt;div class="linenodiv"&gt;
+      &lt;pre&gt; 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;
+    &lt;td class="code"&gt;
+     &lt;div class="source"&gt;
+      &lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;fib2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;max&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;next&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+        &lt;span class="n"&gt;nonlocal&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="nb"&gt;max&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;
+            &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;
+        &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;next&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;</content></entry>
  <entry>
   <title type="text">Lab 17</title>
   <link rel="alternate" href="http://www.example.com/2019/11/lab-17.html?utm_source=all&amp;utm_medium=Atom" />

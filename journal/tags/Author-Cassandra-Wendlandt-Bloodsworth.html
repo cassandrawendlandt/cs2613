@@ -50,9 +50,62 @@
 
           <article>
   <header>
-    <h2><a href='/2019/12/lab-22.html'>Lab 22</a></h2>
+    <h2><a href='/2019/12/lab-23.html'>Lab 23</a></h2>
     <p class='date-and-tags'>
 <time datetime="2019-12-03" pubdate="true">2019-12-03</time> :: <span class="tags"></span></p>
+    <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
+  </header>
+
+<h2 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab">What new concepts (if any) did you learn about in this lab?</h2>
+
+<p>In today’s lab we focused mainly on <strong>manipulating photos</strong> using Octave. This was a new concept to me. We covered how to turn a photo black and white, applying gradient to a photo and adding a yellow tint to them. It was a very interesting topic to explore. It was also a very confusing to follow the lab in the beginning</p>
+
+<h2 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge">What concepts are familiar from other courses or from your own knowledge?</h2>
+
+<p>There was no concepts that were familiar to me from previous courses or my own knowledge. This made the lab a bit tricky to follow along. I kept getting lost in what was being explained which made it hard to stay caught up.</p>
+
+<h2 id="what-new-skills-did-you-practice">What new skills did you practice?</h2>
+
+<p>In this lab I did not practice any new skills. I did however improve on my octave programming skills and my debugging skills. My octave programming skills were improved because the whole lab was programming in octave. One thing I have improved with this lab was working with vectors and arrays in octave. My debugging skills were improved because I came across some errors I had to solve.</p>
+
+<h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important">What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h2>
+
+<p>I found this lab pretty hard to follow along. The topics were very hard to follow and understand. I think the hardest thing for me to understand is how everything works in octave. This is the first time I ever worked with Octave and I found that I am having an extremely hard time understanding it and how it works.</p>
+
+<h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab">What explicit tasks (e.g. reading) were you given during this lab?</h2>
+
+<p>First we looked at <strong>broadcasting</strong>. We read a broadcasting section that is in the <a href="https://octave.org/doc/v4.0.3/Broadcasting.html">octave documentation</a>to help gain a better understanding of the topic.</p>
+
+<p>Then we moved on and looked at <strong>reshaping arrays</strong>. In this part we ran the two lines of code that is below in the command window. Then we looked at the result to get a sense of how the method <code>reshape</code> works so we can use it later in the lab.</p>
+
+<pre><code>ones(3,3,3) .* reshape([1,2,3],[1,1,3])
+ones(3,3,3) .* reshape([1,2,3],[1,3,1])</code></pre>
+
+<p>Next we looked at <strong>scaling layers of arrays</strong>. In the section we took a black and white photo and added a yellow tint to it. We had to fill in the function <code>scale_layers</code>. Below is what the function would look like.</p>
+
+<pre><code>function out = scale_layers(array, weights)
+  out = array .* reshape(weights,[1,1,3]);
+endfunction</code></pre>
+
+<p>After we looked at <strong>converting to monochrome</strong>. In this section we took a photo of an owl and applied the following method to it. Below is the function we had to fill in to have the photo transferred into monochrome.</p>
+
+<pre><code>function out = monochrome(in, weights=[0.21,0.72,0.07])
+  out = sum(scale_layers(in,weights), 3);
+endfunction</code></pre>
+
+<p>The last thing we looked at was <strong>changing the gradient</strong> or the amount of intensity of a photo. We ran some sample code quickly to get an understanding how the function <code>gradient</code> works. Then we filled in the following function to display the owl picture using the <code>norming</code> function.</p>
+
+<pre><code>function normimg = normgrad(img)
+  [Dx, Dy] = gradient(img);
+  normimg = sqrt(Dx.^2 + Dy.^2);
+endfunction</code></pre>
+
+</article>
+<article>
+  <header>
+    <h2><a href='/2019/11/lab-22.html'>Lab 22</a></h2>
+    <p class='date-and-tags'>
+<time datetime="2019-11-28" pubdate="true">2019-11-28</time> :: <span class="tags"></span></p>
     <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
   </header>
 
@@ -68,11 +121,11 @@
 
 <h2 id="what-new-skills-did-you-practice">What new skills did you practice?</h2>
 
-<p>I did not learn any new skills. I did however practice my octave programming skills and my debugging skills. I practiced my octave programming skills because the whole lab was working in octave. I also improved my debugging skills because when I find out what caused my errors through the lab.</p>
+<p>I did not practice any new skills. I did however practiced my octave programming skills and my debugging skills. I practiced my octave programming skills because the whole lab was working in octave. I also improved my debugging skills when I had to trace through my code to find out what caused my errors through the lab.</p>
 
 <h2 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important">What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h2>
 
-<p>I found this lab to be particularly difficult because there was a lot of concepts that we should know from the course <strong>linear algebra</strong>. This made it difficult because it&rsquo;s been a while since I took linear algebra. This meant in the lab I was trying to relearn linear algebra and the new material at the same time.</p>
+<p>I found this lab to be particularly difficult because there was a lot of concepts that we should have known from the course <strong>linear algebra</strong>. This made it difficult because it&rsquo;s been a while since I took linear algebra. This meant in the lab I was trying to relearn linear algebra and the new material at the same time.</p>
 
 <h2 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab">What explicit tasks (e.g. reading) were you given during this lab?</h2>
 
@@ -294,12 +347,28 @@ fibmat  median=0.026ms mean=0.028ms total=2771.087ms</code></pre>
 <p>We started the lab with looking at <strong>Counters, generators and classes</strong>. We looked at the counter code from Lab 18 and generated the numbers by providing a compatible interface by using a <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/iterators.html#defining-classes">python class</a>.  Then we looked at the Fibonacci series and completed the definition of <code>__next__</code> so it will act like the generator.</p>
 
 <div class="brush: python">
- <pre><code>def __next__(self):
-	if self.max &gt; self.a: 
-		self.a,self.b = self.b,self.a + self.b
-		return self.b-self.a
-	else: 
-		raise StopIteration</code></pre></div>
+ <table class="sourcetable">
+  <tbody>
+   <tr>
+    <td class="linenos">
+     <div class="linenodiv">
+      <pre>1
+2
+3
+4
+5
+6</pre></div></td>
+    <td class="code">
+     <div class="source">
+      <pre><span></span><span class="k">def</span> <span class="nf">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">max</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">:</span> 
+		<span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span>
+	<span class="k">else</span><span class="p">:</span> 
+		<span class="k">raise</span> <span class="ne">StopIteration</span>
+</pre></div>
+</td></tr></tbody></table>
+</div>
 
 <p>The code above shows what the <code>__next__</code> function would look like. I found it was basically just taking the closure code from the last lab which made it easy to grasp the concept of how it was done.  Then we looked <strong>object copying and equality</strong>. During this part of the lab we had to write the code for the method<a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/special-method-names.html#rich-comparisons"> <code>__eq__</code></a>inorder for the test to pass. Then we also wrote an <code>eqal</code> method to be able to do arithmetic.  Then in the lab we used <a href="https://docs.python.org/3/library/copy.html">deepCopy</a> to update one of our test sets to make sure the ‘eqal` method does not change the object self.</p>
 
@@ -333,29 +402,68 @@ fibmat  median=0.026ms mean=0.028ms total=2771.087ms</code></pre>
 <p>The whole lab was just looking at how <strong>closures</strong> work to simulate generators and then a few examples. The first example we looked at was <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/generators.html#generators">Counter</a>. For this example we were given the code that uses the generator. Then we had to write a function that mimics the behaviour of the other one. Below is an example of the function that we had to write.</p>
 
 <div class="brush: python">
- <pre><code>def make_counter2(x):
-	count = x
-	def counter():
-		nonlocal count,x
-		if count ==x:
-			print ('Entering make_counter')
-		x = x+1
-		return x-1
-	return counter</code></pre></div>
+ <table class="sourcetable">
+  <tbody>
+   <tr>
+    <td class="linenos">
+     <div class="linenodiv">
+      <pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td>
+    <td class="code">
+     <div class="source">
+      <pre><span></span><span class="k">def</span> <span class="nf">make_counter2</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+	<span class="n">count</span> <span class="o">=</span> <span class="n">x</span>
+	<span class="k">def</span> <span class="nf">counter</span><span class="p">():</span>
+		<span class="n">nonlocal</span> <span class="n">count</span><span class="p">,</span><span class="n">x</span>
+		<span class="k">if</span> <span class="n">count</span> <span class="o">==</span><span class="n">x</span><span class="p">:</span>
+			<span class="k">print</span> <span class="p">(</span><span class="s1">&#39;Entering make_counter&#39;</span><span class="p">)</span>
+		<span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">+</span><span class="mi">1</span>
+		<span class="k">return</span> <span class="n">x</span><span class="o">-</span><span class="mi">1</span>
+	<span class="k">return</span> <span class="n">counter</span>
+</pre></div>
+</td></tr></tbody></table>
+</div>
 
 <p>The next example we looked at is the <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/generators.html#a-fibonacci-generator">Fibonacci series</a>. Here we had to fill in the function <code>fib2</code> that will mimic the function <code>fib</code>. Below is an example of the definition for <code>fib2</code>.</p>
 
 <div class="brush: python">
- <pre><code>def fib2(max):
-    a,b = 0,1
-    def next():
-        nonlocal a,b
-        if a &lt; max:
-            a , b = b, a+b
-            return b-a
-        else:
-            return None
-    return next</code></pre></div>
+ <table class="sourcetable">
+  <tbody>
+   <tr>
+    <td class="linenos">
+     <div class="linenodiv">
+      <pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td>
+    <td class="code">
+     <div class="source">
+      <pre><span></span><span class="k">def</span> <span class="nf">fib2</span><span class="p">(</span><span class="nb">max</span><span class="p">):</span>
+    <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="mi">1</span>
+    <span class="k">def</span> <span class="nf">next</span><span class="p">():</span>
+        <span class="n">nonlocal</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span>
+        <span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="nb">max</span><span class="p">:</span>
+            <span class="n">a</span> <span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+            <span class="k">return</span> <span class="n">b</span><span class="o">-</span><span class="n">a</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">None</span>
+    <span class="k">return</span> <span class="nb">next</span>
+</pre></div>
+</td></tr></tbody></table>
+</div>
 
 </article>
 <article>
@@ -496,41 +604,13 @@ fibmat  median=0.026ms mean=0.028ms total=2771.087ms</code></pre>
 <p>We were given <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/books/diveintopython3/your-first-python-program.html#everythingisanobject">chapter 1</a> in <strong>Dive into Python 3</strong> to read for the lab. This reading was very helpful in the lab to explain topics I was having problems with.  First we copied the python code from <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/labs/L14/_humansize.py/">humansize.py</a> and ran it from the command line using <code>python3 humansize.py</code>. Then we ran them through the terminal using <code>python3</code> and typed in lines to run the function.  Then we moved to writing test cases using <a href="https://docs.pytest.org/en/latest/">pytest</a>. We first copied the <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/labs/L14/_test_humansize.py/">initial test cases</a>that were given during the lab. We ran the test cases in the terminal by using <code>pytest-3</code>. Then we ran it through vscodium but adding the <code>Python: Configure Tests</code> in the terminal then we were able to run the test cases.  After we moved onto looking at modules in python. Here we saw that if we want a function from a file we can add <code>from humansize import approximate size</code>. Then if we want to be able to access all the functions in a file we add <code>import humansize</code>.  The last two topics we looked at was <strong>indentation</strong> and <strong>expectations</strong> in python. For the indentation section we looked at the FizzBuzz problem and added the indentations so the code will run properly. After that we looked at expectations. In this section we had to fix the function to make it check so it does not divide by 0.</p>
 
 </article>
-<article>
-  <header>
-    <h2><a href='/2019/10/lab-13.html'>Lab 13</a></h2>
-    <p class='date-and-tags'>
-<time datetime="2019-10-17" pubdate="true">2019-10-17</time> :: <span class="tags"></span></p>
-    <p class='authors'>By: <span class="authors"><a href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">Cassandra Wendlandt-Bloodsworth</a></span></p>
-  </header>
-
-<h1 id="what-new-concepts-if-any-did-you-learn-about-in-this-lab">What new concepts (if any) did you learn about in this lab?</h1>
-
-<p>During this lab we looked at <strong>timers</strong> and <strong>animations</strong>. These were fairly new topics to me as I have not seen them much. It was really neat to see how the animation ran while using the robot example from <a href="http://www.cs.unb.ca/~bremner/teaching/cs2613/labs/L12/">lab 12</a>. Setting the time interval was a brand new concept to me. Using the <code>timer = setInterval (frame, 300)</code> seemed a lot easier to understand than the <code>setTimeout(function () {loop (i-1, str+”*”): }, 1000);</code> to understand. It seemed easier to understand because you can easily place what is what by looking at it right away. They only bad thing about it, is that you need to remember to have a <code>clearInterval</code> so it does not run forever.</p>
-
-<h1 id="what-concepts-are-familiar-from-other-courses-or-from-your-own-knowledge">What concepts are familiar from other courses or from your own knowledge?</h1>
-
-<p>There was not any concepts that I was familiar with from other courses or my own knowledge this time around.</p>
-
-<h1 id="what-new-skills-did-you-practice">What new skills did you practice?</h1>
-
-<p>The new skills that I practiced was my debugging skills, JavaScript programming skills, and problem solving skills. I practiced my debugging skills by having to work through the errors that was given and try to fix them. There were a few problems that I could not get so I asked my classmates and they helped solve them and showed me new debugging techniques. By working with through my problems and getting my classmates help I practiced my problem solving skills. I improved my JavaScript coding skills since the whole lab was completed in JavaScript.</p>
-
-<h1 id="what-specific-details-did-you-find-surprising-interesting-confusing-difficult-or-otherwise-important">What specific details did you find surprising, interesting, confusing, difficult, or otherwise important?</h1>
-
-<p>I found the animation part of the lab to be very interesting. It was cool to see a visual representation of the robot moving around the screen. I found this interesting because I find anything that is interactive or just constantly active for a set time to be very interesting.</p>
-
-<h1 id="what-explicit-tasks-eg-reading-were-you-given-during-this-lab">What explicit tasks (e.g. reading) were you given during this lab?</h1>
-
-<p>First we looked at <strong>timers</strong>. We had to run the provided code. While doing this we noticed that it was not 100 % correct since all done was being printed before the animation is actually complete. We then had to make changes to the code in order for it to work properly. The changes we made was putting the print statement into an else statement with the timer.  Then we implemented another timer. This one did not use recursion like the previous one.  After that the lab was just about setting up the <strong>animation</strong> for the robot exercise that is in <a href="http://eloquentjavascript.net/07_robot.html">chapter 7</a> of Eloquent JavaScript and from last lab as well.</p>
-
-</article>
 <footer>
  <ul class="pagination">
   <li class="page-item disabled"><a class="page-link" href="#">
     <quote>&larr;</quote></a></li>
   <li class="page-item active"><a class="page-link" href="/tags/Author-Cassandra-Wendlandt-Bloodsworth.html">1</a></li>
   <li class="page-item"><a class="page-link" href="/tags/Author-Cassandra-Wendlandt-Bloodsworth-2.html">2</a></li>
+  <li class="page-item"><a class="page-link" href="/tags/Author-Cassandra-Wendlandt-Bloodsworth-3.html">3</a></li>
   <li class="page-item"><a class="page-link" href="/tags/Author-Cassandra-Wendlandt-Bloodsworth-2.html">
     <quote>&rarr;</quote></a></li></ul></footer>
         </div>
