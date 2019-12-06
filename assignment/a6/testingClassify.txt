@@ -1,0 +1,7 @@
+Try different values of p. What do you notice about accuracy? How about run time?
+
+When increasing the value of p I noticed that the accuracy went up as well. This increareses the run time as well a bit. 
+
+Try smaller or larger training sets. Does this have an effect on accuracy? What would be a hazard of using too large of a training set? 
+
+When I decrease and increase the training set I noticed it lowers the accuracy a bit. The hazard of using a training set that is to larger because it can cause overfitting

@@ -1,8 +1,8 @@
 iris = csvread("iris.csv");
 
-[training, testing] = randomsplit(iris, 2/3)
+[training, testing] = randomsplit(iris, 2/3);
 
-p = 2
+p = 5;
 cells = p^(columns(iris)-1)+1
 
 minmax = ranges(iris);
@@ -16,9 +16,9 @@ for i=1:rows(training)
   votes(hashval,label) += 1;
 endfor
 
-classification = tally(votes)
+classification = tally(votes);
 
-correct = 0
+correct = 0;
 for i=1:rows(testing);
   hashval = hash(testing(i,:), minmax, p);
   class=classification(hashval);
