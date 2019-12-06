@@ -1,4 +1,4 @@
-## usage: [RESULT] = hash(ARRAY)
+## usage: [RESULT] = tally(ARRAY)
 ##
 ## Finds the most votes for each row. 
 ## ARRAY is the array of votes. there is one column per class

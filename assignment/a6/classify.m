@@ -2,7 +2,7 @@ iris = csvread("iris.csv");
 
 [training, testing] = randomsplit(iris, 2/3);
 
-p = 5;
+p = 2;
 cells = p^(columns(iris)-1)+1
 
 minmax = ranges(iris);
