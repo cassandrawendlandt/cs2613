@@ -5,13 +5,10 @@
 ## the matrix is being split by. This number is between 0 and 1. TRAIN
 ## and TEST are matrixs of random rows from MATRIX. If the ratio does
 ##not split the matrix evenly, TRAIN will get the bigger section
-
 function [train,test] = randomsplit(matrix, ratio)
-  
   randomGen = randperm(rows(matrix)); 
   train = matrix(randomGen(1:round(ratio *rows(matrix))),:);
   test =  matrix(randomGen(round(ratio*rows(matrix))+1:end),:);
-
 endfunction
 
 %!test "Base case, split in two even halfs"

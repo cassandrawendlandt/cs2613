@@ -6,7 +6,6 @@
 ## number returned from the caluculation 
 function results=hash(v, ranges, p)
   bucketValue = bucket(v,ranges,p);
-  
   results = sum (bucketValue .* (p .^ [0:1:columns(bucketValue)-1]))+1;
 endfunction
 

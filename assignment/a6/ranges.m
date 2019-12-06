@@ -5,7 +5,6 @@
 ## RESULTS is a 2D array. The first row contains the minmum
 ## values for each row and the second row contains the 
 ##maximum values.
-
 function [results] = ranges(matrix)
   results =[min(matrix);max(matrix)];
 endfunction

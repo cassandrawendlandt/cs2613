@@ -1,16 +1,13 @@
 ## usage: [RESULTS] = bucket(V,RANGES,P)
-
+##
 ## Groups a vector into different buckets based in the range
 ## V the vector to be bucketed. RANGES matrix of the step range
 ## P is the precision that is being looked at. RESULTS is a matrix with
 ## the number of buckets and slices
-
 function result= bucket(v,ranges,p)
   vector = v(2:end) - 0.5/p ;
   ranges2 = ranges(:,2:end);
- 
   result= [];
-      
    for x=1:columns(vector)
      step = ((ranges2(2,x) - ranges2(1,x)) / p);
      bucket = [0:step:ranges2(2,x) - step];
@@ -18,7 +15,6 @@ function result= bucket(v,ranges,p)
      result(x) = p - index(1); 
    endfor
 endfunction
-
 
 %!test "[*,0] -> bucket 0"
 %!shared zero_one
