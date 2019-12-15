@@ -1,0 +1,11 @@
+#lang racket
+
+(define (my-great-function num)(+1 num))
+
+(define my-fun(lambda (num) (+1 num)))
+(map my-fun '(1 2 3))
+
+(define-syntax-rule(And a b)
+  (if a #t b))
+
+(And #t (error 'demo "dont call this"))
