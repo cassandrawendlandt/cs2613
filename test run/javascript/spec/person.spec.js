@@ -1,5 +1,6 @@
 let Person = require("../person.js").Person;
 let People = require("../person.js").People;
+
 describe("person",
     function () {
         let bob=new Person("bob", 42);
@@ -18,8 +19,6 @@ describe("person",
             });
              
     });
-
-
 
 
 describe("people",

@@ -4,8 +4,8 @@ class Person{
         this.name = name;  
         this.age = age;
     }
-    birthday(self){ 
-       return new Person (this.name, this.age+1)        
+    birthday(){ 
+        return new Person (this.name, this.age+1);        
     }
 }
 
@@ -24,9 +24,16 @@ exports.read_json_file=read_json_file;
 
 class People { 
     constructor(jsonFile){
-        this.data = read_json_file(jsonFile);
+        let data = read_json_file(jsonFile);
         
-        this.length = this.data.length;
+        for (var i =0 ; i < data.length; i++) {
+            this [data[i].name] = new Person(data[i].name,data[i].died-data[i].born);
+            
+
+        } 
+        
+        this.length = data.length;
+        
     }
 
 
